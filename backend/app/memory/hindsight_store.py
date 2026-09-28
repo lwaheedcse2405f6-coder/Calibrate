@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import logging
 import os
-from functools import lru_cache
+import threading
 from typing import Any
 
 from app import config  # noqa: F401 (loads .env)
@@ -96,15 +96,27 @@ def bank_id() -> str:
     return bank
 
 
-@lru_cache(maxsize=1)
-def get_client():
-    """Create the Hindsight client the first time it's needed."""
-    from hindsight_client import Hindsight
+_local = threading.local()
 
-    return Hindsight(
-        base_url=os.environ.get("HINDSIGHT_BASE_URL", "https://api.hindsight.vectorize.io"),
-        api_key=os.environ["HINDSIGHT_API_KEY"],
-    )
+
+def get_client():
+    """The Hindsight client for this thread, created the first time it's needed.
+
+    One client per thread, not one shared: the client runs each call on the current thread's
+    event loop, and its connection belongs to the loop that opened it. The web server answers
+    requests on a pool of threads, so a single shared client fails from the second thread on
+    ("Timeout context manager should be used inside a task").
+    """
+    client = getattr(_local, "client", None)
+    if client is None:
+        from hindsight_client import Hindsight
+
+        client = Hindsight(
+            base_url=os.environ.get("HINDSIGHT_BASE_URL", "https://api.hindsight.vectorize.io"),
+            api_key=os.environ["HINDSIGHT_API_KEY"],
+        )
+        _local.client = client
+    return client
 
 
 def ensure_bank() -> None:

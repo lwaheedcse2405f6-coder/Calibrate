@@ -2,6 +2,7 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 
 from app.api import mock_data
+from app.db import get
 
 router = APIRouter(prefix="/api")
 
@@ -24,7 +25,7 @@ class AskRequest(BaseModel):
 
 @router.get("/reps")
 def list_reps():
-    return mock_data.REPS
+    return get("reps") or []
 
 
 @router.get("/quarters")

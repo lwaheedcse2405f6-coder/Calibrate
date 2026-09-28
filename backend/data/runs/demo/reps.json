@@ -1,8 +1,26 @@
 [
   {
-    "id": "rep-001",
-    "name": "Demo Representative",
-    "role": "Developer",
-    "quarters": ["Q1", "Q2", "Q3", "Q4"]
+    "rep_id": "priya",
+    "name": "Priya"
+  },
+  {
+    "rep_id": "arjun",
+    "name": "Arjun"
+  },
+  {
+    "rep_id": "meera",
+    "name": "Meera"
+  },
+  {
+    "rep_id": "rahul",
+    "name": "Rahul"
+  },
+  {
+    "rep_id": "sana",
+    "name": "Sana"
+  },
+  {
+    "rep_id": "karan",
+    "name": "Karan"
   }
 ]

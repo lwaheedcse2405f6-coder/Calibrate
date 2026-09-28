@@ -1,0 +1,22 @@
+{
+  "2017-Q1": {
+    "reps_forecast_inr": 12446289,
+    "agent_forecast_inr": 12446289,
+    "actual_inr": 14959505
+  },
+  "2017-Q2": {
+    "reps_forecast_inr": 37797767,
+    "agent_forecast_inr": 37797767,
+    "actual_inr": 31431934
+  },
+  "2017-Q3": {
+    "reps_forecast_inr": 42361783,
+    "agent_forecast_inr": 42361783,
+    "actual_inr": 36963220
+  },
+  "2017-Q4": {
+    "reps_forecast_inr": 44662569,
+    "agent_forecast_inr": 44662569,
+    "actual_inr": 41912095
+  }
+}

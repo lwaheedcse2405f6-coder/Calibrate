@@ -1,0 +1,146 @@
+{
+  "priya": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Priya demonstrated high forecast accuracy on the Codehow deal, maintaining an 89% confidence level which resulted in a win.; Priya's Codehow deal was lost with a 47% probability forecast.; Priya's sales forecasts for GTX Basic deals show moderate confidence (76%) for small deals with 1 contact and a finance contact.; Priya's Ron-tech deal was won with a 69% probability forecast.; Priya's sales forecasts for GTX Basic deals show moderate confidence (39%) for small deals with 1 contact and a finance contact.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Priya demonstrated high forecast accuracy on the Codehow deal, maintaining an 89% confidence level which resulted in a win.; Priya's Rundofase deal forecast was adjusted to 80% probability, and the deal was won, confirming the accuracy of the forecast.; Priya's Condax deal was won with a 78% probability forecast.; Priya's Konmatfix deal forecast was adjusted to 80% probability, and the deal was ultimately won.; Priya's Codehow deal was lost with a 47% probability forecast.",
+      "evidence_count": 28,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Priya's forecast accuracy shows a trend of over-confidence in large deals, while performance on smaller or end-of-quarter deals is more balanced and accurate.",
+      "evidence_count": 30,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Priya generally exhibits an underestimation bias across most deal categories, most notably for single_contact_no_finance deals, where her actual win rate was significantly lower than her stated confidence. For large_deal and overall categories, she also demonstrated an underestimation bias. End-of-quarter deals showed the most accurate alignment between her forecast and actual win rate.",
+      "evidence_count": 29,
+      "confidence": "high"
+    }
+  ],
+  "arjun": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Arjun's forecasting accuracy for won deals: Xx-holding (67%, 51%), Goodsilron (56%, 57%), Singletechno (61%), Plexzap (46%), Scotfind (54%, 50%), Y-corporation (41%), Faxquote (57%), and Rantouch (47%).; Arjun's forecasting for the Kan-code deal was initially overconfident, as the deal was lost; the assistant corrected the probability to 14% on 2017-03-07, which was validated by the loss.; Arjun forecast the Zoomit deal (MG Special) at 65% probability with a deal size of ₹4,565, involving 2 contacts and a finance contact.; Arjun's forecasting bias for MG Advanced deals: he forecast a 41% probability for the won Y-corporation deal.; Arjun's forecasting bias for single_contact_no_finance deals: he forecast a 57% probability for the won Goodsilron deal and a 54% probability for the won Scotfind deal.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Arjun's forecasting accuracy for won deals: Xx-holding (67%, 51%, 55%, 47%), Goodsilron (56%, 57%, 42%, 44%), Singletechno (61%), Plexzap (46%), Scotfind (54%, 50%, 40%), Y-corporation (41%), Faxquote (57%, 52%), Rantouch (47%), Konex (58%), Hottechi (47%), and Finjob (47%).; Arjun's forecast for the Scotfind deal was adjusted to 86% and the deal was won.; Arjun forecast an 11% probability for the Cheers deal, which he ultimately lost.; Arjun forecast a 17% probability for the Cheers deal, which he ultimately lost.; Arjun forecast a 51% probability for the Cheers deal, which he ultimately won.",
+      "evidence_count": 21,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Arjun exhibits a tendency toward over-optimism in early-quarter assessments and large deals, while demonstrating higher precision and conservative underestimation in later-quarter instances and single-contact deals.",
+      "evidence_count": 55,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "The data does not record any information regarding Arjun's past deals, forecast confidence, or actual outcomes, making it impossible to calculate performance metrics.",
+      "evidence_count": 0,
+      "confidence": "low"
+    }
+  ],
+  "meera": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Meera demonstrated accurate forecasting calibration on the Codehow deal, which was forecast at 90% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Treequote deal, which was forecast at 70% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Treequote deal, which was forecast at 65% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Inity deal, which was forecast at 71% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Konmatfix deal, which was forecast at 65% probability and subsequently won.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Meera demonstrated accurate forecasting calibration on the Codehow deal, which was forecast at 90% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Treequote deal, which was forecast at 70% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Treequote deal, which was forecast at 65% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Inity deal, which was forecast at 71% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Konmatfix deal, which was forecast at 65% probability and subsequently won.",
+      "evidence_count": 23,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Meera demonstrated accurate forecasting calibration on the Codehow deal, which was forecast at 90% probability and subsequently won.; Meera's forecasting accuracy for won deals: Ron-tech (79% forecast, won), Isdom (71% forecast, won), and Domzoom (61% forecast, won).; Meera's forecast for the Inity deal was 60%, which proved accurate when the deal was lost.; Meera demonstrated accurate forecasting calibration on the Treequote deal, which was forecast at 70% probability and subsequently won.; Meera demonstrated accurate forecasting calibration on the Treequote deal, which was forecast at 65% probability and subsequently won.",
+      "evidence_count": 34,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Meera consistently displays over-optimism across all 66 closed deals, with actual win rates significantly lower than her stated confidence levels. This pattern persists across specific categories like large deals and end-of-quarter deals, with no evidence of improvement over time.",
+      "evidence_count": 66,
+      "confidence": "high"
+    }
+  ],
+  "rahul": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Rahul's forecast probability for the Singletechno deal was 68%, which was confirmed accurate by the deal's successful outcome.; Rahul's forecast probability for the Hottechi deal was 75%, which was confirmed accurate by the deal's successful outcome.; Rahul won the Nam-zim deal on March 14, 2017, with a calibrated forecast probability of 81%.; Rahul forecast a 59% probability for the Scotfind deal, which he subsequently won.; Rahul forecast an 81% probability for the Nam-zim deal, which he subsequently won.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Rahul's forecasting for 2017-Q1 is highly accurate but shows a consistent tendency to underestimate his success rate, with an overall win rate of 92.6% against a stated average of 72.4% across 27 deals.",
+      "evidence_count": 27,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Rahul's Cheers deal was lost, confirming the 34% probability forecast was accurate.; Rahul shows mixed forecasting accuracy for large deals, having lost the Labdrill deal (62% forecast), the Plusstrip deal (44% forecast), and the Plusstrip deal (56% forecast).; Rahul demonstrates high forecasting accuracy for Kan-code deals, with an 85% confidence forecast correctly predicting a win.; Rahul's Plusstrip deal was lost, confirming the 33% probability forecast was accurate.; Rahul shows mixed forecasting accuracy for large deals, having won the Y-corporation deal (61% forecast) but lost the Nam-zim deal (50% forecast).",
+      "evidence_count": 27,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Rahul's Cheers deal was lost, confirming the 34% probability forecast was accurate.; Rahul shows mixed forecasting accuracy for large deals, having lost the Labdrill deal (62% forecast), the Plusstrip deal (44% forecast), and the Plusstrip deal (56% forecast).; Rahul shows mixed forecasting accuracy for large, end-of-quarter deals, having lost the Golddex deal (84% forecast) and the Labdrill deal (64% forecast).; Rahul demonstrates high forecasting accuracy for Kan-code deals, with an 85% confidence forecast correctly predicting a win.; Rahul's Plusstrip deal was lost, confirming the 33% probability forecast was accurate.",
+      "evidence_count": 62,
+      "confidence": "high"
+    }
+  ],
+  "sana": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Sana demonstrates high forecast accuracy, with successful wins on deals calibrated at 93% (Gekko & Co), 97% (Donquadtech), 88% (Xx-zobam), 97% (The New York Inquirer), and 92% (Kan-code).; Sana forecast the Zathunicon deal for MG Advanced at 97% probability with a deal size of ₹281,619, 2 contacts, and no finance contact.; Sana demonstrates high confidence in her forecasts for GTX Basic and GTX Plus Basic deals, with probabilities of 97%, 88%, and 97% for successful outcomes.; Sana forecasted a 93% probability for the large_deal classification GTX Plus Pro, which resulted in a win.; Sana forecast the Silis deal for MG Advanced at 97% probability with a deal size of ₹281,619, 4 contacts, and no finance contact.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Sana demonstrates high forecast accuracy, with successful wins on deals calibrated at 93% (Gekko & Co), 97% (Donquadtech), 88% (Xx-zobam), 97% (The New York Inquirer), 92% (Kan-code), 97% (Zotware), and 97% (Zencorporation).; Sana won the Yearin deal (large_deal) with a 97% forecast probability.; Sana won the Mathtouch deal (large_deal) with a 97% forecast probability.; Sana won the Ganjaflex deal (MG Special) with a 95% forecast probability.; Sana won the Plussunin deal (MG Advanced) with a 97% forecast probability.",
+      "evidence_count": 9,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Sana demonstrated high forecasting accuracy on the Silis deal, with a 98% probability forecast that was confirmed by the deal being won.; Sana demonstrates high forecast accuracy, with successful wins on deals calibrated at 93% (Gekko & Co), 97% (Donquadtech), 88% (Xx-zobam), 97% (The New York Inquirer), 92% (Kan-code), 97% (Zotware), and 97% (Zencorporation).; Sana demonstrates high forecasting accuracy for high-probability deals, as evidenced by the successful closure of the Kan-code deal at a 98% forecast probability and the Zathunicon deal at a 97% forecast probability.; Sana demonstrated high forecasting accuracy on the Bioplex deal, which she forecast at 98% probability and subsequently won.; Sana's forecasting bias for the Bubba Gump deal showed an over-pessimistic adjustment, as the initial 72% forecast was more accurate than the corrected 53% estimate given the deal was won.",
+      "evidence_count": 32,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Sana exhibits a consistent over-optimistic forecasting bias across all categories, with actual win rates trailing her stated confidence levels. While she is highly accurate at identifying 'sure-fire' wins, she struggles with large deals and end-of-quarter forecasts, leading to an overall negative calibration bias.",
+      "evidence_count": 47,
+      "confidence": "high"
+    }
+  ],
+  "karan": [
+    {
+      "quarter": "2017-Q3",
+      "belief": "Karan's forecast for the Hottechi deal was 50%, which proved accurate as the deal was lost.; Karan forecasted the Goodsilron deal at 65% probability, which was accurate as the deal was won.; Karan's forecasting for the Doncon deal was calibrated at 70% probability, which accurately predicted the deal's successful outcome.; Karan's Scotfind deal was won, with a calibrated forecast probability of 86%.; Karan's Singletechno deal was won, with a calibrated forecast probability of 69%.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "No closed deals were recorded for Karan, making it impossible to calculate win rates or provide accuracy assessments for any categories.",
+      "evidence_count": 0,
+      "confidence": "low"
+    }
+  ]
+}

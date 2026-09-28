@@ -1,0 +1,792 @@
+{
+  "2016-Q4": {},
+  "2017-Q1": {
+    "priya": {
+      "rep_id": "priya",
+      "quarter": "2017-Q1",
+      "summary": "No data available for Priya regarding closed deals or forecast confidence, making calibration analysis impossible.",
+      "rules": []
+    },
+    "arjun": {
+      "rep_id": "arjun",
+      "quarter": "2017-Q1",
+      "summary": "Not enough history yet.",
+      "rules": []
+    },
+    "meera": {
+      "rep_id": "meera",
+      "quarter": "2017-Q1",
+      "summary": "Not enough history yet.",
+      "rules": []
+    },
+    "rahul": {
+      "rep_id": "rahul",
+      "quarter": "2017-Q1",
+      "summary": "No closed deals were recorded for Rahul, making it impossible to calculate performance metrics or adjustments.",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "insufficient data",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        }
+      ]
+    },
+    "sana": {
+      "rep_id": "sana",
+      "quarter": "2017-Q1",
+      "summary": "There are no closed deals for Sana, making it impossible to calculate forecast confidence, win rates, or perform adjustment analysis.",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "No closed deal data available",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        }
+      ]
+    }
+  },
+  "2017-Q2": {
+    "priya": {
+      "rep_id": "priya",
+      "quarter": "2017-Q2",
+      "summary": "Priya's forecasting is generally accurate overall, but she exhibits a conservative bias for large deals and single-contact deals without finance, while showing an optimistic bias during end-of-quarter periods.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "condition": "single_contact_no_finance",
+          "stated_avg": 0.91,
+          "actual_rate": 0.67,
+          "adjustment": 0.736,
+          "evidence_count": 3,
+          "confidence": "medium"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "large_deal",
+          "stated_avg": 0.64,
+          "actual_rate": 0.5,
+          "adjustment": 0.781,
+          "evidence_count": 10,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "under",
+          "condition": "end_of_quarter",
+          "stated_avg": 0.73,
+          "actual_rate": 0.8,
+          "adjustment": 1.096,
+          "evidence_count": 5,
+          "confidence": "medium"
+        },
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "overall",
+          "stated_avg": 0.72,
+          "actual_rate": 0.73,
+          "adjustment": 1.0,
+          "evidence_count": 28,
+          "confidence": "high"
+        }
+      ]
+    },
+    "arjun": {
+      "rep_id": "arjun",
+      "quarter": "2017-Q2",
+      "summary": "Arjun consistently understated his win probability across all categories, demonstrating a significant conservative bias in his forecasting with an overall actual win rate of 95% compared to a 50% average forecast.",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "All closed deals",
+          "stated_avg": 0.5,
+          "actual_rate": 0.95,
+          "adjustment": 1.9,
+          "evidence_count": 21,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "under",
+          "condition": "Large deals",
+          "stated_avg": 0.56,
+          "actual_rate": 1.0,
+          "adjustment": 1.786,
+          "evidence_count": 4,
+          "confidence": "medium"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "under",
+          "condition": "Single contact without finance",
+          "stated_avg": 0.46,
+          "actual_rate": 1.0,
+          "adjustment": 2.0,
+          "evidence_count": 3,
+          "confidence": "medium"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "under",
+          "condition": "Deals occurring between 2017-03-27 and 2017-03-31",
+          "stated_avg": 0.48,
+          "actual_rate": 1.0,
+          "adjustment": 2.0,
+          "evidence_count": 5,
+          "confidence": "medium"
+        }
+      ]
+    },
+    "meera": {
+      "rep_id": "meera",
+      "quarter": "2017-Q2",
+      "summary": "Meera demonstrates high forecast accuracy across her closed deals, with an overall calibration of 74% actual win rate against a 73% stated average. All analyzed categories, including Large Deals and Single Contact No Finance deals, show accurate forecasting within a 5-point adjustment threshold.",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "Overall performance",
+          "stated_avg": 0.73,
+          "actual_rate": 0.74,
+          "adjustment": 1.0,
+          "evidence_count": 23,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "Large Deal",
+          "stated_avg": 0.96,
+          "actual_rate": 1.0,
+          "adjustment": 1.0,
+          "evidence_count": 4,
+          "confidence": "medium"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "Single Contact No Finance",
+          "stated_avg": 0.97,
+          "actual_rate": 1.0,
+          "adjustment": 1.0,
+          "evidence_count": 1,
+          "confidence": "low"
+        }
+      ]
+    },
+    "rahul": {
+      "rep_id": "rahul",
+      "quarter": "2017-Q2",
+      "summary": "Rahul's forecasting for 2017-Q1 is highly accurate but shows a consistent tendency to underestimate his success rate, with an overall win rate of 92.6% against a stated average of 72.4% across 27 deals.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "under",
+          "condition": "single_contact_no_finance",
+          "stated_avg": 0.78,
+          "actual_rate": 1.0,
+          "adjustment": 1.282,
+          "evidence_count": 3,
+          "confidence": "medium"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "under",
+          "condition": "large_deal",
+          "stated_avg": 0.7,
+          "actual_rate": 1.0,
+          "adjustment": 1.429,
+          "evidence_count": 5,
+          "confidence": "medium"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "end_of_quarter",
+          "stated_avg": 0.97,
+          "actual_rate": 1.0,
+          "adjustment": 1.0,
+          "evidence_count": 1,
+          "confidence": "low"
+        },
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "overall",
+          "stated_avg": 0.7240000000000001,
+          "actual_rate": 0.9259999999999999,
+          "adjustment": 1.279,
+          "evidence_count": 27,
+          "confidence": "high"
+        }
+      ]
+    },
+    "sana": {
+      "rep_id": "sana",
+      "quarter": "2017-Q2",
+      "summary": "Sana demonstrates a consistent tendency to underestimate her win rate across all categories, with an overall 94% average forecast against a 100% actual win rate based on 9 closed deals.",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "Overall performance across 9 closed deals",
+          "stated_avg": 0.94,
+          "actual_rate": 1.0,
+          "adjustment": 1.064,
+          "evidence_count": 9,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "under",
+          "condition": "Large deals including Gekko & Co, Kan-code, Zotware, and Donquadtech GTX Pro",
+          "stated_avg": 0.948,
+          "actual_rate": 1.0,
+          "adjustment": 1.055,
+          "evidence_count": 4,
+          "confidence": "medium"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "Deals with Zencorporation and Ontomedia",
+          "stated_avg": 0.97,
+          "actual_rate": 1.0,
+          "adjustment": 1.0,
+          "evidence_count": 2,
+          "confidence": "low"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "under",
+          "condition": "Deals with Zencorporation and Xx-zobam",
+          "stated_avg": 0.925,
+          "actual_rate": 1.0,
+          "adjustment": 1.081,
+          "evidence_count": 2,
+          "confidence": "low"
+        }
+      ]
+    }
+  },
+  "2017-Q3": {
+    "priya": {
+      "rep_id": "priya",
+      "quarter": "2017-Q3",
+      "summary": "Priya's forecast accuracy shows a trend of over-confidence in large deals, while performance on smaller or end-of-quarter deals is more balanced and accurate.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "condition": "Single_contact_no_finance",
+          "stated_avg": 0.63,
+          "actual_rate": 0.5,
+          "adjustment": 0.794,
+          "evidence_count": 4,
+          "confidence": "low"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "Large_deal",
+          "stated_avg": 0.65,
+          "actual_rate": 0.56,
+          "adjustment": 0.862,
+          "evidence_count": 18,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "End_of_quarter",
+          "stated_avg": 0.68,
+          "actual_rate": 0.71,
+          "adjustment": 1.0,
+          "evidence_count": 7,
+          "confidence": "medium"
+        },
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "Overall",
+          "stated_avg": 0.67,
+          "actual_rate": 0.63,
+          "adjustment": 1.0,
+          "evidence_count": 30,
+          "confidence": "high"
+        }
+      ]
+    },
+    "arjun": {
+      "rep_id": "arjun",
+      "quarter": "2017-Q3",
+      "summary": "Arjun exhibits a tendency toward over-optimism in early-quarter assessments and large deals, while demonstrating higher precision and conservative underestimation in later-quarter instances and single-contact deals.",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "Across 55 closed deals, Arjun maintained an average stated probability of 38% against an actual win rate of 44%.",
+          "stated_avg": 0.38,
+          "actual_rate": 0.44,
+          "adjustment": 1.158,
+          "evidence_count": 55,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "under",
+          "condition": "Based on 4 closed deals, Arjun forecasted an average of 37% with an actual win rate of 50%.",
+          "stated_avg": 0.37,
+          "actual_rate": 0.5,
+          "adjustment": 1.351,
+          "evidence_count": 4,
+          "confidence": "medium"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "Based on 4 closed deals, Arjun had a 0% win rate despite averaging a 21% stated probability.",
+          "stated_avg": 0.21,
+          "actual_rate": 0.0,
+          "adjustment": 0.3,
+          "evidence_count": 4,
+          "confidence": "medium"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "under",
+          "condition": "Based on 5 closed deals, Arjun showed an average stated probability of 46% compared to a 60% win rate.",
+          "stated_avg": 0.46,
+          "actual_rate": 0.6,
+          "adjustment": 1.304,
+          "evidence_count": 5,
+          "confidence": "medium"
+        }
+      ]
+    },
+    "meera": {
+      "rep_id": "meera",
+      "quarter": "2017-Q3",
+      "summary": "Meera's forecasting is generally conservative, showing an overall under-estimation of win rates, though she exhibits over-confidence in large deals and limited data points like end-of-quarter deals.",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "Overall forecasting performance",
+          "stated_avg": 0.77,
+          "actual_rate": 0.94,
+          "adjustment": 1.221,
+          "evidence_count": 34,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "under",
+          "condition": "Deals involving a single contact and no finance department",
+          "stated_avg": 0.79,
+          "actual_rate": 1.0,
+          "adjustment": 1.266,
+          "evidence_count": 7,
+          "confidence": "medium"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "Large deals (GTX Plus Pro)",
+          "stated_avg": 0.95,
+          "actual_rate": 0.75,
+          "adjustment": 0.789,
+          "evidence_count": 4,
+          "confidence": "medium"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "condition": "End of quarter deals",
+          "stated_avg": 0.42,
+          "actual_rate": 0.0,
+          "adjustment": 0.3,
+          "evidence_count": 1,
+          "confidence": "low"
+        }
+      ]
+    },
+    "rahul": {
+      "rep_id": "rahul",
+      "quarter": "2017-Q3",
+      "summary": "Rahul demonstrated high forecasting accuracy in Q1 2017, consistently under-promising on win probabilities across all deal categories with an overall win rate of 92.6% against a 73% stated average.",
+      "rules": [
+        {
+          "trait": "large_deal",
+          "direction": "under",
+          "condition": "Large Deal",
+          "stated_avg": 0.72,
+          "actual_rate": 1.0,
+          "adjustment": 1.389,
+          "evidence_count": 6,
+          "confidence": "medium"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "under",
+          "condition": "Single Contact, No Finance",
+          "stated_avg": 0.78,
+          "actual_rate": 1.0,
+          "adjustment": 1.282,
+          "evidence_count": 3,
+          "confidence": "medium"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "under",
+          "condition": "End of Quarter",
+          "stated_avg": 0.895,
+          "actual_rate": 1.0,
+          "adjustment": 1.117,
+          "evidence_count": 2,
+          "confidence": "low"
+        },
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "Overall",
+          "stated_avg": 0.73,
+          "actual_rate": 0.926,
+          "adjustment": 1.268,
+          "evidence_count": 27,
+          "confidence": "high"
+        }
+      ]
+    },
+    "sana": {
+      "rep_id": "sana",
+      "quarter": "2017-Q3",
+      "summary": "Sana exhibits a persistent overconfidence bias across all categories, where her stated probability forecasts significantly exceed the actual win rate of her closed deals.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "condition": "single_contact_no_finance",
+          "stated_avg": 0.88,
+          "actual_rate": 0.67,
+          "adjustment": 0.761,
+          "evidence_count": 6,
+          "confidence": "medium"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "large_deal",
+          "stated_avg": 0.82,
+          "actual_rate": 0.6,
+          "adjustment": 0.732,
+          "evidence_count": 15,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "condition": "end_of_quarter",
+          "stated_avg": 0.89,
+          "actual_rate": 0.67,
+          "adjustment": 0.753,
+          "evidence_count": 3,
+          "confidence": "low"
+        },
+        {
+          "trait": "overall",
+          "direction": "over",
+          "condition": "overall",
+          "stated_avg": 0.84,
+          "actual_rate": 0.53,
+          "adjustment": 0.631,
+          "evidence_count": 32,
+          "confidence": "high"
+        }
+      ]
+    },
+    "karan": {
+      "rep_id": "karan",
+      "quarter": "2017-Q3",
+      "summary": "No closed deals were recorded for Karan, making it impossible to calculate win rates, adjustment metrics, or perform calibration analysis for any traits.",
+      "rules": [
+        {
+          "trait": "other",
+          "direction": "accurate",
+          "condition": "No data available",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        }
+      ]
+    }
+  },
+  "2017-Q4": {
+    "priya": {
+      "rep_id": "priya",
+      "quarter": "2017-Q4",
+      "summary": "Priya generally exhibits an underestimation bias across most deal categories, most notably for single_contact_no_finance deals, where her actual win rate was significantly lower than her stated confidence. For large_deal and overall categories, she also demonstrated an underestimation bias. End-of-quarter deals showed the most accurate alignment between her forecast and actual win rate.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "condition": "single_contact_no_finance",
+          "stated_avg": 0.81,
+          "actual_rate": 0.5,
+          "adjustment": 0.617,
+          "evidence_count": 2,
+          "confidence": "low"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "large_deal",
+          "stated_avg": 0.61,
+          "actual_rate": 0.52,
+          "adjustment": 0.852,
+          "evidence_count": 23,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "end_of_quarter",
+          "stated_avg": 0.7,
+          "actual_rate": 0.67,
+          "adjustment": 1.0,
+          "evidence_count": 3,
+          "confidence": "low"
+        },
+        {
+          "trait": "overall",
+          "direction": "over",
+          "condition": "overall",
+          "stated_avg": 0.64,
+          "actual_rate": 0.55,
+          "adjustment": 0.859,
+          "evidence_count": 29,
+          "confidence": "high"
+        }
+      ]
+    },
+    "arjun": {
+      "rep_id": "arjun",
+      "quarter": "2017-Q4",
+      "summary": "The data does not record any information regarding Arjun's past deals, forecast confidence, or actual outcomes, making it impossible to calculate performance metrics.",
+      "rules": [
+        {
+          "trait": "other",
+          "direction": "accurate",
+          "condition": "Insufficient data available to determine performance metrics",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        }
+      ]
+    },
+    "meera": {
+      "rep_id": "meera",
+      "quarter": "2017-Q4",
+      "summary": "Meera consistently displays over-optimism across all 66 closed deals, with actual win rates significantly lower than her stated confidence levels. This pattern persists across specific categories like large deals and end-of-quarter deals, with no evidence of improvement over time.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "condition": "Single Contact/No Finance",
+          "stated_avg": 0.765,
+          "actual_rate": 0.667,
+          "adjustment": 0.872,
+          "evidence_count": 9,
+          "confidence": "medium"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "Large Deal",
+          "stated_avg": 0.83,
+          "actual_rate": 0.0,
+          "adjustment": 0.3,
+          "evidence_count": 4,
+          "confidence": "low"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "condition": "End of Quarter",
+          "stated_avg": 0.77,
+          "actual_rate": 0.5,
+          "adjustment": 0.649,
+          "evidence_count": 6,
+          "confidence": "medium"
+        },
+        {
+          "trait": "overall",
+          "direction": "over",
+          "condition": "Overall",
+          "stated_avg": 0.732,
+          "actual_rate": 0.545,
+          "adjustment": 0.745,
+          "evidence_count": 66,
+          "confidence": "high"
+        }
+      ]
+    },
+    "rahul": {
+      "rep_id": "rahul",
+      "quarter": "2017-Q4",
+      "summary": "Rahul consistently demonstrates an optimistic bias across all deal traits, with his stated confidence levels significantly exceeding actual win rates. This trend is most pronounced in end-of-quarter deals, and overall performance has not improved since the start of the analyzed period.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "condition": "single_contact_no_finance",
+          "stated_avg": 0.58,
+          "actual_rate": 0.4,
+          "adjustment": 0.69,
+          "evidence_count": 5,
+          "confidence": "low"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "large_deal",
+          "stated_avg": 0.56,
+          "actual_rate": 0.47,
+          "adjustment": 0.839,
+          "evidence_count": 19,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "condition": "end_of_quarter",
+          "stated_avg": 0.76,
+          "actual_rate": 0.5,
+          "adjustment": 0.658,
+          "evidence_count": 4,
+          "confidence": "low"
+        },
+        {
+          "trait": "overall",
+          "direction": "over",
+          "condition": "overall",
+          "stated_avg": 0.6,
+          "actual_rate": 0.53,
+          "adjustment": 0.883,
+          "evidence_count": 62,
+          "confidence": "high"
+        }
+      ]
+    },
+    "sana": {
+      "rep_id": "sana",
+      "quarter": "2017-Q4",
+      "summary": "Sana exhibits a consistent over-optimistic forecasting bias across all categories, with actual win rates trailing her stated confidence levels. While she is highly accurate at identifying 'sure-fire' wins, she struggles with large deals and end-of-quarter forecasts, leading to an overall negative calibration bias.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "condition": "single_contact_no_finance",
+          "stated_avg": 0.88,
+          "actual_rate": 0.77,
+          "adjustment": 0.875,
+          "evidence_count": 26,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "large_deal",
+          "stated_avg": 0.83,
+          "actual_rate": 0.64,
+          "adjustment": 0.771,
+          "evidence_count": 22,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "condition": "end_of_quarter",
+          "stated_avg": 0.81,
+          "actual_rate": 0.6,
+          "adjustment": 0.741,
+          "evidence_count": 10,
+          "confidence": "high"
+        },
+        {
+          "trait": "overall",
+          "direction": "over",
+          "condition": "overall",
+          "stated_avg": 0.86,
+          "actual_rate": 0.72,
+          "adjustment": 0.837,
+          "evidence_count": 47,
+          "confidence": "high"
+        }
+      ]
+    },
+    "karan": {
+      "rep_id": "karan",
+      "quarter": "2017-Q4",
+      "summary": "No closed deals were recorded for Karan, making it impossible to calculate win rates or provide accuracy assessments for any categories.",
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "insufficient data",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "insufficient data",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "insufficient data",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        },
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "insufficient data",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        }
+      ]
+    }
+  }
+}

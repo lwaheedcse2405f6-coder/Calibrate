@@ -12,7 +12,7 @@ backend/.cache/
 /backend/data/runs/*
 !/backend/data/runs/demo/
 /backend/data/runs/demo/*
-!/backend/data/runs/demo/reps.json
+!/backend/data/runs/demo/*.json
 
 # Python bytecode/cache artifacts
 *.py[cod]

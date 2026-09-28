@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+node_modules/
+frontend/dist/
+backend/.cache/
+*.sqlite
+
+# keep the final demo run, ignore every other run folder
+backend/data/runs/*
+!backend/data/runs/demo/

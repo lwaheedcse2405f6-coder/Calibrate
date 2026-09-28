@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+hindsight-client
+groq
+pandas
+numpy
+httpx
+pytest
+ruff

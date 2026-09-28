@@ -1,0 +1,91 @@
+{
+  "chart_tooltips": {
+    "brier_score_bar": {
+      "title": "Brier Score — lower is better",
+      "body": "Measures how far off each probability forecast was from the actual outcome. 0 = perfect. 0.25 = random guess. Above 0.25 = worse than flipping a coin.",
+      "memory_off_label": "Memory OFF",
+      "memory_on_label": "Memory ON (Calibrated)"
+    },
+    "calibration_curve": {
+      "title": "Calibration Curve",
+      "body": "The diagonal line is perfect calibration. Points above = rep over-states confidence. Points below = rep sandbagging. Calibrate pushes dots toward the diagonal.",
+      "x_axis": "Stated win probability",
+      "y_axis": "Actual win rate"
+    },
+    "rep_bias_heatmap": {
+      "title": "Hidden Bias by Deal Type",
+      "body": "Red = rep over-states probability for this deal type. Blue = rep under-states. White = well calibrated. Darker = stronger signal."
+    },
+    "quarter_timeline": {
+      "title": "Brier Score Over Time",
+      "body": "Each point is one quarter's Brier score. The drop when Memory turns ON proves that Hindsight is doing real work — not just repackaging the rep's gut feeling."
+    },
+    "revenue_error_bar": {
+      "title": "Revenue Forecast Error",
+      "body": "Positive = rep over-forecast (optimism bias). Negative = rep sandbagged. The agent-corrected bar should be shorter and closer to zero."
+    }
+  },
+
+  "sub_chart_oneliners": {
+    "trust_the_rep":         "Raw rep probability — no correction applied.",
+    "agent_off":             "AI running without memory — same as trusting the rep.",
+    "agent_on":              "AI with Hindsight memory — bias corrected.",
+    "historical_baseline":   "Flat 63% win rate — the naive historical average.",
+    "false_alarm_rate":      "Rules the AI invented that aren't in the rep's actual bias profile.",
+    "bias_detection_rate":   "Share of planted biases the AI correctly identified.",
+    "sana_improvement":      "Sana's over-confidence bias was no longer detected this quarter — a genuine improvement signal.",
+    "pending_deals":         "Open deals excluded from scoring — outcomes not yet known."
+  },
+
+  "form_labels": {
+    "deal_amount": {
+      "label":       "Deal Amount (INR)",
+      "placeholder": "e.g. 2500000",
+      "helper":      "Enter the total deal value in Indian Rupees."
+    },
+    "stated_prob": {
+      "label":       "Your Win Probability",
+      "placeholder": "0.75",
+      "helper":      "Enter your gut-feel probability as a decimal (0 to 1)."
+    },
+    "deal_stage": {
+      "label":       "Current Stage",
+      "placeholder": "e.g. Proposal Sent",
+      "helper":      "The CRM stage at the time of this forecast."
+    },
+    "finance_contact": {
+      "label":       "Finance Contact Engaged?",
+      "options":     ["Yes", "No"],
+      "helper":      "Affects the single-contact-no-finance bias correction."
+    },
+    "quarter": {
+      "label":       "Quarter",
+      "placeholder": "e.g. Q2-2025",
+      "helper":      "The quarter this deal is expected to close in."
+    },
+    "submit_button": {
+      "label":       "Get Calibrated Probability",
+      "loading":     "Calibrating...",
+      "success":     "Done — see your corrected probability below."
+    }
+  },
+
+  "result_display": {
+    "corrected_prob_label":   "Calibrated Probability",
+    "stated_prob_label":      "Your Stated Probability",
+    "correction_delta_label": "Correction Applied",
+    "bias_detected_label":    "Bias Detected",
+    "confidence_label":       "Detection Confidence",
+    "evidence_count_label":   "Based on {n} past deals",
+    "no_history_message":     "Not enough history yet — using neutral 50% prior.",
+    "improvement_message":    "Your calibration has improved this quarter. Keep it up."
+  },
+
+  "error_messages": {
+    "invalid_prob":     "Win probability must be between 0 and 1.",
+    "invalid_amount":   "Deal amount must be a positive integer.",
+    "ai_unavailable":   "Calibration engine is temporarily unavailable. Your stated probability is shown unchanged.",
+    "broken_json":      "The AI returned an unexpected response. Falling back to historical baseline.",
+    "missing_quarter":  "Please select a quarter before submitting."
+  }
+}

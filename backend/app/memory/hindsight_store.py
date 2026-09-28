@@ -341,7 +341,9 @@ def reflect_calibration_card(rep_id: str, rep_name: str, quarter: str | None = N
 
     if records:
         card = build_card(records)
-        if card["rules"]:
+        # Only ask reflect to explain real biases: with nothing to explain, it tends to invent
+        # a pattern (seen in the Priya smoke test), so the measured sentence is safer.
+        if any(r["direction"] != "accurate" for r in card["rules"]):
             card["summary"] = _explain_card(rep_id, rep_name, card) or \
                 card["summary"].replace("Rep ", f"{rep_name} ", 1)
         return {"rep_id": rep_id, "quarter": quarter, "source": "track_record",

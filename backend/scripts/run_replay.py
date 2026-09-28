@@ -41,15 +41,20 @@ def main() -> None:
         services = _load_services(service_spec)
     except (ImportError, RuntimeError) as exc:
         raise SystemExit(str(exc)) from exc
-    result = run(
-        mode=args.mode,
-        run_id=args.run_id,
-        deals_path=args.deals if args.deals else DATA / "deals.csv",
-        rep_id=args.rep_id,
-        forecast_quarter=args.quarter,
-        resume=not args.no_resume,
-        services=services,
-    )
+    try:
+        result = run(
+            mode=args.mode,
+            run_id=args.run_id,
+            deals_path=args.deals if args.deals else DATA / "deals.csv",
+            rep_id=args.rep_id,
+            forecast_quarter=args.quarter,
+            resume=not args.no_resume,
+            services=services,
+        )
+    finally:
+        close = getattr(services, "close", None)
+        if callable(close):
+            close()
     print(f"{result.mode} replay {result.run_id}: {result.output_dir} ({len(result.completed_quarters)} quarters complete)")
 
 

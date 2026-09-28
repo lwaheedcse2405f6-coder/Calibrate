@@ -42,6 +42,9 @@ class HindsightReplayServices:
     def wait_for_memory_processing(self) -> None:
         time.sleep(MEMORY_PAUSE_SECONDS)
 
+    def close(self) -> None:
+        self.store.get_client().close()
+
     def snapshot_beliefs(self, rep_id: str, quarter: str, card: dict[str, Any]) -> dict[str, Any]:
         observations = self.store.recall_beliefs(rep_id, limit=5)
         rules = card.get("rules") or []

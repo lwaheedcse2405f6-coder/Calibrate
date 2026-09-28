@@ -26,19 +26,22 @@ Calibrate fixes the number before it leaves the rep's screen.
 graph TD
     A["CRM Deal\n(stated_prob, amount_inr)"]
     B["POST /api/forecast/correct"]
-    C["Groq LLM\n(llama3-8b-8192)"]
-    D["Hindsight Memory Bank"]
-    E["Calibration Card\n(CalibrationRule x N)"]
-    F["corrected_prob returned"]
-    G["Brier Score Dashboard"]
+    C["Hindsight Memory Bank\n(Facts & Track Record)"]
+    D["Calibration Card\n(Measured empirically from memory)"]
+    E["Python calibrator.py\n(apply_card: pure deterministic adjustment)"]
+    F["Groq LLM\n(openai/gpt-oss-120b: Reflect explanation)"]
+    G["corrected_prob returned + reason"]
+    H["Brier Score Dashboard"]
 
     A --> B
-    B --> C
-    D -- "facts + observations\n+ directives" --> C
-    C --> E
+    B --> E
+    C -- "Query track record" --> D
+    D --> E
     E --> F
     F --> G
-    G -- "eval.json" --> D
+    G --> H
+    H -- "eval.json & scores.json" --> C
+
 ```
 
 ---
@@ -97,7 +100,7 @@ The evaluation harness (`backend/tests/`) covers:
   - Meera: `large_deal` over-confidence detected in Q4
   - Rahul: `end_of_quarter` optimism inflation detected in Q4
   - Sana: `overall` over-confidence detected in Q3
-  - Karan: correctly classified as unbiased (joined Q3)
+  - Karan: no bias planted, completely left alone (joined Q3; cold-start handled gracefully)
 - **False Alarm Count:** 3
 - **Test Suite Status:** Passing all tests across evaluation harness
 
@@ -106,23 +109,25 @@ The evaluation harness (`backend/tests/`) covers:
 ## Quick Start
 
 ```bash
-# 1. Clone and enter
-git clone <repo-url> && cd msoft
+# 1. Clone repository
+git clone <repo-url>
+cd Calibrate
 
-# 2. Set up environment
+# 2. Enter backend and install dependencies
+cd backend
 python -m venv .venv
-.venv\Scripts\activate        # Windows
+source .venv/bin/activate      # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# 3. Copy env file
+# 3. Environment configuration
 cp .env.example .env
-# Fill in HINDSIGHT_API_KEY, GROQ_API_KEY, etc.
+# Provide HINDSIGHT_API_KEY, GROQ_API_KEY, and HINDSIGHT_BANK_ID
 
-# 4. Run evaluation harness
-pytest backend/tests/ -v
+# 4. Run test suite and evaluation harness
+pytest tests/ -v
 
-# 5. Start the backend (once Role 1 merges)
-uvicorn backend.main:app --reload
+# 5. Start the backend server
+uvicorn app.main:app --reload
 ```
 
 ---

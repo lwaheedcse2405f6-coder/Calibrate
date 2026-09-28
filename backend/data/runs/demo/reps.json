@@ -1,26 +1,32 @@
 [
   {
     "rep_id": "priya",
-    "name": "Priya"
+    "name": "Priya",
+    "joins": "2017-Q1"
   },
   {
     "rep_id": "arjun",
-    "name": "Arjun"
+    "name": "Arjun",
+    "joins": "2017-Q1"
   },
   {
     "rep_id": "meera",
-    "name": "Meera"
+    "name": "Meera",
+    "joins": "2017-Q1"
   },
   {
     "rep_id": "rahul",
-    "name": "Rahul"
+    "name": "Rahul",
+    "joins": "2017-Q1"
   },
   {
     "rep_id": "sana",
-    "name": "Sana"
+    "name": "Sana",
+    "joins": "2017-Q1"
   },
   {
     "rep_id": "karan",
-    "name": "Karan"
+    "name": "Karan",
+    "joins": "2017-Q3"
   }
 ]

@@ -45,9 +45,9 @@ TEAM_CARD_QUERY = (
 )
 
 SUMMARY_QUERY = (
-    "In one or two plain sentences for a sales manager, say how reliable {rep_name}'s forecasts "
-    "are and where to be careful. Use the measured track record given as context, quote its "
-    "numbers and deal counts exactly, and mention if the pattern seems to be changing recently."
+    "In one or two plain sentences for a sales manager, explain the forecasting patterns for "
+    "{rep_name} listed in the context. Mention ONLY those patterns, quote their numbers and deal "
+    "counts exactly, and do not describe any other deal types or claim other patterns."
 )
 
 SUMMARY_SCHEMA: dict[str, Any] = {
@@ -341,11 +341,16 @@ def reflect_calibration_card(rep_id: str, rep_name: str, quarter: str | None = N
 
     if records:
         card = build_card(records)
-        # Only ask reflect to explain real biases: with nothing to explain, it tends to invent
-        # a pattern (seen in the Priya smoke test), so the measured sentence is safer.
+        # The summary shown to managers is the measured sentence: always true to the numbers.
+        # Hindsight's own wording is kept separately; in the demo run it sometimes described
+        # patterns the numbers didn't support, so it's never the headline.
+        card["summary"] = card["summary"].replace("Rep ", f"{rep_name} ", 1)
+        if card["summary"].startswith("Forecasts match"):
+            card["summary"] = f"{rep_name}'s forecasts match" + card["summary"][len("Forecasts match"):]
         if any(r["direction"] != "accurate" for r in card["rules"]):
-            card["summary"] = _explain_card(rep_id, rep_name, card) or \
-                card["summary"].replace("Rep ", f"{rep_name} ", 1)
+            note = _explain_card(rep_id, rep_name, card)
+            if note:
+                card["hindsight_summary"] = note
         return {"rep_id": rep_id, "quarter": quarter, "source": "track_record",
                 "deals_remembered": len(records), **card}
 
@@ -365,8 +370,8 @@ def _explain_card(rep_id: str, rep_name: str, card: dict) -> str | None:
     """One reflect call: a plain-English summary of the measured card, in Hindsight's words."""
     measured = "; ".join(
         f"{r['condition']}: says {r['stated_avg']:.0%} on average, wins {r['actual_rate']:.0%} "
-        f"({r['evidence_count']} deals) -> {r['direction']}"
-        for r in card["rules"]
+        f"({r['evidence_count']} deals) -> {r['direction']}-confident"
+        for r in card["rules"] if r["direction"] != "accurate"
     )
     try:
         resp = get_client().reflect(

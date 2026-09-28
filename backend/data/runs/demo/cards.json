@@ -1,0 +1,744 @@
+{
+  "2016-Q4": {},
+  "2017-Q1": {
+    "priya": {
+      "rep_id": "priya",
+      "quarter": "2017-Q1",
+      "source": "reflect",
+      "summary": "Not enough history for Priya yet, so forecasts are not adjusted.",
+      "rules": []
+    },
+    "arjun": {
+      "rep_id": "arjun",
+      "quarter": "2017-Q1",
+      "source": "reflect",
+      "summary": "No closed deal data available for Arjun, preventing calculation of win rates or calibration analysis.",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "insufficient data",
+          "stated_avg": null,
+          "actual_rate": null,
+          "adjustment": 1.0,
+          "evidence_count": 0,
+          "confidence": "low"
+        }
+      ]
+    },
+    "meera": {
+      "rep_id": "meera",
+      "quarter": "2017-Q1",
+      "source": "reflect",
+      "summary": "Not enough history for Meera yet, so forecasts are not adjusted.",
+      "rules": []
+    },
+    "rahul": {
+      "rep_id": "rahul",
+      "quarter": "2017-Q1",
+      "source": "reflect",
+      "summary": "Not enough history for Rahul yet, so forecasts are not adjusted.",
+      "rules": []
+    },
+    "sana": {
+      "rep_id": "sana",
+      "quarter": "2017-Q1",
+      "source": "reflect",
+      "summary": "Not enough history for Sana yet, so forecasts are not adjusted.",
+      "rules": []
+    }
+  },
+  "2017-Q2": {
+    "priya": {
+      "rep_id": "priya",
+      "quarter": "2017-Q2",
+      "source": "track_record",
+      "deals_remembered": 26,
+      "summary": "Priya's forecasts match reality within noise (based on 26 closed deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.723,
+          "actual_rate": 0.808,
+          "adjustment": 1.0,
+          "evidence_count": 26,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.673,
+          "actual_rate": 0.636,
+          "adjustment": 1.0,
+          "evidence_count": 11,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Forecasts match reality within noise (based on 26 closed deals)."
+    },
+    "arjun": {
+      "rep_id": "arjun",
+      "quarter": "2017-Q2",
+      "source": "track_record",
+      "deals_remembered": 21,
+      "summary": "Arjun under-calls all deals (says 49%, wins 95%, 21 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "all deals",
+          "stated_avg": 0.492,
+          "actual_rate": 0.952,
+          "adjustment": 1.936,
+          "evidence_count": 21,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.495,
+          "actual_rate": 1.0,
+          "adjustment": 1.0,
+          "evidence_count": 5,
+          "confidence": "medium"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.489,
+          "actual_rate": 1.0,
+          "adjustment": 1.0,
+          "evidence_count": 5,
+          "confidence": "medium"
+        }
+      ],
+      "hindsight_summary": "Arjun is consistently underconfident in his forecasting, significantly undervaluing his overall win rate, though he demonstrates improved accuracy when dealing with specific segments like '1 contact and no finance person' and 'big-ticket products'."
+    },
+    "meera": {
+      "rep_id": "meera",
+      "quarter": "2017-Q2",
+      "source": "track_record",
+      "deals_remembered": 20,
+      "summary": "Meera's forecasts match reality within noise (based on 20 closed deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.708,
+          "actual_rate": 0.8,
+          "adjustment": 1.0,
+          "evidence_count": 20,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Forecasts match reality within noise (based on 20 closed deals)."
+    },
+    "rahul": {
+      "rep_id": "rahul",
+      "quarter": "2017-Q2",
+      "source": "track_record",
+      "deals_remembered": 22,
+      "summary": "Rahul under-calls all deals (says 72%, wins 91%, 22 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "all deals",
+          "stated_avg": 0.718,
+          "actual_rate": 0.909,
+          "adjustment": 1.266,
+          "evidence_count": 22,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.7,
+          "actual_rate": 1.0,
+          "adjustment": 1.0,
+          "evidence_count": 6,
+          "confidence": "medium"
+        }
+      ],
+      "hindsight_summary": "Rahul demonstrates high accuracy in big-ticket product forecasts with a 100% win rate, while his general forecasts show a 91% win rate but tend to under-predict performance compared to the 72% average."
+    },
+    "sana": {
+      "rep_id": "sana",
+      "quarter": "2017-Q2",
+      "source": "track_record",
+      "deals_remembered": 9,
+      "summary": "Sana's forecasts match reality within noise (based on 9 closed deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.944,
+          "actual_rate": 1.0,
+          "adjustment": 1.0,
+          "evidence_count": 9,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Forecasts match reality within noise (based on 9 closed deals)."
+    }
+  },
+  "2017-Q3": {
+    "priya": {
+      "rep_id": "priya",
+      "quarter": "2017-Q3",
+      "source": "track_record",
+      "deals_remembered": 86,
+      "summary": "Priya's forecasts match reality within noise (based on 86 closed deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.685,
+          "actual_rate": 0.663,
+          "adjustment": 1.0,
+          "evidence_count": 86,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.897,
+          "actual_rate": 0.786,
+          "adjustment": 1.0,
+          "evidence_count": 14,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.666,
+          "actual_rate": 0.568,
+          "adjustment": 1.0,
+          "evidence_count": 44,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.715,
+          "actual_rate": 0.75,
+          "adjustment": 1.0,
+          "evidence_count": 12,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Forecasts match reality within noise (based on 86 closed deals)."
+    },
+    "arjun": {
+      "rep_id": "arjun",
+      "quarter": "2017-Q3",
+      "source": "track_record",
+      "deals_remembered": 81,
+      "summary": "Arjun under-calls all deals (says 39%, wins 63%, 81 deals); under-calls 1 contact and no finance person (says 49%, wins 91%, 11 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "all deals",
+          "stated_avg": 0.393,
+          "actual_rate": 0.63,
+          "adjustment": 1.602,
+          "evidence_count": 81,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "under",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.487,
+          "actual_rate": 0.909,
+          "adjustment": 1.866,
+          "evidence_count": 11,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.359,
+          "actual_rate": 0.562,
+          "adjustment": 1.0,
+          "evidence_count": 16,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.388,
+          "actual_rate": 0.5,
+          "adjustment": 1.0,
+          "evidence_count": 6,
+          "confidence": "medium"
+        }
+      ],
+      "hindsight_summary": "Arjun is reliable for big-ticket deals late in the quarter but consistently underpredicts his win rates, particularly for deals with single contacts and no finance involvement."
+    },
+    "meera": {
+      "rep_id": "meera",
+      "quarter": "2017-Q3",
+      "source": "track_record",
+      "deals_remembered": 80,
+      "summary": "Meera's forecasts match reality within noise (based on 80 closed deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.672,
+          "actual_rate": 0.7,
+          "adjustment": 1.0,
+          "evidence_count": 80,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.711,
+          "actual_rate": 0.833,
+          "adjustment": 1.0,
+          "evidence_count": 12,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.912,
+          "actual_rate": 0.857,
+          "adjustment": 1.0,
+          "evidence_count": 7,
+          "confidence": "medium"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.523,
+          "actual_rate": 0.333,
+          "adjustment": 1.0,
+          "evidence_count": 9,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Forecasts match reality within noise (based on 80 closed deals)."
+    },
+    "rahul": {
+      "rep_id": "rahul",
+      "quarter": "2017-Q3",
+      "source": "track_record",
+      "deals_remembered": 82,
+      "summary": "Rahul's forecasts match reality within noise (based on 82 closed deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.655,
+          "actual_rate": 0.634,
+          "adjustment": 1.0,
+          "evidence_count": 82,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.675,
+          "actual_rate": 0.615,
+          "adjustment": 1.0,
+          "evidence_count": 13,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.601,
+          "actual_rate": 0.581,
+          "adjustment": 1.0,
+          "evidence_count": 31,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.84,
+          "actual_rate": 0.625,
+          "adjustment": 1.0,
+          "evidence_count": 8,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Forecasts match reality within noise (based on 82 closed deals)."
+    },
+    "sana": {
+      "rep_id": "sana",
+      "quarter": "2017-Q3",
+      "source": "track_record",
+      "deals_remembered": 69,
+      "summary": "Sana over-calls all deals (says 87%, wins 61%, 69 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "over",
+          "condition": "all deals",
+          "stated_avg": 0.866,
+          "actual_rate": 0.609,
+          "adjustment": 0.703,
+          "evidence_count": 69,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.863,
+          "actual_rate": 0.438,
+          "adjustment": 1.0,
+          "evidence_count": 16,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.872,
+          "actual_rate": 0.69,
+          "adjustment": 1.0,
+          "evidence_count": 29,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.863,
+          "actual_rate": 0.5,
+          "adjustment": 1.0,
+          "evidence_count": 6,
+          "confidence": "medium"
+        }
+      ],
+      "hindsight_summary": "Sana demonstrates inconsistent forecasting reliability, showing high accuracy on specific deal types but significant overconfidence across her total portfolio, with a 61% actual win rate against an 87% forecasted probability and a pattern of frequent, volatile forecast adjustments."
+    },
+    "karan": {
+      "rep_id": "karan",
+      "quarter": "2017-Q3",
+      "source": "reflect",
+      "summary": "Not enough history for Karan yet, so forecasts are not adjusted.",
+      "rules": []
+    }
+  },
+  "2017-Q4": {
+    "priya": {
+      "rep_id": "priya",
+      "quarter": "2017-Q4",
+      "source": "track_record",
+      "deals_remembered": 146,
+      "summary": "Priya over-calls 1 contact and no finance person (says 89%, wins 75%, 24 deals); over-calls big-ticket products (says 68%, wins 57%, 75 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.688,
+          "actual_rate": 0.658,
+          "adjustment": 1.0,
+          "evidence_count": 146,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.887,
+          "actual_rate": 0.75,
+          "adjustment": 0.846,
+          "evidence_count": 24,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "big-ticket products",
+          "stated_avg": 0.675,
+          "actual_rate": 0.573,
+          "adjustment": 0.85,
+          "evidence_count": 75,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.665,
+          "actual_rate": 0.6,
+          "adjustment": 1.0,
+          "evidence_count": 25,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Priya maintains an accurate overall forecasting record of 66% wins across 146 deals, though she tends to over-forecast on big-ticket items and deals lacking a finance contact, with her performance pattern remaining stable."
+    },
+    "arjun": {
+      "rep_id": "arjun",
+      "quarter": "2017-Q4",
+      "source": "track_record",
+      "deals_remembered": 141,
+      "summary": "Arjun under-calls all deals (says 39%, wins 60%, 141 deals); under-calls 1 contact and no finance person (says 44%, wins 79%, 24 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "condition": "all deals",
+          "stated_avg": 0.391,
+          "actual_rate": 0.603,
+          "adjustment": 1.54,
+          "evidence_count": 141,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "under",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.44,
+          "actual_rate": 0.792,
+          "adjustment": 1.801,
+          "evidence_count": 24,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.388,
+          "actual_rate": 0.606,
+          "adjustment": 1.0,
+          "evidence_count": 33,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.427,
+          "actual_rate": 0.667,
+          "adjustment": 1.0,
+          "evidence_count": 15,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Arjun consistently under-forecasts his win rate, achieving 60% actual wins against a 39% forecast across 141 deals, with even higher discrepancies in deals involving fewer stakeholders. While his forecasting is more stable for big-ticket and late-quarter deals, his recent pattern of overconfidence before losses suggests inconsistent reliability in individual deal assessments."
+    },
+    "meera": {
+      "rep_id": "meera",
+      "quarter": "2017-Q4",
+      "source": "track_record",
+      "deals_remembered": 140,
+      "summary": "Meera over-calls big-ticket products (says 85%, wins 57%, 14 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.655,
+          "actual_rate": 0.6,
+          "adjustment": 1.0,
+          "evidence_count": 140,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.683,
+          "actual_rate": 0.739,
+          "adjustment": 1.0,
+          "evidence_count": 23,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "condition": "big-ticket products",
+          "stated_avg": 0.849,
+          "actual_rate": 0.571,
+          "adjustment": 0.673,
+          "evidence_count": 14,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.638,
+          "actual_rate": 0.55,
+          "adjustment": 1.0,
+          "evidence_count": 20,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Meera maintains a reliable 60% win rate across 140 deals, though she tends to overestimate success on big-ticket items and has recently shown inconsistent forecasting accuracy, particularly regarding lost deals."
+    },
+    "rahul": {
+      "rep_id": "rahul",
+      "quarter": "2017-Q4",
+      "source": "track_record",
+      "deals_remembered": 142,
+      "summary": "Rahul over-calls deals opened in the last 2 weeks of a quarter (says 84%, wins 61%, 18 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.655,
+          "actual_rate": 0.599,
+          "adjustment": 1.0,
+          "evidence_count": 142,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.624,
+          "actual_rate": 0.476,
+          "adjustment": 1.0,
+          "evidence_count": 21,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.636,
+          "actual_rate": 0.549,
+          "adjustment": 1.0,
+          "evidence_count": 51,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.843,
+          "actual_rate": 0.611,
+          "adjustment": 0.725,
+          "evidence_count": 18,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Rahul maintains a generally reliable 66% forecast accuracy against a 60% win rate, but shows over-optimism in deals with single contacts without finance and big-ticket items, and exhibits significant forecasting skew during end-of-quarter periods."
+    },
+    "sana": {
+      "rep_id": "sana",
+      "quarter": "2017-Q4",
+      "source": "track_record",
+      "deals_remembered": 129,
+      "summary": "Sana over-calls all deals (says 79%, wins 59%, 129 deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "over",
+          "condition": "all deals",
+          "stated_avg": 0.79,
+          "actual_rate": 0.589,
+          "adjustment": 0.746,
+          "evidence_count": 129,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.818,
+          "actual_rate": 0.5,
+          "adjustment": 1.0,
+          "evidence_count": 26,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.806,
+          "actual_rate": 0.604,
+          "adjustment": 1.0,
+          "evidence_count": 48,
+          "confidence": "high"
+        },
+        {
+          "trait": "end_of_quarter",
+          "direction": "accurate",
+          "condition": "deals opened in the last 2 weeks of a quarter",
+          "stated_avg": 0.811,
+          "actual_rate": 0.462,
+          "adjustment": 1.0,
+          "evidence_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Sana demonstrates high forecasting accuracy for specific deal types, such as big-ticket items and those with single contacts, but she exhibits a consistent over-optimism in her overall win rate, claiming 79% while actually achieving 59%."
+    },
+    "karan": {
+      "rep_id": "karan",
+      "quarter": "2017-Q4",
+      "source": "track_record",
+      "deals_remembered": 44,
+      "summary": "Karan's forecasts match reality within noise (based on 44 closed deals).",
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "condition": "all deals",
+          "stated_avg": 0.614,
+          "actual_rate": 0.568,
+          "adjustment": 1.0,
+          "evidence_count": 44,
+          "confidence": "high"
+        },
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "accurate",
+          "condition": "1 contact and no finance person",
+          "stated_avg": 0.671,
+          "actual_rate": 0.7,
+          "adjustment": 1.0,
+          "evidence_count": 10,
+          "confidence": "high"
+        },
+        {
+          "trait": "large_deal",
+          "direction": "accurate",
+          "condition": "big-ticket products",
+          "stated_avg": 0.605,
+          "actual_rate": 0.444,
+          "adjustment": 1.0,
+          "evidence_count": 9,
+          "confidence": "high"
+        }
+      ],
+      "hindsight_summary": "Forecasts match reality within noise (based on 44 closed deals)."
+    }
+  }
+}

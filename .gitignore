@@ -11,8 +11,6 @@ backend/.cache/
 /data/runs/
 /backend/data/runs/*
 !/backend/data/runs/demo/
-/backend/data/runs/demo/*
-!/backend/data/runs/demo/reps.json
 
 # Python bytecode/cache artifacts
 *.py[cod]

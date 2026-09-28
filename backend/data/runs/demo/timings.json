@@ -1,0 +1,687 @@
+{
+  "retain_batches": [
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 13.743
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 17.113
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 16.037
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 14.846
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 21.297
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 13.714
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 15.265
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 15.479
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 19.417
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 10.084
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 21.142
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 11.768
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 22.443
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 20.769
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 14.108
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 10.632
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 25,
+      "seconds": 19.486
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 21,
+      "seconds": 9.666
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 12.356
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 19.105
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 16.075
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 12.805
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 9.203
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 21.006
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 12.153
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 12.618
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 12.832
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 20.071
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 10.088
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 14.071
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 11.224
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 20.37
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 13.892
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 15.853
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 13.88
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 16.095
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 11.431
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 18.548
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 13.868
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 11.189
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 18.836
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 21.316
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 11.388
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 15.88
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 11.75
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 14.344
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 15.446
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 13.58
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 16.407
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 14.058
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 14.44
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 12.111
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 15.467
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 25,
+      "seconds": 20.042
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 13,
+      "seconds": 7.736
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 13.203
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 22.283
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 16.299
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 13.865
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 17.355
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 11.777
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 10.724
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 12.262
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 9.923
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 10.352
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 19.97
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 11.304
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 10.845
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 12.274
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 23.791
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 15.694
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 15.606
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 12.03
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 14.659
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 12.624
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 20.511
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 15.496
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 14.188
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 16.981
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 14.69
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 14.304
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 10.004
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 10.351
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 19.315
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 14.938
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 14.783
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 9.979
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 10.189
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 9.699
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 13.739
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 17.662
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 14.366
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 14.237
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 20.524
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 17.395
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 20.998
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 13.62
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 25,
+      "seconds": 13.212
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 13.428
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 15.783
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 18.453
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 10.248
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 14.383
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 14.666
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 11.659
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 13.245
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 19.506
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 12.629
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 13.461
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 11.486
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 10.964
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 12.435
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 12.508
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 12.367
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 20.016
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 11.55
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 12.739
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 21.108
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 12.109
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 18.549
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 13.478
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 10.62
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 19.705
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 11.892
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 11.871
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 20.808
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 16.463
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 13.217
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 15.816
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 14.097
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 11.027
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 20.632
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 14.711
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 14.347
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 25,
+      "seconds": 15.277
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 7,
+      "seconds": 15.101
+    }
+  ],
+  "first_25_batch_seconds": 13.743,
+  "memories_saved": 3366,
+  "first_25_batch_quarter": "2017-Q1"
+}

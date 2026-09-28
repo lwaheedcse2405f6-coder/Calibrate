@@ -88,7 +88,8 @@ def test_card_measured_from_memory_and_explained_by_reflect(monkeypatch):
     card = hs.reflect_calibration_card("priya", "Priya", "2017-Q3")
     assert card["source"] == "track_record" and card["deals_remembered"] == 130
     assert ("single_contact_no_finance", "over") in _flagged(card)
-    assert card["summary"] == "Priya over-calls single-contact deals."
+    assert card["summary"].startswith("Priya ") and "over-calls 1 contact and no finance person" in card["summary"]
+    assert card["hindsight_summary"] == "Priya over-calls single-contact deals."
     assert client.reflects[0]["tags"] == ["rep:priya"] and "30 deals" in client.reflects[0]["context"]
     hs._TRACK_CACHE.clear()
 
@@ -119,5 +120,6 @@ def test_accurate_rep_summary_is_measured_not_invented(monkeypatch):
     hs._TRACK_CACHE.clear()
     card = hs.reflect_calibration_card("priya", "Priya", "2017-Q2")
     assert client.reflects == []                      # nothing to explain: no reflect call
-    assert "within noise" in card["summary"]
+    assert card["summary"].startswith("Priya's forecasts match reality within noise")
+    assert "hindsight_summary" not in card
     hs._TRACK_CACHE.clear()

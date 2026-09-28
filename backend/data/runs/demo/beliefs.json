@@ -1,0 +1,146 @@
+{
+  "priya": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Priya forecast the Codehow deal for MG Special at 88% probability with a deal size of ₹4,565, 1 contact, and a finance contact.; Priya forecast the Statholdings deal for GTX Plus Basic at 70% probability with a deal size of ₹90,968, 2 contacts, and a finance contact.; Priya forecast the Ron-tech deal for GTX Pro at 68% probability with a deal size of ₹400,143, 2 contacts, and a finance contact.; Priya forecast a 62% probability for the Finhigh deal for the MG Special product, and she won it.; Priya forecast the Konmatfix deal for GTX Plus Basic at 82% probability with a deal size of ₹90,968, 2 contacts, and no finance contact.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Priya forecast the Codehow deal for GTX Plus Pro at 78% probability with a deal size of ₹455,006, 4 contacts, and a finance contact; it is classified as a large_deal.; Priya forecast the Gogozoom deal for GTX Pro at 73% probability with a deal size of ₹400,143, 1 contact, and a finance contact.; Priya forecast the Gogozoom deal for MG Advanced at 49% probability with a deal size of ₹281,619, 4 contacts, and a finance contact.; Priya forecast the Warephase deal for MG Advanced at 78% probability with a deal size of ₹281,619, 1 contact, and finance contact confirmed.; Priya forecast the Toughzap deal for GTX Plus Pro at 56% probability with a deal size of ₹455,006, 4 contacts, and no finance contact; it is classified as a large_deal and end_of_quarter.",
+      "evidence_count": 26,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Priya's forecasting bias shows a tendency to overestimate the probability of deals that are ultimately lost, as evidenced by the loss of the Conecom deal (forecasted at 28%), the Funholding deal (forecasted at 56%), the Isdom deal (forecasted at 48%), the Streethex deal (forecasted at 53%), the Treequote deal (forecasted at 44% and 46%), and the Scottech deal (forecasted at 40%).; Priya's forecasting shows calibration on recent deals: the Stanredtax deal was lost (forecasted at 37%) and the Treequote deal was lost (forecasted at 44%).; Priya's forecasting shows calibration on recent deals: the Statholdings deal was won (forecasted at 85%) and the Conecom deal was won (forecasted at 76%).; Priya's forecasting shows calibration on recent deals: the Rundofase deal was lost (forecasted at 49%) and the Streethex deal was won (forecasted at 69%).; Priya forecast the Streethex deal for GTX Plus Pro at 78% probability with a deal size of ₹455,006, 2 contacts, and a finance contact; it is classified as a large_deal.",
+      "evidence_count": 86,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Priya's forecasting bias shows a tendency to overestimate the probability of deals that are ultimately lost, as evidenced by the loss of the Conecom deal (forecasted at 28%), the Funholding deal (forecasted at 56%), the Isdom deal (forecasted at 48%), the Streethex deal (forecasted at 53%), the Treequote deal (forecasted at 44% and 46%), and the Scottech deal (forecasted at 40%).; Priya's forecasting shows calibration on recent deals: the Stanredtax deal was lost (forecasted at 37%) and the Treequote deal was lost (forecasted at 44%).; Priya's forecasting shows calibration on recent deals: the Inity deal was won (forecasted at 66%), the Genco Pura Olive Oil Company deal was won (forecasted at 97%), and the Bioholding deal was won (forecasted at 81%).; Priya forecast the Streethex deal for GTX Plus Pro at 78% probability with a deal size of ₹455,006, 2 contacts, and a finance contact; it is classified as a large_deal.; Priya's forecasting shows calibration on recent deals: the Rundofase deal was lost (forecasted at 49%) and the Streethex deal was won (forecasted at 69%).",
+      "evidence_count": 146,
+      "confidence": "high"
+    }
+  ],
+  "arjun": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Arjun's forecast for the Goodsilron deal was 42% confidence, which was calibrated as accurate following the win of the deal.; Arjun exhibits an underconfident forecasting bias for MG Special deals, having forecast a 61% probability for the Singletechno deal, a 54.17% probability for the Scotfind deal, and a 39.82% probability for the Scotfind deal, all of which he won.; Arjun's forecast for the Konex deal was 58% confidence, which was calibrated as accurate following the win of the deal.; Arjun exhibits an underconfident forecasting bias for GTX Basic deals, having forecast a 58.07% probability for the Konex deal which he won.; Arjun's forecast for the Kan-code deal was 14% confidence, which was calibrated as accurate following the loss of the deal.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Arjun forecast the Hatfan deal for GTX Pro at 52% probability, classified as a large_deal with 2 contacts and a finance contact.; Arjun's forecast for the Goodsilron deal was 44% confidence, which was calibrated as accurate following the win of the deal.; Arjun forecast the Groovestreet deal for MG Advanced at 49% probability with a deal size of ₹281,619, 1 contact, and a finance contact.; Arjun forecast the Golddex deal for GTX Basic at 53% probability with a deal size of ₹45,650, 3 contacts, and a finance contact.; Arjun exhibits an underconfident forecasting bias for GTX Pro large deals, having forecast a 51.17% probability for the Xx-holding deal, a 42.2% probability for the Goodsilron deal, and a 55% probability for the Xx-holding deal, all of which he won.",
+      "evidence_count": 21,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Arjun exhibited forecasting bias on the Konex deal by increasing his confidence from 16% to 26% on July 25, 2017, and again from 29% to 46% on August 5, 2017, both shortly before the deal was lost, contradicting his earlier successful forecast on the same deal; he later demonstrated accurate forecasting by increasing his confidence from 38% to 61% shortly before the deal was won, and again by increasing his confidence from 48% to 77% shortly before the deal was won on September 23, 2017.; Arjun exhibited forecasting bias on the Kan-code deal by increasing his confidence from 26% to 41% shortly before the deal was lost, again by adjusting his confidence from 22% to 36% on August 28, 2017, shortly before the deal was lost again, and finally by adjusting his confidence from 29% to 46% on September 22, 2017, shortly before the deal was lost again.; Arjun's forecast for the Goodsilron deal was 44% confidence, which was calibrated as accurate following the win of the deal.; Arjun exhibited forecasting bias on the Scotfind deal by increasing his confidence from 18% to 35% shortly before the deal was lost, and later by adjusting his forecast from 22% to 42% before the deal was lost again; he subsequently demonstrated accurate forecasting by increasing his confidence from 63% to 98% shortly before the deal was won.; Arjun forecast the Condax deal for GTX Plus Pro at 54% probability with a deal size of ₹455,006, 3 contacts, and a finance contact involved, classified as a large_deal.",
+      "evidence_count": 81,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Arjun forecast the Condax deal for GTX Plus Pro at 54% probability with a deal size of ₹455,006, 3 contacts, and a finance contact involved, classified as a large_deal.; Arjun demonstrates high forecasting accuracy on the Lexiqvolax deal, where his adjusted 82% confidence forecast (Oct 2017) and subsequent 43% confidence forecast (Dec 2017) were validated by wins.; Arjun forecast the Lexiqvolax deal for MG Advanced at 13% probability with a deal size of ₹281,619, 2 contacts, and a finance contact.; Arjun forecast the J-Texon deal for MG Advanced at 41% probability with a deal size of ₹281,619, involving 1 contact, no finance contact, and the 'end_of_quarter' trait.; Arjun forecast the Konex deal for MG Advanced at 45% probability with a deal size of ₹281,619, 2 contacts, and a finance contact.",
+      "evidence_count": 141,
+      "confidence": "high"
+    }
+  ],
+  "meera": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Meera's sales forecasts for the Hottechi (MG Special) and Rundofase (MG Special) deals, both with 3 contacts and no finance contact, show confidence levels of 84% and 72% respectively.; Meera forecast the Domzoom deal for MG Special at 37% probability with a deal size of ₹4,565, 3 contacts, and a finance contact.; Meera demonstrated accurate forecasting on the Conecom deal, which she estimated at 72% probability and subsequently won.; Meera's sales forecasts for the Codehow and dambase deals (GTX Plus Pro, large_deal) show high confidence levels of 90% and 97% respectively, with 2-3 contacts and no finance contact.; Meera forecast the Codehow deal for GTX Basic at 69% probability with a deal size of ₹45,650, 2 contacts, and a finance contact.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Meera demonstrated accurate forecasting on the Treequote deal, which she estimated at 65% probability and subsequently won.; Meera forecast the Isdom deal for GTX Basic at 71% probability with a deal size of ₹45,650, 1 contact, and a finance contact.; Meera forecast the Inity deal for GTX Plus Basic at 83% probability with a deal size of ₹90,968, 1 contact, and a finance contact.; Meera demonstrated accurate forecasting on the Conecom deal, which she estimated at 72% probability and subsequently won.; Meera demonstrated accurate forecasting on the dambase deal, which she estimated at 97% probability and subsequently won.",
+      "evidence_count": 20,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Meera's sales forecasts for GTX Plus Pro deals show high confidence levels, ranging from 90% to 97%, with 1-3 contacts and no finance contact; this includes the Genco Pura Olive Oil Company deal (97% probability, 2 contacts, no finance contact, large_deal).; Meera forecast the Globex Corporation deal for MG Special at 51% probability on 2017-04-23, and later updated the forecast to 67% probability on 2017-07-27, with a deal size of ₹4,565, 4 contacts, and no finance contact.; Meera forecast the Funholding deal for MG Special at 41% probability with a deal size of ₹4,565, 2 contacts, no finance contact, and end_of_quarter trait; previously forecast at 29% probability with 4 contacts.; Meera demonstrated accurate forecasting on the Treequote deal, which she estimated at 65% probability and subsequently won.; Meera forecast the Inity deal for GTX Plus Pro at 70% probability with a deal size of ₹455,006, 3 contacts, no finance contact, and classified as a large_deal.",
+      "evidence_count": 80,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Meera's Treequote deal was lost, confirming the 40% probability forecast was accurate.; Meera's sales forecasts for GTX Plus Pro deals show high confidence levels, ranging from 90% to 97%, with 1-3 contacts and no finance contact; this includes the Genco Pura Olive Oil Company deal (97% probability, 2 contacts, no finance contact, large_deal).; Meera forecast the Funholding deal for MG Special at 41% probability with a deal size of ₹4,565, 2 contacts, no finance contact, and end_of_quarter trait; previously forecast at 29% probability with 4 contacts.; Meera forecast the Dontechi deal for MG Special at 57% probability on 2017-07-19 and updated it to 74% probability on 2017-08-27, with a deal size of ₹4,565, 2 contacts, and a finance contact confirmed.; Meera forecast the Betatech deal for GTX Plus Basic at 60% probability with a deal size of ₹90,968, 1 contact, no finance contact, and classified as single_contact_no_finance.",
+      "evidence_count": 140,
+      "confidence": "high"
+    }
+  ],
+  "rahul": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Rahul's Sonron deal was won, confirming the accuracy of his 82% probability forecast.; Rahul forecast the Labdrill deal for GTX Pro at 65% probability.; Rahul forecast the Goodsilron deal for GTX Basic at 95% probability with a deal size of ₹45,650, 4 contacts, and no finance contact.; Rahul's Hottechi deal was won, confirming the accuracy of his 75% probability forecast.; Rahul forecast the Kan-code deal for GTX Basic at 85% probability with a deal size of ₹45,650, 2 contacts, and a finance contact.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Rahul forecasts deals with the multi_contact_no_finance_large_deal trait at 56% probability.; Rahul forecasts deals with the multi_contact_no_finance_large_deal trait at 94% probability.; Rahul forecasts deals with the multi_contact_no_finance_large_deal_end_of_quarter trait at 64% probability.; Rahul forecasts deals with the multi_contact_no_finance trait at 59.6% average probability.; Rahul forecasts deals with the multi_contact_no_finance trait at 68% probability.",
+      "evidence_count": 22,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Rahul forecasts deals with the multi_contact_with_finance trait at 69% probability.; Rahul forecasts deals with the multi_contact_with_finance_large_deal trait at 90% probability.; Rahul forecasts deals with the single_contact_with_finance_large_deal trait at 61% probability.; Rahul forecasts deals with the multi_contact_with_finance trait at 63% probability.; Rahul forecasts deals with the multi_contact_no_finance trait at 45% probability.",
+      "evidence_count": 82,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Rahul forecasts deals with the multi_contact_with_finance_large_deal trait at 90% probability.; Rahul forecasts deals with the multi_contact_no_finance trait at 45% probability.; Rahul forecasts deals with the single_contact_no_finance_large_deal trait at 58% probability.; Rahul forecasts deals with the multi_contact_with_finance trait at 71.5% average probability.; Rahul forecasts deals with the single_contact_with_finance_end_of_quarter trait at 65% probability.",
+      "evidence_count": 142,
+      "confidence": "high"
+    }
+  ],
+  "sana": [
+    {
+      "quarter": "2017-Q1",
+      "belief": "Sana demonstrates high confidence in her successful deals, consistently forecasting high probabilities: 97% for the Donquadtech deal (GTX Basic), 93% for the Gekko & Co deal, 88% for the Xx-zobam deal, 97% for the GTX Plus Basic deal, 92.24% for both the Donquadtech (GTX Pro) and Kan-code (GTX Pro) large deals, 97% for the Zotware (GTX Pro) large deal, and 97% for the Zencorporation (GTX Basic) deal.; Sana forecast the Zencorporation deal for GTX Pro at 96% probability with a deal size of ₹400,143, 1 contact, and a finance contact.; Sana demonstrates high forecasting accuracy for won deals, with Gekko & Co forecast at 93%, Donquadtech at 97% (March 2) and 92% (March 23), Xx-zobam at 88%, The New York Inquirer at 97%, Kan-code at 92%, Ontomedia at 97%, Zotware at 97%, and Zencorporation.; Sana forecast the Silis deal for MG Advanced at 97% probability with a deal size of ₹281,619, 4 contacts, and no finance contact.; Sana forecast the Donquadtech deal for GTX Basic at 69% probability with a deal size of ₹45,650, 3 contacts, and no finance contact.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q2",
+      "belief": "Sana forecast the Zotware deal for GTX Pro at 77% probability with a deal size of ₹400,143, 1 contact, and a finance contact involved, classified as a large_deal.; Sana exhibits mixed forecasting accuracy: she showed overconfidence on the Initech deal (83% forecast, lost), the Bubba Gump deal (82% forecast, lost; 64% forecast, lost), the Gekko & Co deal (77% forecast, lost), the Silis deal (81% forecast, lost; 94% forecast, lost; 97% forecast, won), the Donquadtech deal (69% forecast, lost; 74% forecast, lost), the Ontomedia deal (68% forecast, lost; 72% forecast, lost), the Bioplex deal (65% forecast, lost; 75% forecast, lost; 97% forecast, won), the Opentech deal (62% forecast, lost), the Zathunicon deal (88% forecast, lost; 97% forecast, won), the Xx-zobam deal (82% forecast, lost), the Mathtouch deal (69% forecast, lost; 70% forecast, lost), the Umbrella Corporation deal (48% forecast, lost; 97% forecast, won), the Betasoloin deal (81% forecast, lost; 97% forecast, won; 91% forecast, won; 97% forecast, won), the Zotware deal (74% forecast, lost; 96% forecast, won), the Kinnamplus deal (72% forecast, lost), the Iselectrics deal (73% forecast, lost), and the Kan-code deal (97% forecast, won), but demonstrated accurate calibration on the Yearin deal (97% forecast, won), the Iselectrics deal (97% forecast, won), the Ganjaflex deal (95% forecast, won), the Acme Corporation deal (97% forecast, won; 93% forecast, won), the Vehement Capital Partners deal (97% forecast, won; 97% forecast, won), the Zencorporation deal (96% forecast, won; 88% forecast, won), the Plussunin deal (97% forecast, won), and the Condax deal (97% forecast, won).; Sana forecast the Kan-code deal for GTX Pro at 97% probability with a deal size of ₹400,143, 2 contacts, no finance contact, and classified as a large_deal.; Sana forecast the Plussunin deal for the GTX Pro product at 97% probability with a deal size of ₹400,143, 2 contacts, and a finance contact involved.; Sana forecast the Mathtouch deal for GTX Pro at 70% probability with a deal size of ₹400,143, 2 contacts, a finance contact, and classified as a large_deal.",
+      "evidence_count": 9,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q3",
+      "belief": "Sana exhibits mixed forecasting accuracy: she showed overconfidence on the Initech deal (83% forecast, lost), the Bubba Gump deal (82% forecast, lost; 64% forecast, lost), the Gekko & Co deal (77% forecast, lost), the Silis deal (81% forecast, lost; 94% forecast, lost; 97% forecast, won), the Donquadtech deal (69% forecast, lost; 74% forecast, lost), the Ontomedia deal (68% forecast, lost; 72% forecast, lost), the Bioplex deal (65% forecast, lost; 75% forecast, lost; 97% forecast, won), the Opentech deal (62% forecast, lost), the Zathunicon deal (88% forecast, lost; 97% forecast, won), the Xx-zobam deal (82% forecast, lost), the Mathtouch deal (69% forecast, lost; 70% forecast, lost), the Umbrella Corporation deal (48% forecast, lost; 97% forecast, won), the Betasoloin deal (81% forecast, lost; 97% forecast, won; 91% forecast, won; 97% forecast, won), the Zotware deal (74% forecast, lost; 96% forecast, won), the Kinnamplus deal (72% forecast, lost), the Iselectrics deal (73% forecast, lost), and the Kan-code deal (97% forecast, won), but demonstrated accurate calibration on the Yearin deal (97% forecast, won), the Iselectrics deal (97% forecast, won), the Ganjaflex deal (95% forecast, won), the Acme Corporation deal (97% forecast, won; 93% forecast, won), the Vehement Capital Partners deal (97% forecast, won; 97% forecast, won), the Zencorporation deal (96% forecast, won; 88% forecast, won), the Plussunin deal (97% forecast, won), and the Condax deal (97% forecast, won).; Sana forecast the Bioplex deal for GTX Basic at 44% probability with a deal size of ₹45,650, 4 contacts, a finance contact, and classified as end_of_quarter.; Sana forecast the Kan-code deal for GTX Plus Basic at 32% probability with a deal size of ₹90,968, 2 contacts, no finance contact, and classified as end_of_quarter.; Sana forecast the Plussunin deal for GTX Plus Pro at 73% probability with a deal size of ₹455,006, 2 contacts, no finance contact, and classified as a large_deal.; Sana forecast the Opentech deal for GTX Plus Basic at 60% probability with a deal size of ₹90,968, 4 contacts, and a finance contact, categorized by the trait end_of_quarter.",
+      "evidence_count": 69,
+      "confidence": "high"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Sana exhibits mixed forecasting accuracy: she showed overconfidence on the Initech deal (83% forecast, lost), the Bubba Gump deal (82% forecast, lost; 64% forecast, lost), the Gekko & Co deal (77% forecast, lost), the Silis deal (81% forecast, lost; 94% forecast, lost; 97% forecast, won), the Donquadtech deal (69% forecast, lost; 74% forecast, lost), the Ontomedia deal (68% forecast, lost; 72% forecast, lost), the Bioplex deal (65% forecast, lost; 75% forecast, lost; 97% forecast, won), the Opentech deal (62% forecast, lost), the Zathunicon deal (88% forecast, lost; 97% forecast, won), the Xx-zobam deal (82% forecast, lost), the Mathtouch deal (69% forecast, lost; 70% forecast, lost), the Umbrella Corporation deal (48% forecast, lost; 97% forecast, won), the Betasoloin deal (81% forecast, lost; 97% forecast, won; 91% forecast, won; 97% forecast, won), the Zotware deal (74% forecast, lost; 96% forecast, won), the Kinnamplus deal (72% forecast, lost), the Iselectrics deal (73% forecast, lost), and the Kan-code deal (97% forecast, won), but demonstrated accurate calibration on the Yearin deal (97% forecast, won), the Iselectrics deal (97% forecast, won), the Ganjaflex deal (95% forecast, won), the Acme Corporation deal (97% forecast, won; 93% forecast, won), the Vehement Capital Partners deal (97% forecast, won; 97% forecast, won), the Zencorporation deal (96% forecast, won; 88% forecast, won), the Plussunin deal (97% forecast, won), and the Condax deal (97% forecast, won).; Sana forecast the Gekko & Co deal for GTX Pro at 77% probability with a deal size of ₹400,143, 1 contact, no finance contact, and traits single_contact_no_finance and large_deal.; Sana's forecast for the Initech deal was adjusted from 37% to 28%, which was accurate as the deal was subsequently lost.; Sana forecast the Opentech deal for GTX Plus Basic at 60% probability with a deal size of ₹90,968, 4 contacts, and a finance contact, categorized by the trait end_of_quarter.; Sana forecast the Vehement Capital Partners deal for GTX Pro at 74% probability with a deal size of ₹400,143, 1 contact, no finance contact, and classified as single_contact_no_finance, large_deal, and end_of_quarter.",
+      "evidence_count": 129,
+      "confidence": "high"
+    }
+  ],
+  "karan": [
+    {
+      "quarter": "2017-Q3",
+      "belief": "Karan forecast the Blackzim deal for GTX Plus Basic at 49% probability with a deal size of ₹90,968, 3 contacts, and a finance contact.; Karan forecast the Scotfind deal for GTX Basic at 71% probability with a deal size of ₹45,650, 1 contact, and no finance contact.; Karan forecast the Blackzim deal for GTX Basic at 77% probability with a deal size of ₹45,650, 4 contacts, and a finance contact.; Karan forecast the Singletechno deal for GTX Plus Basic at 69% probability with a deal size of ₹90,968, 2 contacts, and a finance contact.; Karan forecast the Kan-code deal for GTX Basic at 48% probability with a deal size of ₹45,650, 1 contact, and a finance contact confirmed.",
+      "evidence_count": 0,
+      "confidence": "low"
+    },
+    {
+      "quarter": "2017-Q4",
+      "belief": "Karan forecast the Konex deal for GTX Plus Basic at 65% probability with a deal size of ₹90,968, 4 contacts, and a finance contact.; Karan forecast the Plusstrip deal for GTX Plus Basic at 70% probability with a deal size of ₹90,968, 4 contacts, and a finance contact.; Karan forecast the Faxquote deal for GTX Plus Basic at 48% probability with a deal size of ₹90,968, involving 2 contacts and a finance contact.; Karan's forecasting bias for the Konex deal was calibrated to 83% probability, which proved accurate as the deal was won.; Karan forecast the Finjob deal for GTX Pro at 74% probability with a deal size of ₹400,143, 3 contacts, no finance contact, and classified as a large_deal.",
+      "evidence_count": 44,
+      "confidence": "high"
+    }
+  ]
+}

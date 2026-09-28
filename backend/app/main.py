@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.config import FRONTEND_ORIGIN
 from app.api.routes import router
+from app.config import FRONTEND_ORIGIN
 
 app = FastAPI(title="Calibrate API")
 

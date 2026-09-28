@@ -1,7 +1,7 @@
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-import os
 
 # .env lives at the project root, two folders above this file's folder
 ROOT = Path(__file__).resolve().parents[2]

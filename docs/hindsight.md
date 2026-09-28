@@ -25,12 +25,12 @@ This document specifies the **exact technical configuration** used in the Calibr
 
 Learning in Calibrate is grounded in empirical CRM events, separating deterministic calculation from semantic explanation:
 
-1. **Numeric Metadata Ingestion**: Deal forecast and outcome events are written to Hindsight carrying exact numeric metadata (`stated_prob`, `actual_outcome`, `amount_inr`, `n_contacts`, `has_finance_contact`).
+1. **Numeric Metadata Ingestion**: Every forecast and outcome is saved to Hindsight as a memory. Each **outcome** memory also carries exact numbers as metadata (`deal_id`, `rep_id`, `stated_prob`, `outcome`, `traits`, `close_date`), so the agent can later read a rep's track record back from memory without any rounding or guessing.
 2. **Quarterly Card Measurement**: At the beginning of each quarter, the agent queries Hindsight to read back the rep's historical track record across closed deals. Rather than letting the LLM invent calibration numbers, the calibration card is **measured from the rep's past win rates** across specific traits (`single_contact_no_finance`, `large_deal`, `end_of_quarter`, `overall`).
 3. **Deterministic Correction**: Each incoming forecast is adjusted using pure Python (`apply_card`) by matching deal traits against the rep's active card rules and applying the empirical factor.
-4. **Reflect Explanations & Executive Inquiries**: Groq LLMs (`openai/gpt-oss-*`) run `reflect` calls over the gathered evidence to generate plain-language explanations quoting past deal precedents (e.g., *"Priya's single-contact deals closed 4 of 9 times"*) and to synthesize answers for high-level queries via `POST /api/ask` (e.g., *"What is our realistic Q3 commit?"*).
+4. **Reflect Explanations & Executive Inquiries**: Hindsight's own `reflect` (it reasons over the bank's facts, observations and directives) explains each measured card in plain words, and answers free questions via `POST /api/ask`: the agent first gathers the named rep's latest card and most relevant remembered deals, then `reflect` answers from that evidence and returns it in `based_on`. Real example: *"Priya says 89% on single-contact, no-finance deals but wins 75% (24 deals)."* Groq (`openai/gpt-oss-*`) is used only for the one-line explanation in the live correction form.
 5. **Outcome Feedback Loop**: Once a deal closes, the agent writes an outcome fact and a **self-check memory** evaluating whether its adjustment improved or degraded accuracy.
-6. **Evolving Beliefs**: As observations accumulate, Hindsight updates its internal mental models. When a rep's habits change (such as Sana improving after Q2), the old belief softens and the adjustment factor normalizes to 1.0.
+6. **Evolving Beliefs**: As memories accumulate, Hindsight forms observations and refreshes one summary page (mental model) per rep. When a rep's habits change, the belief follows the evidence: Sana over-called by about 30 points in Q2; after she improved, her measured gap shrank to 20 points by Q4, so her correction became gentler (x0.70 in Q3 to x0.75 in Q4).
 
 
 ---
@@ -238,7 +238,7 @@ HINDSIGHT_API_KEY=        # Your Hindsight API key
 HINDSIGHT_BANK_ID=        # The memory bank ID for this deployment
 HINDSIGHT_BASE_URL=       # Hindsight API base URL
 GROQ_API_KEY=             # Groq inference API key
-GROQ_MODEL_FAST=          # Model ID for fast inference (e.g. llama3-8b-8192)
+GROQ_MODEL_FAST=          # Model ID for fast inference (e.g. openai/gpt-oss-20b)
 ```
 
 ---

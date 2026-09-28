@@ -5,6 +5,7 @@ from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
+from app.agent.calibrator import ask as agent_ask
 from app.agent.calibrator import correct
 from app.api import mock_data
 from app.db import get
@@ -71,7 +72,7 @@ def correct_forecast(body: CorrectRequest):
 
 @router.post("/ask")
 def ask(body: AskRequest):
-    return mock_data.ASK_ANSWER
+    return agent_ask(body.question)
 
 
 @router.get("/eval")

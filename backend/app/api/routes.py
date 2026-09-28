@@ -1,4 +1,8 @@
+import asyncio
+import json
+
 from fastapi import APIRouter
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 from app.agent.calibrator import correct
@@ -73,3 +77,48 @@ def ask(body: AskRequest):
 @router.get("/eval")
 def get_eval():
     return mock_data.EVAL
+REPLAY = [
+    {
+        "quarter": "2017-Q2",
+        "reps_forecast_inr": 45500000,
+        "agent_forecast_inr": 34100000,
+        "actual_inr": 31900000,
+        "belief_updates": [
+            {
+                "rep_id": "priya",
+                "belief": "Overconfident on single-contact deals",
+                "evidence_count": 9,
+            }
+        ],
+    },
+    {
+        "quarter": "2017-Q3",
+        "reps_forecast_inr": 42000000,
+        "agent_forecast_inr": 35000000,
+        "actual_inr": 33000000,
+        "belief_updates": [],
+    },
+    {
+        "quarter": "2017-Q4",
+        "reps_forecast_inr": 48000000,
+        "agent_forecast_inr": 39000000,
+        "actual_inr": 37000000,
+        "belief_updates": [],
+    },
+]
+async def replay_events(mode: str):
+    for item in REPLAY:
+        yield f"data: {json.dumps(item)}\n\n"
+        await asyncio.sleep(1.5)
+
+
+@router.get("/replay/stream")
+async def replay_stream(mode: str = "on"):
+    return StreamingResponse(
+        replay_events(mode),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+        },
+    )

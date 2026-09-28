@@ -261,6 +261,22 @@ def run(
                 card = services.reflect_calibration_card(active_rep, rep_deals[0]["rep_name"], quarter)
                 if not isinstance(card, dict):
                     raise TypeError(f"Role 2 returned a non-object card for {active_rep} in {quarter}")
+                if card.get("reflection_failed"):
+                    quarter_idx = QUARTERS.index(quarter)
+                    for prior_quarter in reversed(QUARTERS[:quarter_idx]):
+                        prior_card = quarter_cards.get(prior_quarter, {}).get(active_rep)
+                        if prior_card and prior_card.get("rules"):
+                            card = {
+                                **prior_card,
+                                "rep_id": active_rep,
+                                "quarter": quarter,
+                                "fallback_from": prior_quarter,
+                            }
+                            print(
+                                f"using {prior_quarter} calibration card for {active_rep} "
+                                f"after reflection failed in {quarter}"
+                            )
+                            break
                 quarter_cards[quarter][active_rep] = card
 
         memories: list[dict[str, Any]] = []

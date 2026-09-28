@@ -18,7 +18,10 @@ log = logging.getLogger(__name__)
 
 LARGE_DEAL_PRODUCTS = {"GTX Pro", "GTK 500"}
 END_OF_QUARTER_DAYS = 14
-STRENGTH = {"low": 0.5, "medium": 0.8, "high": 1.0}
+# Calibration cards are estimates, not ground truth. Keep corrections partial
+# even when Hindsight reports high confidence, so stale or noisy summaries do
+# not move a forecast too far in one step.
+STRENGTH = {"low": 0.125, "medium": 0.2, "high": 0.25}
 PROB_MIN, PROB_MAX = 0.02, 0.98
 IST = timezone(timedelta(hours=5, minutes=30))
 

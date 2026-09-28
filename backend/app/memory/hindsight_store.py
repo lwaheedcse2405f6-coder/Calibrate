@@ -25,9 +25,11 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 CARD_QUERY = (
-    "Compare {rep_name}'s stated forecast confidence with actual outcomes, using only deals that "
-    "have closed (won or lost). Group the deals by these traits: single_contact_no_finance, "
-    "large_deal, end_of_quarter, and overall (all of the rep's closed deals). For each group give: "
+    "Compare {rep_name}'s stated forecast confidence with actual outcomes using only closed deals "
+    "from forecast cohort {forecast_quarter}. The tag forecast-quarter identifies when the rep "
+    "made the forecast; do not use the close quarter as a substitute. Do not blend older forecast "
+    "cohorts into these metrics. Group the deals by single_contact_no_finance, large_deal, "
+    "end_of_quarter, and overall. For each group give: "
     "the average stated probability (stated_avg, 0-1), the actual win rate (actual_rate, 0-1), "
     "the number of closed deals (evidence_count), and adjustment = actual_rate / stated_avg. "
     "direction is 'over' if stated_avg is more than 5 points above actual_rate, 'under' if more "
@@ -117,8 +119,23 @@ def _yes(v: Any) -> bool:
     return str(v).strip().lower() in {"1", "true", "yes", "y"}
 
 
+def _forecast_quarter(deal: dict) -> str | None:
+    if deal.get("forecast_quarter"):
+        return str(deal["forecast_quarter"])
+    raw_date = str(deal.get("forecast_date") or "")
+    try:
+        year, month = int(raw_date[:4]), int(raw_date[5:7])
+    except (TypeError, ValueError):
+        return None
+    return f"{year}-Q{(month - 1) // 3 + 1}"
+
+
 def _tags(deal: dict, kind: str) -> list[str]:
-    return [f"rep:{deal['rep_id']}", f"quarter:{deal['quarter']}", f"kind:{kind}"]
+    tags = [f"rep:{deal['rep_id']}", f"quarter:{deal['quarter']}", f"kind:{kind}"]
+    forecast_quarter = _forecast_quarter(deal)
+    if forecast_quarter:
+        tags.append(f"forecast-quarter:{forecast_quarter}")
+    return tags
 
 
 # ---------------------------------------------------------------------------
@@ -258,20 +275,36 @@ def _reflect_card(query: str, tags: list[str] | None) -> dict | None:
     return resp.structured_output
 
 
+def _previous_quarter(quarter: str) -> str:
+    year_text, q_text = quarter.split("-Q", maxsplit=1)
+    year, q = int(year_text), int(q_text)
+    return f"{year - 1}-Q4" if q == 1 else f"{year}-Q{q - 1}"
+
+
 def reflect_calibration_card(rep_id: str, rep_name: str, quarter: str | None = None) -> dict:
     """Build a rep's calibration card. Tries twice, then falls back to an empty card.
 
     Never raises, so the replay can't crash here.
     """
     raw = None
+    prior_forecast_quarter = _previous_quarter(quarter) if quarter else None
+    query = CARD_QUERY.format(
+        rep_name=rep_name,
+        forecast_quarter=prior_forecast_quarter or "the latest completed forecast cohort",
+    )
+    tags = [f"rep:{rep_id}"]
+    if prior_forecast_quarter:
+        tags.append(f"forecast-quarter:{prior_forecast_quarter}")
     for attempt in (1, 2):
         try:
-            raw = _reflect_card(CARD_QUERY.format(rep_name=rep_name), [f"rep:{rep_id}"])
+            raw = _reflect_card(query, tags)
             if raw:
                 break
         except Exception as exc:  # noqa: BLE001
             log.warning("reflect failed for %s (attempt %d): %s", rep_id, attempt, exc)
     card = parse_card(raw) if raw else empty_card()
+    if raw is None:
+        card["reflection_failed"] = True
     return {"rep_id": rep_id, "quarter": quarter, **card}
 
 

@@ -25,6 +25,7 @@ class CorrectRequest(BaseModel):
     product: str | None = None
     stated_prob: float
 
+
 class AskRequest(BaseModel):
     question: str
 
@@ -36,36 +37,169 @@ def list_reps():
 
 @router.get("/quarters")
 def get_quarters(mode: str = "on"):
-    return mock_data.QUARTERS
+    name = "quarters_on" if mode == "on" else "quarters_off"
+    data = get(name) or {}
+
+    return [
+        {"quarter": quarter, **values}
+        for quarter, values in sorted(data.items())
+    ]
 
 
 @router.get("/scores")
 def get_scores():
-    return mock_data.SCORES
+    deal_map = (get("deals") or {}).get("deals", {})
+    data = list(deal_map.values())
+
+    by_quarter = {}
+
+    for deal in data:
+        if deal.get("outcome") is None:
+            continue
+
+        quarter = deal.get("forecast_quarter")
+        if not quarter:
+            continue
+
+        if quarter not in by_quarter:
+            by_quarter[quarter] = {
+                "reps": [],
+                "agent_on": [],
+                "agent_off": [],
+            }
+
+        won = 1 if deal["outcome"] == "won" else 0
+
+        stated_prob = deal.get("stated_prob")
+        corrected_prob = deal.get("corrected_prob")
+
+        if stated_prob is not None:
+            by_quarter[quarter]["reps"].append(
+                (stated_prob - won) ** 2
+            )
+            by_quarter[quarter]["agent_off"].append(
+                (stated_prob - won) ** 2
+            )
+
+        if corrected_prob is not None:
+            by_quarter[quarter]["agent_on"].append(
+                (corrected_prob - won) ** 2
+            )
+
+    result = []
+
+    for quarter in sorted(by_quarter):
+        values = by_quarter[quarter]
+
+        result.append(
+            {
+                "quarter": quarter,
+                "reps": (
+                    sum(values["reps"]) / len(values["reps"])
+                    if values["reps"]
+                    else 0
+                ),
+                "agent_off": (
+                    sum(values["agent_off"]) / len(values["agent_off"])
+                    if values["agent_off"]
+                    else 0
+                ),
+                "agent_on": (
+                    sum(values["agent_on"]) / len(values["agent_on"])
+                    if values["agent_on"]
+                    else 0
+                ),
+                "baseline_win_rate": 0,
+            }
+        )
+
+    return result
 
 
 @router.get("/reps/{rep_id}/card")
-def get_card(rep_id: str, quarter: str = "2017-Q3"):
-    return {**mock_data.CARD, "rep_id": rep_id, "quarter": quarter}
+def get_card(rep_id: str, quarter: str | None = None):
+    cards = get("cards") or {}
+
+    if quarter:
+        card = cards.get(quarter, {}).get(rep_id)
+        if card:
+            return {**card, "rep_id": rep_id, "quarter": quarter}
+
+    for current_quarter in sorted(cards, reverse=True):
+        card = cards.get(current_quarter, {}).get(rep_id)
+        if card:
+            return {
+                **card,
+                "rep_id": rep_id,
+                "quarter": current_quarter,
+            }
+
+    return {}
 
 
 @router.get("/reps/{rep_id}/beliefs")
 def get_beliefs(rep_id: str):
-    return mock_data.BELIEFS
+    cards = get("cards") or {}
+    result = []
+
+    for quarter in sorted(cards):
+        card = cards.get(quarter, {}).get(rep_id)
+
+        if not card:
+            continue
+
+        rules = card.get("rules") or []
+
+        evidence_count = max(
+            (
+                rule.get("evidence_count", 0)
+                for rule in rules
+            ),
+            default=0,
+        )
+
+        result.append(
+            {
+                "quarter": quarter,
+                "belief": card.get("summary", ""),
+                "evidence_count": evidence_count,
+                "confidence": card.get("confidence"),
+            }
+        )
+
+    return result
 
 
 @router.get("/reps/{rep_id}/deals")
 def get_deals(rep_id: str):
-    return [d for d in mock_data.DEALS if d["rep_id"] == rep_id]
+    deals = (get("deals") or {}).get("deals", [])
+
+    return [
+        deal
+        for deal in deals
+        if deal.get("rep_id") == rep_id
+    ]
 
 
 @router.post("/forecast/correct")
 def correct_forecast(body: CorrectRequest):
-    deals_by_id = {d["deal_id"]: d for d in mock_data.DEALS}
+    cards = get("cards") or {}
+
+    card = next(
+        (
+            cards[quarter][body.rep_id]
+            for quarter in sorted(cards, reverse=True)
+            if body.rep_id in cards.get(quarter, {})
+            and cards[quarter][body.rep_id].get("rules")
+        ),
+        None,
+    )
+
+    deals_by_id = (get("deals") or {}).get("deals", {})
 
     return correct(
         body.model_dump(),
-        mock_data.CARD,
+        card,
         deals_by_id=deals_by_id,
     )
 
@@ -78,6 +212,8 @@ def ask(body: AskRequest):
 @router.get("/eval")
 def get_eval():
     return mock_data.EVAL
+
+
 REPLAY = [
     {
         "quarter": "2017-Q2",
@@ -107,6 +243,8 @@ REPLAY = [
         "belief_updates": [],
     },
 ]
+
+
 async def replay_events(mode: str):
     for item in REPLAY:
         yield f"data: {json.dumps(item)}\n\n"

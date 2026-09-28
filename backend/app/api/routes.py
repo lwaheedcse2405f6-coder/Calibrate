@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 
+from app.agent.calibrator import correct
 from app.api import mock_data
 from app.db import get
 
@@ -16,8 +17,8 @@ class CorrectRequest(BaseModel):
     has_champion: bool = False
     competitor: bool = False
     stage: str = "proposal"
+    product: str | None = None
     stated_prob: float
-
 
 class AskRequest(BaseModel):
     question: str
@@ -55,7 +56,13 @@ def get_deals(rep_id: str):
 
 @router.post("/forecast/correct")
 def correct_forecast(body: CorrectRequest):
-    return mock_data.CORRECTION
+    deals_by_id = {d["deal_id"]: d for d in mock_data.DEALS}
+
+    return correct(
+        body.model_dump(),
+        mock_data.CARD,
+        deals_by_id=deals_by_id,
+    )
 
 
 @router.post("/ask")

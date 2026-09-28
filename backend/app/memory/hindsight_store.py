@@ -88,7 +88,12 @@ CARD_SCHEMA: dict[str, Any] = {
 # ---------------------------------------------------------------------------
 
 def bank_id() -> str:
-    return os.environ.get("HINDSIGHT_BANK_ID", "calibrate-dev")
+    bank = os.environ.get("HINDSIGHT_BANK_ID")
+    if not bank:
+        # Loud on purpose: a missing bank id silently reads an empty bank (the /api/ask bug).
+        log.warning("HINDSIGHT_BANK_ID is not set; using 'calibrate-dev'")
+        return "calibrate-dev"
+    return bank
 
 
 @lru_cache(maxsize=1)
@@ -401,10 +406,17 @@ def reflect_team_card(quarter: str | None = None) -> dict:
     return {"rep_id": "team", "quarter": quarter, **card}
 
 
-def reflect_answer(question: str) -> tuple[str, list[str]]:
-    """Free question over the whole bank. Returns (answer, the memories it was based on)."""
-    resp = get_client().reflect(bank_id=bank_id(), query=question, budget="mid",
-                                include_facts=True)
+def reflect_answer(question: str, context: str | None = None) -> tuple[str, list[str]]:
+    """Free question over the whole bank. Returns (answer, the memories it was based on).
+
+    ``context`` is evidence gathered beforehand (a rep's card, recalled deals); reflect uses it
+    alongside its own search of the bank.
+    """
+    kwargs: dict[str, Any] = {"bank_id": bank_id(), "query": question, "budget": "mid",
+                              "include_facts": True}
+    if context:
+        kwargs["context"] = context
+    resp = get_client().reflect(**kwargs)
     based_on = []
     if resp.based_on and resp.based_on.memories:
         based_on = [m.text for m in resp.based_on.memories[:5]]

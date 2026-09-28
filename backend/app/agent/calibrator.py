@@ -10,6 +10,7 @@ Owner: Role 2.
 from __future__ import annotations
 
 import logging
+import re
 from datetime import date, datetime, timedelta, timezone
 
 from app.agent.card import MIN_EVIDENCE
@@ -205,13 +206,71 @@ def correct(form: dict, card: dict | None, *, rep_name: str | None = None,
 # Ask box
 # ---------------------------------------------------------------------------
 
+def _reps_named(question: str) -> list[tuple[str, str]]:
+    """Reps mentioned by name in a question, e.g. "What bias has Priya shown?" -> priya."""
+    from app.sim.personas import PERSONAS
+
+    q = question.lower()
+    return [(rep_id, p["name"]) for rep_id, p in PERSONAS.items()
+            if re.search(rf"\b{re.escape(p['name'].lower())}\b", q)]
+
+
+def _latest_card(rep_id: str) -> tuple[str | None, dict | None]:
+    """The agent's most recent calibration card for a rep, from the saved demo run."""
+    try:
+        from app.db import get
+
+        cards = get("cards") or {}
+    except Exception as exc:  # noqa: BLE001 (no saved run: answer from memory alone)
+        log.info("no saved cards: %s", exc)
+        return None, None
+    for quarter in sorted(cards, reverse=True):
+        card = (cards.get(quarter) or {}).get(rep_id)
+        if card and card.get("rules"):
+            return quarter, card
+    return None, None
+
+
 def ask(question: str) -> dict:
+    """Answer a free question from memory: gather evidence first, then let reflect answer.
+
+    For each rep named in the question: their latest calibration card plus their most relevant
+    remembered deals. Those go to reflect as context and come back in ``based_on``. If a named
+    rep has nothing in memory, say so, and name the bank, so a misconfigured deploy is obvious.
+    """
     from app.memory import hindsight_store as hs
 
+    bank = hs.bank_id()
+    evidence: list[str] = []
+    missing: list[str] = []
+    for rep_id, name in _reps_named(question):
+        quarter, card = _latest_card(rep_id)
+        if card:
+            evidence.append(f"{name}'s latest calibration card ({quarter}): {card['summary']}")
+        try:
+            hits = hs.recall_rep_history(rep_id, question, limit=4)
+        except Exception as exc:  # noqa: BLE001
+            log.warning("recall failed for %s: %s", rep_id, exc)
+            hits = []
+        evidence.extend(h["text"] for h in hits)
+        if not card and not hits:
+            missing.append(name)
+
+    if missing and not evidence:
+        return {"answer": (f"I have no memories about {', '.join(missing)} in memory bank "
+                           f"'{bank}'. Check that HINDSIGHT_BANK_ID and HINDSIGHT_API_KEY point "
+                           "at the bank the replay filled."),
+                "based_on": [], "memory_bank": bank}
+
     try:
-        answer, based_on = hs.reflect_answer(question)
+        answer, facts = hs.reflect_answer(question, context="\n".join(evidence) or None)
     except Exception as exc:  # noqa: BLE001
         log.warning("ask failed: %s", exc)
+        if evidence:  # memory lookup worked; only the write-up failed
+            return {"answer": " ".join(evidence[:2]), "based_on": evidence[:6],
+                    "memory_bank": bank}
         return {"answer": "Sorry, memory isn't reachable right now. Try again in a minute.",
-                "based_on": []}
-    return {"answer": answer, "based_on": based_on}
+                "based_on": [], "memory_bank": bank}
+
+    based_on = list(dict.fromkeys(evidence + facts))[:6]
+    return {"answer": answer, "based_on": based_on, "memory_bank": bank}

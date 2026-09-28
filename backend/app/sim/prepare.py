@@ -9,7 +9,8 @@ from app.sim.personas import MAVEN_AGENT, PERSONAS, REP_ORDER
 
 RAW = Path(__file__).resolve().parents[2] / "data" / "maven"
 INR_PER_USD = 83
-LARGE_PRODUCTS = {"GTX Pro", "GTK 500"}
+# GTX Plus Pro is the highest-priced GTX tier and gives Meera learnable examples.
+LARGE_PRODUCTS = {"GTX Pro", "GTX Plus Pro", "GTK 500"}
 OUTCOME = {"Won": "won", "Lost": "lost", "Engaging": "pending"}
 
 

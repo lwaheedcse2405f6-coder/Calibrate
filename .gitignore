@@ -6,6 +6,12 @@ frontend/dist/
 backend/.cache/
 *.sqlite
 
-# keep the final demo run, ignore every other run folder
-backend/data/runs/*
-!backend/data/runs/demo/
+# Replay outputs are generated locally and must not be committed.
+/data/runs/
+/backend/data/runs/*
+!/backend/data/runs/demo/
+/backend/data/runs/demo/*
+!/backend/data/runs/demo/reps.json
+
+# Python bytecode/cache artifacts
+*.py[cod]

@@ -19,15 +19,17 @@ COLUMNS = ["deal_id", "rep_id", "rep_name", "account", "product", "amount_inr",
            "has_champion", "competitor", "stated_prob", "outcome", "traits"]
 
 
-def stated_prob(base: float, rep: dict, traits: list[str], quarter: str,
+def stated_prob(outcome_signal: float, rep: dict, traits: list[str], quarter: str,
                 rng: np.random.Generator) -> float:
-    p = base
+    # Closed Maven outcomes create the rep's simulated gut feel; pending deals use
+    # their Maven series win rate because their outcome is not known yet.
+    p = 0.64 + 0.30 * (outcome_signal - 0.64)
     for b in rep["biases"]:
         applies = b["trait"] == "overall" or b["trait"] in traits
         active = "until" not in b or quarter <= b["until"]
         if applies and active:
             p += b["shift"]
-    p += rng.normal(0, 0.05)
+    p += rng.normal(0, 0.08)
     return float(min(0.97, max(0.05, p)))
 
 
@@ -41,7 +43,7 @@ def _sample(d: pd.DataFrame, per_quarter: int, pending: int, seed: int) -> pd.Da
     return pd.concat(parts)
 
 
-def build(raw: Path = prep.RAW, seed: int = SEED, per_quarter: int = 25,
+def build(raw: Path = prep.RAW, seed: int = SEED, per_quarter: int = 60,
           pending: int = 5) -> pd.DataFrame:
     rng = np.random.default_rng(seed)
     deals, base = prep.prepare(raw)
@@ -63,11 +65,14 @@ def build(raw: Path = prep.RAW, seed: int = SEED, per_quarter: int = 25,
         for s, lg, eq in zip(single, d["large_deal"], d["end_of_quarter"])
     ]
 
-    # 3-4. stated probability = base rate + bias shift + noise
+    # 3-4. stated probability follows the simulated gut-feel formula, plus any
+    # planted rep bias. Closed deals use their real Maven outcome; pending deals
+    # use the Maven series win rate as an expected outcome rather than a future label.
     d["stated_prob"] = [
-        # Bias is applied using information available when the rep forecast,
-        # never the later quarter in which the deal happened to close.
-        round(stated_prob(base[r.series], PERSONAS[r.rep_id], r.traits.split(";"), r.forecast_quarter, rng), 4)
+        round(stated_prob(
+            float(r.outcome == "won") if r.outcome != "pending" else base[r.series],
+            PERSONAS[r.rep_id], r.traits.split(";"), r.forecast_quarter, rng,
+        ), 4)
         for r in d.itertuples()
     ]
 

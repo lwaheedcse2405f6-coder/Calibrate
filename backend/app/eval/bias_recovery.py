@@ -20,15 +20,22 @@ from __future__ import annotations
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
-from typing import Any, List, Optional
+from typing import Any
 
+try:
+    from app.sim.personas import PERSONAS
+except ModuleNotFoundError:
+    from backend.app.sim.personas import PERSONAS
+
+SANA_REP_ID: str = "sana"
+Persona = dict[str, Any]
+ALL_PERSONAS: list[Persona] = [
+    {"rep_id": rep_id, **data}
+    for rep_id, data in PERSONAS.items()
+]
 from pydantic import BaseModel, ValidationError
-
-from backend.app.sim.personas import PERSONAS, active_reps
-from backend.app.eval.personas import ALL_PERSONAS, Persona, SANA_REP_ID
-
 
 # ===========================================================================
 # Enums — enforce strict vocabulary at the API boundary
@@ -69,7 +76,7 @@ class EvidenceDeal(BaseModel):
     """
     deal_id:    str
     close_date: str            # ISO date string "YYYY-MM-DD"
-    outcome:    Optional[str] = None   # "won" | "lost" | None if still open
+    outcome:    str | None = None   # "won" | "lost" | None if still open
 
 
 class CalibrationRule(BaseModel):
@@ -83,7 +90,7 @@ class CalibrationRule(BaseModel):
     trait:      TraitEnum
     direction:  DirectionEnum
     confidence: ConfidenceEnum
-    note:       Optional[str] = None   # free-text explanation from the AI
+    note:       str | None = None   # free-text explanation from the AI
 
 
 class CalibrationCard(BaseModel):
@@ -95,8 +102,8 @@ class CalibrationCard(BaseModel):
                        temporal integrity by apply_card() in tests.
     """
     summary:        str
-    rules:          List[CalibrationRule]
-    evidence_deals: List[EvidenceDeal] = []
+    rules:          list[CalibrationRule]
+    evidence_deals: list[EvidenceDeal] = []
 
 
 # ===========================================================================
@@ -338,7 +345,7 @@ def export_eval_results(
     correct = sum(1 for r in comparison_results if r.get("overall_correct"))
 
     headline = {
-        "run_timestamp": datetime.utcnow().isoformat() + "Z",
+        "run_timestamp": datetime.now(timezone.utc).isoformat(),
         "model":         "dummy_ai_v1 (Pydantic-validated, no real model connected)",
         "summary": {
             "total_reps_evaluated":   total,
@@ -433,8 +440,6 @@ if __name__ == "__main__":
 
 import json as _json
 from pathlib import Path as _Path
-
-from backend.app.sim.personas import PERSONAS
 
 
 def is_strong(rule: dict) -> bool:

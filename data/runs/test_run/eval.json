@@ -1,0 +1,69 @@
+{
+  "biases_found": 5,
+  "biases_total": 5,
+  "false_alarms": 0,
+  "per_rep": [
+    {
+      "rep_id": "priya",
+      "hidden": [
+        [
+          "single_contact_no_finance",
+          "over"
+        ]
+      ],
+      "found": true,
+      "first_found_quarter": "2017-Q2"
+    },
+    {
+      "rep_id": "arjun",
+      "hidden": [
+        [
+          "overall",
+          "under"
+        ]
+      ],
+      "found": true,
+      "first_found_quarter": "2017-Q1"
+    },
+    {
+      "rep_id": "meera",
+      "hidden": [
+        [
+          "large_deal",
+          "over"
+        ]
+      ],
+      "found": true,
+      "first_found_quarter": "2017-Q1"
+    },
+    {
+      "rep_id": "rahul",
+      "hidden": [
+        [
+          "end_of_quarter",
+          "over"
+        ]
+      ],
+      "found": true,
+      "first_found_quarter": "2017-Q1"
+    },
+    {
+      "rep_id": "sana",
+      "hidden": [
+        [
+          "overall",
+          "over"
+        ]
+      ],
+      "found": true,
+      "first_found_quarter": "2017-Q1"
+    },
+    {
+      "rep_id": "karan",
+      "hidden": [],
+      "found": false,
+      "first_found_quarter": null
+    }
+  ],
+  "sana_improvement_noticed": true
+}

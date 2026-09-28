@@ -1,0 +1,30 @@
+[
+  {
+    "quarter": "2017-Q1",
+    "reps": 0.654,
+    "agent_off": 0.654,
+    "agent_on": 0.091,
+    "baseline_win_rate": 0.345
+  },
+  {
+    "quarter": "2017-Q2",
+    "reps": 0.649,
+    "agent_off": 0.649,
+    "agent_on": 0.081,
+    "baseline_win_rate": 0.345
+  },
+  {
+    "quarter": "2017-Q3",
+    "reps": 0.439,
+    "agent_off": 0.439,
+    "agent_on": 0.089,
+    "baseline_win_rate": 0.267
+  },
+  {
+    "quarter": "2017-Q4",
+    "reps": 0.422,
+    "agent_off": 0.422,
+    "agent_on": 0.101,
+    "baseline_win_rate": 0.285
+  }
+]

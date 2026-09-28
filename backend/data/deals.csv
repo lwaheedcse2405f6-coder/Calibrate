@@ -1,0 +1,583 @@
+deal_id,rep_id,rep_name,account,product,amount_inr,forecast_date,close_date,quarter,n_contacts,has_finance_contact,has_champion,competitor,stated_prob,outcome,traits
+Q7IRUJK7,meera,Meera,Codehow,GTX Plus Pro,455006,2017-01-01,2017-03-01,2017-Q1,1,False,True,True,0.5472,won,single_contact_no_finance
+UA8AWDG4,arjun,Arjun,Y-corporation,MG Advanced,281619,2017-01-01,2017-03-22,2017-Q1,3,True,False,False,0.3747,won,
+Y9HWSG8Z,priya,Priya,Gogozoom,GTX Basic,45650,2017-01-01,2017-03-20,2017-Q1,2,True,False,True,0.6617,won,
+06B7XWPC,rahul,Rahul,Sonron,GTX Pro,400143,2017-01-02,2017-03-17,2017-Q1,2,True,False,True,0.6825,won,large_deal
+IF7MJ88P,rahul,Rahul,Goodsilron,GTX Basic,45650,2017-01-02,2017-03-01,2017-Q1,3,True,True,True,0.6442,won,
+PC1NUL8Q,meera,Meera,Hottechi,MG Special,4565,2017-01-02,2017-03-02,2017-Q1,4,True,False,True,0.6423,won,
+77ZECYVJ,rahul,Rahul,Finjob,GTX Basic,45650,2017-01-03,2017-03-17,2017-Q1,4,False,True,True,0.6894,lost,
+I4UCA7CU,priya,Priya,Stanredtax,GTX Plus Basic,90968,2017-01-03,2017-03-21,2017-Q1,3,False,True,True,0.5928,won,
+IRB461Y7,rahul,Rahul,Xx-holding,GTX Plus Basic,90968,2017-01-03,2017-03-30,2017-Q1,4,False,False,True,0.6751,won,
+NM2Q3CGW,arjun,Arjun,Scotfind,MG Special,4565,2017-01-03,2017-03-15,2017-Q1,3,False,False,False,0.4043,won,
+CRX91A45,rahul,Rahul,Faxquote,GTX Basic,45650,2017-01-04,2017-03-16,2017-Q1,4,False,False,False,0.6447,won,
+ITHR5WLF,arjun,Arjun,Plexzap,MG Advanced,281619,2017-01-04,2017-03-12,2017-Q1,1,True,True,True,0.3671,won,
+SV4SOO2K,arjun,Arjun,Hottechi,GTX Plus Basic,90968,2017-01-04,2017-03-28,2017-Q1,2,True,True,True,0.3768,won,
+279625VN,meera,Meera,Funholding,MG Advanced,281619,2017-01-05,2017-03-25,2017-Q1,2,True,False,True,0.6455,lost,
+2U54WYQ1,arjun,Arjun,Goodsilron,GTX Pro,400143,2017-01-05,2017-03-23,2017-Q1,3,False,False,False,0.293,won,large_deal
+85XNDIK1,rahul,Rahul,Blackzim,GTX Basic,45650,2017-01-05,2017-03-30,2017-Q1,4,True,False,True,0.725,lost,
+RK52YU8S,priya,Priya,Treequote,GTX Pro,400143,2017-01-05,2017-03-09,2017-Q1,2,False,True,False,0.7568,lost,large_deal
+1G866GH4,priya,Priya,Toughzap,MG Special,4565,2017-01-06,2017-03-17,2017-Q1,1,True,False,False,0.6055,won,
+HHBA93J5,rahul,Rahul,Konex,GTX Basic,45650,2017-01-06,2017-03-27,2017-Q1,4,True,False,False,0.6296,won,
+MXNVX2AM,priya,Priya,Codehow,GTX Pro,400143,2017-01-06,2017-03-18,2017-Q1,2,True,True,True,0.6329,lost,large_deal
+VCA1WAB0,meera,Meera,Funholding,MG Advanced,281619,2017-01-06,2017-03-21,2017-Q1,2,False,False,False,0.6757,lost,
+BBC3JB3H,meera,Meera,Isdom,GTX Basic,45650,2017-01-07,2017-03-08,2017-Q1,1,False,True,False,0.6289,won,single_contact_no_finance
+S24L8LVR,meera,Meera,dambase,GTX Plus Pro,455006,2017-01-08,2017-03-18,2017-Q1,1,False,False,True,0.6143,won,single_contact_no_finance
+8O9V7UOZ,meera,Meera,Rundofase,MG Special,4565,2017-01-09,2017-03-01,2017-Q1,2,True,True,True,0.5786,won,
+DDCC6ZPK,sana,Sana,Ontomedia,MG Advanced,281619,2017-01-09,2017-03-25,2017-Q1,3,False,True,False,0.7916,won,
+SIRC44NM,arjun,Arjun,Finjob,GTX Basic,45650,2017-01-09,2017-03-27,2017-Q1,2,False,True,False,0.4359,won,
+VT5Y73GX,meera,Meera,Betatech,MG Special,4565,2017-01-09,2017-03-15,2017-Q1,1,True,False,True,0.5314,won,
+2R3ZA84D,priya,Priya,Finhigh,MG Special,4565,2017-01-10,2017-03-28,2017-Q1,3,True,True,True,0.6278,won,
+5DEO8EDS,arjun,Arjun,Rantouch,GTX Basic,45650,2017-01-10,2017-03-20,2017-Q1,4,True,False,True,0.4061,won,
+LTTYTAXA,sana,Sana,Kan-code,GTX Pro,400143,2017-01-10,2017-03-24,2017-Q1,3,True,True,True,0.8985,won,large_deal
+T5C527Z9,rahul,Rahul,Singletechno,GTX Plus Basic,90968,2017-01-10,2017-03-08,2017-Q1,2,False,True,True,0.6724,won,
+ZE84UHHB,meera,Meera,Inity,MG Special,4565,2017-01-10,2017-03-26,2017-Q1,2,False,False,True,0.6195,won,
+WPXAMXD2,priya,Priya,Funholding,GTX Plus Pro,455006,2017-01-11,2017-03-10,2017-Q1,3,True,True,True,0.5569,lost,
+5AKGNKX1,meera,Meera,Konmatfix,MG Special,4565,2017-01-13,2017-03-16,2017-Q1,1,True,True,False,0.5053,won,
+K1RXVUG9,rahul,Rahul,Nam-zim,GTX Basic,45650,2017-01-13,2017-03-14,2017-Q1,1,True,False,True,0.7072,won,
+KNLMLTJH,meera,Meera,Treequote,MG Special,4565,2017-01-13,2017-03-27,2017-Q1,3,False,True,False,0.6842,won,
+561707V4,arjun,Arjun,Xx-holding,GTX Pro,400143,2017-01-14,2017-03-17,2017-Q1,2,True,True,True,0.3862,won,large_deal
+EJSFO67U,sana,Sana,Zotware,GTX Pro,400143,2017-01-14,2017-03-29,2017-Q1,4,True,False,True,0.8679,won,large_deal
+SNAPG5KC,arjun,Arjun,Hatfan,MG Advanced,281619,2017-01-14,2017-05-05,2017-Q2,1,False,True,True,0.4408,lost,single_contact_no_finance
+NN9R2Y4W,arjun,Arjun,Faxquote,MG Special,4565,2017-01-17,2017-03-30,2017-Q1,3,False,True,True,0.4616,won,
+4TZF9N1D,rahul,Rahul,Xx-holding,MG Advanced,281619,2017-01-19,2017-03-28,2017-Q1,2,True,True,True,0.7012,won,
+6NXY7144,arjun,Arjun,Xx-holding,GTX Basic,45650,2017-01-19,2017-03-31,2017-Q1,1,True,True,False,0.3606,won,
+AC5YXLIR,rahul,Rahul,Faxquote,MG Special,4565,2017-01-19,2017-03-30,2017-Q1,2,True,False,False,0.5921,won,
+HSGJKH6U,rahul,Rahul,Plexzap,MG Advanced,281619,2017-01-19,2017-03-29,2017-Q1,2,True,False,True,0.6584,won,
+IBKRO1AN,rahul,Rahul,Labdrill,GTX Pro,400143,2017-01-20,2017-03-28,2017-Q1,2,True,True,False,0.6858,won,large_deal
+Y6HNPIIT,rahul,Rahul,Hottechi,GTX Pro,400143,2017-01-20,2017-03-07,2017-Q1,1,True,True,True,0.6586,won,large_deal
+1DDW2GQW,meera,Meera,Cancity,MG Advanced,281619,2017-01-21,2017-03-09,2017-Q1,4,False,False,False,0.5827,lost,
+WPGTHV8V,priya,Priya,Ron-tech,GTX Basic,45650,2017-01-21,2017-03-19,2017-Q1,2,True,False,False,0.6761,won,
+VXX8GJGY,sana,Sana,The New York Inquirer,GTX Plus Basic,90968,2017-01-26,2017-03-19,2017-Q1,2,False,True,False,0.8522,won,
+64DJ954O,rahul,Rahul,Condax,GTX Plus Basic,90968,2017-01-27,2017-03-30,2017-Q1,1,False,False,False,0.5509,won,single_contact_no_finance
+IQ9KYZCG,priya,Priya,Statholdings,GTX Plus Basic,90968,2017-01-27,2017-05-11,2017-Q2,1,False,False,True,0.8474,won,single_contact_no_finance
+SNFW1FD7,priya,Priya,Streethex,MG Advanced,281619,2017-01-28,2017-05-07,2017-Q2,2,True,True,True,0.5925,won,
+WFY0S4WW,meera,Meera,Hottechi,GTX Plus Basic,90968,2017-01-28,2017-05-02,2017-Q2,3,True,False,True,0.6729,won,
+AALARPLH,arjun,Arjun,Goodsilron,MG Advanced,281619,2017-01-29,2017-03-13,2017-Q1,3,True,True,False,0.3378,won,
+N9VYMV3W,priya,Priya,Funholding,GTX Pro,400143,2017-01-30,2017-03-10,2017-Q1,1,False,False,True,0.8253,won,single_contact_no_finance;large_deal
+NY21X16G,priya,Priya,Zumgoity,GTX Pro,400143,2017-01-31,2017-03-10,2017-Q1,1,False,False,True,0.85,won,single_contact_no_finance;large_deal
+H2MC2E7K,arjun,Arjun,Condax,GTX Plus Basic,90968,2017-02-02,,2017-Q1,3,False,False,True,0.4672,pending,
+6AWEAWCM,rahul,Rahul,Konex,GTX Pro,400143,2017-02-03,2017-05-15,2017-Q2,4,False,False,False,0.6494,lost,large_deal
+88KUDE6J,sana,Sana,Acme Corporation,GTX Plus Pro,455006,2017-02-04,2017-05-30,2017-Q2,2,False,True,True,0.9353,won,
+FHLOUD3V,arjun,Arjun,Sonron,MG Special,4565,2017-02-05,2017-05-24,2017-Q2,2,False,False,True,0.293,lost,
+LSVMMUJ0,priya,Priya,Condax,GTX Pro,400143,2017-02-05,2017-03-25,2017-Q1,4,True,False,False,0.6083,won,large_deal
+MMWX1A4H,priya,Priya,Ron-tech,GTX Plus Basic,90968,2017-02-05,2017-06-20,2017-Q2,3,False,True,False,0.6128,lost,
+UK2JIE61,meera,Meera,Cancity,MG Special,4565,2017-02-05,2017-05-04,2017-Q2,1,False,False,False,0.6014,won,single_contact_no_finance
+ZHXIDZNI,rahul,Rahul,Unknown,GTX Pro,400143,2017-02-08,,2017-Q1,4,True,False,True,0.7024,pending,large_deal
+22ZJM20V,priya,Priya,Statholdings,GTX Pro,400143,2017-02-09,2017-05-18,2017-Q2,2,False,True,True,0.7024,lost,large_deal
+E9DJS1D8,priya,Priya,Dontechi,GTX Pro,400143,2017-02-09,2017-03-17,2017-Q1,1,False,True,True,0.9447,lost,single_contact_no_finance;large_deal
+L47EPGVT,meera,Meera,Gogozoom,GTX Plus Pro,455006,2017-02-09,2017-03-01,2017-Q1,1,True,True,True,0.6295,won,
+VC94R5H8,arjun,Arjun,Konex,GTX Basic,45650,2017-02-09,2017-03-23,2017-Q1,1,True,False,False,0.391,won,
+HM334UL2,priya,Priya,Rangreen,GTX Plus Basic,90968,2017-02-10,2017-03-30,2017-Q1,1,True,True,True,0.6381,won,
+5QBQMEY5,arjun,Arjun,Scotfind,GTX Pro,400143,2017-02-11,2017-03-24,2017-Q1,1,False,True,False,0.3732,won,single_contact_no_finance;large_deal
+B06D1F9M,arjun,Arjun,Faxquote,GTX Pro,400143,2017-02-13,,2017-Q1,1,True,False,False,0.3024,pending,large_deal
+6CEEGQ8I,meera,Meera,Domzoom,MG Special,4565,2017-02-14,2017-05-30,2017-Q2,3,True,True,False,0.5692,won,
+GEBVQH17,sana,Sana,Iselectrics,GTX Plus Pro,455006,2017-02-14,2017-05-06,2017-Q2,2,False,False,True,0.894,won,
+RWGSCFHR,sana,Sana,Gekko & Co,GTX Plus Pro,455006,2017-02-14,2017-03-02,2017-Q1,2,True,False,True,0.8604,won,
+U64RT0UF,sana,Sana,Betasoloin,GTX Plus Basic,90968,2017-02-14,2017-05-29,2017-Q2,3,True,False,False,0.8887,won,
+N6H58J55,meera,Meera,Streethex,GTX Basic,45650,2017-02-15,2017-05-13,2017-Q2,1,True,False,False,0.6522,lost,
+BRQRF65L,sana,Sana,Donquadtech,GTX Basic,45650,2017-02-16,2017-03-02,2017-Q1,1,False,True,False,0.9385,won,single_contact_no_finance
+LB6XW39X,sana,Sana,Xx-zobam,GTX Basic,45650,2017-02-16,2017-03-04,2017-Q1,3,False,True,True,0.9563,won,
+BEQIZZ7W,priya,Priya,Codehow,GTX Plus Basic,90968,2017-02-19,2017-03-04,2017-Q1,2,True,False,False,0.6763,won,
+IHFM8QXN,arjun,Arjun,Kan-code,GTX Plus Basic,90968,2017-02-19,2017-03-07,2017-Q1,2,False,False,True,0.3543,lost,
+4B4XCPHT,sana,Sana,Zencorporation,GTX Pro,400143,2017-02-20,2017-05-05,2017-Q2,1,False,False,False,0.8247,won,single_contact_no_finance;large_deal
+CYWZJ2AI,rahul,Rahul,Donquadtech,GTX Plus Basic,90968,2017-02-20,,2017-Q1,3,True,True,True,0.6046,pending,
+Y7N97FW8,arjun,Arjun,Unknown,GTX Pro,400143,2017-02-20,,2017-Q1,2,False,True,True,0.3986,pending,large_deal
+5ITSLO0E,meera,Meera,Treequote,GTX Plus Basic,90968,2017-02-21,2017-03-04,2017-Q1,4,True,False,False,0.6735,won,
+IVT0S1N1,arjun,Arjun,Faxquote,GTX Basic,45650,2017-02-21,2017-03-20,2017-Q1,1,True,False,False,0.3111,won,
+52CROFH2,priya,Priya,Betatech,GTX Basic,45650,2017-02-22,2017-03-05,2017-Q1,2,False,False,False,0.5789,lost,
+6KT5HAR6,priya,Priya,Ron-tech,GTX Pro,400143,2017-02-22,2017-03-05,2017-Q1,2,False,True,False,0.6829,won,large_deal
+GVC0RLQE,arjun,Arjun,Scotfind,GTX Plus Basic,90968,2017-02-22,2017-05-11,2017-Q2,4,False,False,False,0.4003,lost,
+REDGEUCP,priya,Priya,Genco Pura Olive Oil Company,GTX Pro,400143,2017-02-22,2017-03-10,2017-Q1,2,False,True,False,0.6222,won,large_deal
+A82DG6R5,rahul,Rahul,Kan-code,GTX Plus Pro,455006,2017-02-23,2017-05-04,2017-Q2,1,True,True,True,0.5683,won,
+U185INDA,priya,Priya,Toughzap,GTX Pro,400143,2017-02-24,2017-05-05,2017-Q2,2,False,True,False,0.659,won,large_deal
+1JC9DMNJ,arjun,Arjun,Hottechi,MG Special,4565,2017-02-25,2017-05-06,2017-Q2,1,False,False,False,0.494,lost,single_contact_no_finance
+AK2LRFXF,arjun,Arjun,Singletechno,MG Special,4565,2017-02-25,2017-03-11,2017-Q1,1,False,True,True,0.4633,won,single_contact_no_finance
+U6N053E1,meera,Meera,Scottech,GTX Basic,45650,2017-02-25,2017-03-02,2017-Q1,2,True,False,False,0.6345,won,
+UCK7JRXG,arjun,Arjun,Goodsilron,MG Advanced,281619,2017-02-25,2017-05-13,2017-Q2,1,False,False,True,0.4712,won,single_contact_no_finance
+8DWOWB6Y,meera,Meera,Betatech,GTX Basic,45650,2017-02-26,2017-03-16,2017-Q1,3,True,True,True,0.586,lost,
+E57F5Z2K,rahul,Rahul,Sonron,GTX Pro,400143,2017-02-27,2017-03-15,2017-Q1,3,True,False,False,0.6252,won,large_deal
+SLIWHUIM,sana,Sana,Ganjaflex,GTX Basic,45650,2017-02-27,2017-05-22,2017-Q2,2,False,True,True,0.9005,won,
+Z2S4KUPO,rahul,Rahul,Rantouch,GTX Plus Basic,90968,2017-02-27,2017-03-10,2017-Q1,1,False,True,True,0.5817,won,single_contact_no_finance
+G0QKNVIJ,meera,Meera,Conecom,MG Special,4565,2017-03-01,2017-05-28,2017-Q2,1,False,False,True,0.7017,won,single_contact_no_finance
+JCFQVIEG,arjun,Arjun,Zoomit,GTX Plus Basic,90968,2017-03-01,2017-06-01,2017-Q2,4,False,False,True,0.4868,won,
+O8JF46GT,priya,Priya,Genco Pura Olive Oil Company,GTX Basic,45650,2017-03-01,2017-03-12,2017-Q1,1,False,False,True,0.9108,won,single_contact_no_finance
+RK5Y67V6,priya,Priya,Stanredtax,MG Special,4565,2017-03-01,2017-03-08,2017-Q1,1,False,False,True,0.97,won,single_contact_no_finance
+X2EXSMPR,arjun,Arjun,Xx-holding,GTX Basic,45650,2017-03-01,2017-03-08,2017-Q1,1,False,False,False,0.4377,won,single_contact_no_finance
+XIWKGJOW,arjun,Arjun,Goodsilron,GTX Pro,400143,2017-03-01,2017-03-09,2017-Q1,1,False,False,True,0.5286,won,single_contact_no_finance;large_deal
+32LY2D1K,priya,Priya,Conecom,MG Advanced,281619,2017-03-02,2017-05-26,2017-Q2,3,True,False,False,0.5496,won,
+FJMFXCTD,rahul,Rahul,Sunnamplex,GTX Pro,400143,2017-03-02,2017-05-06,2017-Q2,1,True,True,True,0.6534,won,large_deal
+G20IQSA3,meera,Meera,Conecom,GTX Basic,45650,2017-03-02,2017-03-12,2017-Q1,1,True,False,False,0.6519,won,
+S2UWELRW,sana,Sana,Mathtouch,GTX Basic,45650,2017-03-02,2017-06-11,2017-Q2,1,False,True,True,0.803,won,single_contact_no_finance
+VBZ862OS,rahul,Rahul,Xx-holding,GTX Basic,45650,2017-03-02,2017-03-19,2017-Q1,2,False,True,False,0.6018,won,
+9JKODCAU,meera,Meera,Rundofase,MG Special,4565,2017-03-03,2017-06-22,2017-Q2,1,True,False,True,0.6543,won,
+Q1ZKBGV5,meera,Meera,Globex Corporation,MG Special,4565,2017-03-03,2017-05-23,2017-Q2,1,False,True,False,0.5729,won,single_contact_no_finance
+U7M26UZV,arjun,Arjun,Unknown,MG Special,4565,2017-03-03,,2017-Q1,1,False,True,False,0.3944,pending,single_contact_no_finance
+U85VV1BU,rahul,Rahul,Goodsilron,GTX Basic,45650,2017-03-03,2017-05-22,2017-Q2,1,True,False,False,0.6051,won,
+4T8KR12S,priya,Priya,Streethex,GTX Plus Basic,90968,2017-03-04,2017-03-20,2017-Q1,3,True,True,True,0.7605,won,
+JIYYV11P,meera,Meera,Genco Pura Olive Oil Company,MG Advanced,281619,2017-03-04,2017-06-07,2017-Q2,2,True,True,True,0.5931,won,
+3AU5SZ3V,sana,Sana,Donquadtech,GTX Pro,400143,2017-03-05,2017-03-23,2017-Q1,1,False,False,False,0.9257,won,single_contact_no_finance;large_deal
+FPTH6URQ,arjun,Arjun,Faxquote,GTX Basic,45650,2017-03-05,2017-05-11,2017-Q2,4,False,True,True,0.299,won,
+3NQBMKOK,rahul,Rahul,Kan-code,GTX Basic,45650,2017-03-06,2017-06-29,2017-Q2,2,False,True,False,0.6745,won,
+NMKAJZJ4,rahul,Rahul,Unknown,MG Special,4565,2017-03-06,,2017-Q1,4,False,False,False,0.6152,pending,
+50HQRWGJ,sana,Sana,Vehement Capital Partners,GTX Pro,400143,2017-03-07,2017-06-10,2017-Q2,1,False,True,True,0.8398,won,single_contact_no_finance;large_deal
+NCMT5KK3,arjun,Arjun,Dalttechnology,GTX Basic,45650,2017-03-07,,2017-Q1,4,True,True,False,0.4266,pending,
+7GRFWF1U,rahul,Rahul,Scotfind,GTX Pro,400143,2017-03-08,2017-03-19,2017-Q1,2,False,False,True,0.5176,won,large_deal
+396WP6JS,meera,Meera,Gogozoom,MG Special,4565,2017-03-10,2017-03-19,2017-Q1,1,False,False,False,0.7656,won,single_contact_no_finance
+BFGASJAW,rahul,Rahul,Unknown,GTX Basic,45650,2017-03-10,,2017-Q1,3,True,False,False,0.7028,pending,
+RCQ32MXL,meera,Meera,Streethex,GTX Plus Basic,90968,2017-03-10,2017-05-12,2017-Q2,4,True,True,False,0.6327,lost,
+0YN6EALP,meera,Meera,Scottech,MG Special,4565,2017-03-11,2017-03-17,2017-Q1,3,False,True,False,0.6019,won,
+6XHE52MV,meera,Meera,Inity,MG Special,4565,2017-03-11,2017-05-30,2017-Q2,4,False,True,True,0.6004,lost,
+97QHOOWD,rahul,Rahul,Y-corporation,GTX Basic,45650,2017-03-11,2017-03-27,2017-Q1,1,True,False,True,0.6151,won,
+HTW9348H,sana,Sana,Silis,GTX Basic,45650,2017-03-11,2017-05-19,2017-Q2,2,False,False,True,0.97,lost,
+ZILYYA1V,arjun,Arjun,Goodsilron,MG Special,4565,2017-03-11,2017-03-30,2017-Q1,2,True,False,True,0.4094,won,
+PFUE2JYB,arjun,Arjun,Finjob,MG Special,4565,2017-03-12,2017-05-26,2017-Q2,3,True,True,False,0.4325,won,
+0FST40LV,meera,Meera,Streethex,MG Special,4565,2017-03-13,2017-05-25,2017-Q2,2,False,False,True,0.6855,won,
+8L5WBK75,rahul,Rahul,Dalttechnology,GTX Pro,400143,2017-03-13,2017-03-30,2017-Q1,1,True,False,False,0.6625,won,large_deal
+Z1RN8D42,rahul,Rahul,Singletechno,GTX Pro,400143,2017-03-13,2017-06-02,2017-Q2,3,False,True,True,0.6705,won,large_deal
+ZNSWDHTJ,priya,Priya,Rundofase,GTX Basic,45650,2017-03-13,2017-05-15,2017-Q2,4,True,True,True,0.6309,won,
+9UVKASFY,arjun,Arjun,Nam-zim,GTX Plus Pro,455006,2017-03-14,2017-05-27,2017-Q2,4,False,True,True,0.4537,lost,
+E96ZTKHC,arjun,Arjun,Scotfind,GTX Basic,45650,2017-03-14,2017-03-17,2017-Q1,2,False,True,False,0.3228,won,
+HALGOQ5D,sana,Sana,Betasoloin,GTX Pro,400143,2017-03-14,2017-05-30,2017-Q2,2,True,True,True,0.9323,won,large_deal
+086279IX,rahul,Rahul,Kan-code,GTX Pro,400143,2017-03-15,2017-06-14,2017-Q2,3,True,True,False,0.691,won,large_deal
+093R7PK9,arjun,Arjun,Zoomit,MG Special,4565,2017-03-15,2017-06-11,2017-Q2,2,False,True,True,0.4574,won,
+E7OPE1O8,priya,Priya,Rangreen,MG Special,4565,2017-03-15,2017-03-20,2017-Q1,1,True,True,True,0.584,won,
+3918OU6O,priya,Priya,Rundofase,GTX Basic,45650,2017-03-16,2017-05-02,2017-Q2,2,False,True,False,0.6382,lost,
+CG65AS6X,arjun,Arjun,Xx-holding,GTX Pro,400143,2017-03-16,2017-03-29,2017-Q1,1,False,False,False,0.4648,won,single_contact_no_finance;large_deal
+04YGLJ3N,rahul,Rahul,Unknown,GTX Plus Pro,455006,2017-03-17,,2017-Q1,3,True,False,False,0.6521,pending,
+DEH0MYSO,rahul,Rahul,Green-Plus,MG Special,4565,2017-03-17,2017-05-24,2017-Q2,2,True,True,True,0.7163,won,
+IDIMBX0N,meera,Meera,Genco Pura Olive Oil Company,GTX Plus Pro,455006,2017-03-17,2017-03-26,2017-Q1,2,False,True,False,0.7045,won,
+G7PNQB9M,meera,Meera,Warephase,GTX Plus Basic,90968,2017-03-18,2017-05-25,2017-Q2,1,True,False,True,0.6906,lost,end_of_quarter
+06YL7WVJ,priya,Priya,Ron-tech,GTX Plus Basic,90968,2017-03-19,2017-03-21,2017-Q1,4,False,False,False,0.5549,won,end_of_quarter
+6JI36HIE,rahul,Rahul,Sonron,MG Advanced,281619,2017-03-19,2017-06-23,2017-Q2,1,True,True,False,0.8549,lost,end_of_quarter
+B5CBSTM5,rahul,Rahul,Golddex,MG Advanced,281619,2017-03-19,2017-03-29,2017-Q1,4,False,False,False,0.8632,won,end_of_quarter
+F8O0IY28,sana,Sana,Zencorporation,GTX Basic,45650,2017-03-19,2017-03-30,2017-Q1,1,False,True,True,0.7972,won,single_contact_no_finance;end_of_quarter
+2BYD4WQ7,meera,Meera,Funholding,MG Special,4565,2017-03-20,2017-05-19,2017-Q2,1,False,False,True,0.6128,lost,single_contact_no_finance;end_of_quarter
+4D95LU0H,priya,Priya,dambase,GTX Basic,45650,2017-03-20,2017-06-24,2017-Q2,3,True,True,False,0.5246,won,end_of_quarter
+KA79LTFF,priya,Priya,Dontechi,GTX Basic,45650,2017-03-20,2017-03-30,2017-Q1,2,False,True,True,0.6384,won,end_of_quarter
+DDBH2FPP,meera,Meera,Rangreen,GTX Plus Basic,90968,2017-03-21,2017-06-16,2017-Q2,3,True,True,True,0.6617,won,end_of_quarter
+IJ4GXGCU,priya,Priya,Isdom,GTX Pro,400143,2017-03-22,2017-03-30,2017-Q1,1,False,False,False,0.9041,won,single_contact_no_finance;large_deal;end_of_quarter
+UD9V38LV,sana,Sana,Betasoloin,GTX Pro,400143,2017-03-23,2017-05-19,2017-Q2,1,True,True,True,0.8785,lost,large_deal;end_of_quarter
+EDAJ0YEW,priya,Priya,Isdom,GTX Pro,400143,2017-03-24,2017-03-30,2017-Q1,3,True,True,True,0.6655,won,large_deal;end_of_quarter
+M52B4VC5,meera,Meera,Globex Corporation,MG Special,4565,2017-03-26,2017-04-04,2017-Q2,2,False,True,True,0.6406,lost,end_of_quarter
+5OVTFUNQ,priya,Priya,Cancity,GTX Pro,400143,2017-03-27,2017-04-05,2017-Q2,3,True,True,True,0.5573,lost,large_deal;end_of_quarter
+3O7PIS8O,priya,Priya,Warephase,MG Advanced,281619,2017-03-28,2017-04-09,2017-Q2,1,True,False,True,0.5787,won,end_of_quarter
+T1ZYZ70B,meera,Meera,Codehow,MG Special,4565,2017-03-28,2017-06-08,2017-Q2,2,False,True,False,0.5362,lost,end_of_quarter
+8IJOC37Z,rahul,Rahul,Hottechi,GTX Basic,45650,2017-03-29,2017-06-28,2017-Q2,1,False,True,True,0.9337,won,single_contact_no_finance;end_of_quarter
+98YPUABG,arjun,Arjun,Sonron,GTX Plus Pro,455006,2017-03-29,2017-04-06,2017-Q2,1,True,False,False,0.4424,lost,end_of_quarter
+HMKFBTYR,priya,Priya,Bioholding,GTX Basic,45650,2017-03-30,2017-06-20,2017-Q2,2,True,False,False,0.6494,won,end_of_quarter
+ZT6XPQR0,arjun,Arjun,Y-corporation,MG Special,4565,2017-03-31,2017-06-28,2017-Q2,2,False,False,True,0.3802,won,end_of_quarter
+5PA21ZHE,priya,Priya,Betatech,GTX Pro,400143,2017-04-01,2017-04-10,2017-Q2,3,False,True,False,0.6081,won,large_deal
+N4PVP6C0,sana,Sana,Initech,GTX Basic,45650,2017-04-01,2017-04-03,2017-Q2,1,True,False,False,0.8607,lost,
+5PJJCTJ9,priya,Priya,Bioholding,MG Advanced,281619,2017-04-02,2017-04-11,2017-Q2,2,False,False,False,0.6614,won,
+OV08QE7X,rahul,Rahul,Cheers,GTX Basic,45650,2017-04-02,2017-04-10,2017-Q2,2,False,True,True,0.6757,won,
+FH4VP5CL,sana,Sana,Bioplex,GTX Plus Basic,90968,2017-04-03,2017-06-26,2017-Q2,3,False,False,False,0.8623,won,
+K9MMOXUC,sana,Sana,Iselectrics,GTX Plus Pro,455006,2017-04-03,2017-04-14,2017-Q2,1,False,True,True,0.8818,won,single_contact_no_finance
+2S3DHZFO,priya,Priya,Konmatfix,GTX Pro,400143,2017-04-04,2017-06-21,2017-Q2,2,False,False,True,0.5148,lost,large_deal
+5FIGO7XN,sana,Sana,Gekko & Co,GTX Pro,400143,2017-04-04,2017-04-15,2017-Q2,1,False,True,True,0.8702,lost,single_contact_no_finance;large_deal
+VIV0OXU6,meera,Meera,Domzoom,GTX Basic,45650,2017-04-04,2017-04-11,2017-Q2,2,True,True,False,0.5848,won,
+A0VM9Q5M,rahul,Rahul,Doncon,GTX Pro,400143,2017-04-05,2017-04-15,2017-Q2,2,False,True,True,0.571,lost,large_deal
+OJSYLHMZ,arjun,Arjun,Zoomit,GTX Basic,45650,2017-04-05,2017-06-28,2017-Q2,4,True,True,True,0.4112,won,
+RSXFS096,sana,Sana,Zencorporation,GTX Basic,45650,2017-04-05,2017-08-07,2017-Q3,3,False,True,True,0.7951,lost,
+7C2HU8OC,rahul,Rahul,Faxquote,GTX Plus Basic,90968,2017-04-06,2017-04-16,2017-Q2,2,False,False,False,0.7018,lost,
+4MMQZHCK,arjun,Arjun,Konex,MG Advanced,281619,2017-04-07,2017-04-16,2017-Q2,2,True,True,True,0.4758,lost,
+PYY9M6Q4,sana,Sana,Mathtouch,GTX Pro,400143,2017-04-07,2017-04-13,2017-Q2,3,False,False,False,0.8897,won,large_deal
+QPOE9V6Y,sana,Sana,Opentech,MG Advanced,281619,2017-04-07,2017-04-17,2017-Q2,4,False,True,False,0.814,lost,
+BK85705L,arjun,Arjun,Labdrill,GTX Basic,45650,2017-04-08,2017-06-10,2017-Q2,1,True,False,False,0.4447,won,
+GWRPJWRO,sana,Sana,Bioplex,GTX Pro,400143,2017-04-08,2017-04-16,2017-Q2,3,False,False,False,0.903,lost,large_deal
+NCUXZU3S,priya,Priya,Stanredtax,GTX Pro,400143,2017-04-10,2017-04-20,2017-Q2,3,True,True,False,0.6956,won,large_deal
+VTVF5TBV,priya,Priya,Codehow,GTX Pro,400143,2017-04-10,2017-04-18,2017-Q2,3,False,False,False,0.6479,lost,large_deal
+30YWHJV8,sana,Sana,Plussunin,GTX Plus Basic,90968,2017-04-11,2017-04-18,2017-Q2,1,True,False,True,0.9339,lost,
+8EAINY61,rahul,Rahul,Singletechno,GTX Basic,45650,2017-04-11,2017-04-18,2017-Q2,3,True,True,False,0.5848,lost,
+W1GERPB9,arjun,Arjun,Fasehatice,GTX Pro,400143,2017-04-11,2017-06-21,2017-Q2,1,False,False,True,0.3772,won,single_contact_no_finance;large_deal
+VO3C2LE4,rahul,Rahul,Groovestreet,MG Special,4565,2017-04-12,2017-04-16,2017-Q2,4,True,False,False,0.6327,lost,
+4RPUMZ9M,rahul,Rahul,Y-corporation,GTX Pro,400143,2017-04-13,2017-04-21,2017-Q2,1,False,False,True,0.6163,lost,single_contact_no_finance;large_deal
+H3ITKE4I,rahul,Rahul,Hatfan,GTX Pro,400143,2017-04-13,2017-04-19,2017-Q2,1,True,False,False,0.7026,lost,large_deal
+OS2CD01K,priya,Priya,Streethex,GTX Plus Pro,455006,2017-04-13,2017-04-21,2017-Q2,1,True,False,True,0.5908,won,
+JS9SCCJ3,priya,Priya,Gogozoom,GTX Plus Basic,90968,2017-04-14,2017-04-15,2017-Q2,4,False,True,False,0.6063,lost,
+BEP06EN5,meera,Meera,Statholdings,GTX Plus Pro,455006,2017-04-15,2017-04-16,2017-Q2,1,True,True,False,0.6393,won,
+QRVHBQSF,sana,Sana,Ganjaflex,MG Special,4565,2017-04-15,2017-04-16,2017-Q2,1,False,False,False,0.8121,won,single_contact_no_finance
+QA9XE19H,rahul,Rahul,Newex,MG Advanced,281619,2017-04-16,2017-04-23,2017-Q2,2,True,False,True,0.6087,lost,
+YGL1F8K1,arjun,Arjun,Plusstrip,MG Special,4565,2017-04-16,2017-05-04,2017-Q2,1,False,True,True,0.401,won,single_contact_no_finance
+Q1DFFYB5,rahul,Rahul,Y-corporation,GTX Plus Pro,455006,2017-04-17,2017-04-19,2017-Q2,2,False,False,True,0.642,lost,
+CJP7LWRK,rahul,Rahul,Xx-holding,GTX Pro,400143,2017-04-18,2017-04-24,2017-Q2,2,True,True,True,0.71,won,large_deal
+N60UJ28O,rahul,Rahul,Xx-holding,GTX Plus Basic,90968,2017-04-18,2017-04-22,2017-Q2,3,False,False,False,0.622,won,
+Q22714T0,meera,Meera,Betatech,MG Special,4565,2017-04-18,2017-04-24,2017-Q2,3,False,False,True,0.636,lost,
+ZKOGIB6R,sana,Sana,Xx-zobam,GTX Basic,45650,2017-04-18,2017-04-25,2017-Q2,2,False,True,True,0.9627,lost,
+AMX2BM39,rahul,Rahul,Kan-code,MG Advanced,281619,2017-04-22,2017-04-23,2017-Q2,1,False,True,False,0.628,won,single_contact_no_finance
+MJF4D19K,priya,Priya,Streethex,GTX Plus Pro,455006,2017-04-22,2017-04-29,2017-Q2,2,True,False,True,0.5989,won,
+J82TWNI7,arjun,Arjun,Plexzap,GTX Pro,400143,2017-04-23,2017-08-13,2017-Q3,1,True,True,False,0.4036,lost,large_deal
+YDBPPU6J,sana,Sana,Betasoloin,GTX Pro,400143,2017-04-23,2017-06-03,2017-Q2,1,False,True,False,0.9438,won,single_contact_no_finance;large_deal
+X3S5O9LJ,priya,Priya,Domzoom,GTX Plus Pro,455006,2017-04-24,2017-04-29,2017-Q2,2,False,True,False,0.5824,won,
+2EO70V27,rahul,Rahul,Sunnamplex,GTX Pro,400143,2017-04-25,2017-04-27,2017-Q2,2,False,True,True,0.7457,lost,large_deal
+ZBAMKTFX,rahul,Rahul,Labdrill,GTX Pro,400143,2017-04-26,2017-08-08,2017-Q3,1,True,False,True,0.6732,won,large_deal
+GIIKA5B9,arjun,Arjun,Lexiqvolax,GTX Basic,45650,2017-04-27,2017-04-29,2017-Q2,1,True,False,False,0.4259,lost,
+NENHRB3K,arjun,Arjun,Lexiqvolax,MG Advanced,281619,2017-04-28,2017-05-14,2017-Q2,4,True,True,True,0.3627,lost,
+IE6TPFU9,meera,Meera,Scottech,GTX Plus Basic,90968,2017-04-29,2017-05-15,2017-Q2,3,True,False,False,0.6295,won,
+UYQJ2A1O,arjun,Arjun,Unknown,GTX Plus Pro,455006,2017-05-01,,2017-Q2,3,True,False,True,0.4377,pending,
+7DDJHUWU,arjun,Arjun,Scotfind,GTX Pro,400143,2017-05-02,2017-05-17,2017-Q2,1,True,True,True,0.3723,lost,large_deal
+B0MOQZVN,arjun,Arjun,Sonron,GTX Basic,45650,2017-05-05,2017-05-14,2017-Q2,1,False,True,False,0.4145,won,single_contact_no_finance
+C64JTLGO,sana,Sana,Vehement Capital Partners,GTX Plus Basic,90968,2017-05-05,2017-05-06,2017-Q2,2,False,True,False,0.9455,won,
+Z236WCM1,rahul,Rahul,Vehement Capital Partners,GTX Plus Basic,90968,2017-05-05,,2017-Q2,3,True,False,True,0.6007,pending,
+1Y9KPBXY,priya,Priya,Funholding,GTX Plus Basic,90968,2017-05-06,2017-09-10,2017-Q3,2,False,False,True,0.6479,lost,
+IGHYUSN8,arjun,Arjun,Golddex,GTX Plus Pro,455006,2017-05-06,,2017-Q2,3,True,True,True,0.4629,pending,
+HJBVO8T4,arjun,Arjun,Fasehatice,GTX Basic,45650,2017-05-09,2017-06-21,2017-Q2,2,True,False,True,0.4269,lost,
+N4Z3QYK7,priya,Priya,Warephase,GTX Pro,400143,2017-05-09,2017-05-24,2017-Q2,2,True,False,True,0.6582,won,large_deal
+53ZXALR1,rahul,Rahul,Faxquote,GTX Plus Basic,90968,2017-05-10,2017-09-14,2017-Q3,1,False,False,True,0.6282,won,single_contact_no_finance
+KLZ95C62,meera,Meera,dambase,MG Special,4565,2017-05-10,2017-08-21,2017-Q3,2,False,True,False,0.6244,lost,
+5BAGWGAG,arjun,Arjun,Condax,GTX Plus Pro,455006,2017-05-12,2017-08-23,2017-Q3,4,True,False,False,0.369,won,
+WSPM5X5V,meera,Meera,Gogozoom,MG Special,4565,2017-05-12,2017-05-23,2017-Q2,4,False,True,True,0.6422,lost,
+3K97S8L9,sana,Sana,Donquadtech,MG Advanced,281619,2017-05-13,2017-05-19,2017-Q2,2,True,False,True,0.7745,lost,
+848QSODT,arjun,Arjun,Unknown,GTX Basic,45650,2017-05-14,,2017-Q2,1,True,True,True,0.3751,pending,
+BCA3ICIO,sana,Sana,Umbrella Corporation,GTX Plus Pro,455006,2017-05-14,2017-08-14,2017-Q3,3,False,False,False,0.8782,lost,
+BHV4K3VV,rahul,Rahul,Y-corporation,GTX Basic,45650,2017-05-15,2017-05-25,2017-Q2,2,True,True,True,0.6338,won,
+TEJBT5CP,arjun,Arjun,Konex,GTX Plus Basic,90968,2017-05-15,2017-06-03,2017-Q2,3,False,True,True,0.3917,won,
+X4FW4JR1,rahul,Rahul,Unknown,GTX Basic,45650,2017-05-15,,2017-Q2,2,False,False,False,0.6344,pending,
+AXHNVQPQ,arjun,Arjun,Golddex,GTX Pro,400143,2017-05-17,2017-09-08,2017-Q3,2,False,False,True,0.3586,won,large_deal
+852ZZB90,meera,Meera,Ron-tech,MG Special,4565,2017-05-18,2017-06-02,2017-Q2,3,True,True,False,0.6264,won,
+DPT11UGS,sana,Sana,Iselectrics,GTX Plus Basic,90968,2017-05-18,2017-09-05,2017-Q3,2,False,False,True,0.8804,won,
+00KY25OA,sana,Sana,Condax,GTX Basic,45650,2017-05-19,2017-06-01,2017-Q2,3,True,True,False,0.8566,won,
+G378ZBNC,meera,Meera,Ron-tech,MG Advanced,281619,2017-05-21,2017-08-03,2017-Q3,1,False,False,False,0.6295,won,single_contact_no_finance
+RE3UNESR,rahul,Rahul,Unknown,GTX Basic,45650,2017-05-21,,2017-Q2,3,True,False,True,0.5867,pending,
+G86OKJFV,meera,Meera,Isdom,GTX Plus Pro,455006,2017-05-22,2017-05-31,2017-Q2,2,True,False,True,0.5869,lost,
+HUCB9WIQ,priya,Priya,Conecom,MG Advanced,281619,2017-05-22,2017-09-08,2017-Q3,1,True,True,True,0.6629,lost,
+075SHVO3,arjun,Arjun,Plexzap,MG Special,4565,2017-05-23,2017-08-12,2017-Q3,2,True,True,False,0.4196,lost,
+OKNOWHS3,rahul,Rahul,Labdrill,GTX Plus Basic,90968,2017-05-23,2017-08-02,2017-Q3,3,True,False,False,0.6536,lost,
+IDBXD4OU,rahul,Rahul,Scotfind,GTX Basic,45650,2017-05-24,2017-08-22,2017-Q3,1,False,False,True,0.6067,lost,single_contact_no_finance
+2PI827MA,rahul,Rahul,Unknown,GTX Pro,400143,2017-05-25,,2017-Q2,1,True,True,True,0.6968,pending,large_deal
+54XWHO19,arjun,Arjun,Hatfan,GTX Basic,45650,2017-05-26,2017-08-03,2017-Q3,2,True,False,False,0.4836,lost,
+5ELX1QYM,arjun,Arjun,Green-Plus,GTX Plus Basic,90968,2017-05-27,2017-05-30,2017-Q2,3,True,False,False,0.3996,lost,
+GPC8PLM7,sana,Sana,Kinnamplus,GTX Basic,45650,2017-05-27,2017-09-02,2017-Q3,4,False,True,False,0.97,won,
+UZI6MKVR,meera,Meera,Betatech,MG Special,4565,2017-05-27,2017-08-24,2017-Q3,1,True,False,False,0.6552,lost,
+V8RYC18P,meera,Meera,Stanredtax,MG Special,4565,2017-05-27,2017-08-21,2017-Q3,4,False,True,False,0.6559,won,
+BAN0BVHW,sana,Sana,Yearin,GTX Pro,400143,2017-05-28,2017-08-05,2017-Q3,1,True,True,True,0.8821,won,large_deal
+BO1ZOZG2,rahul,Rahul,Ontomedia,GTX Plus Basic,90968,2017-05-28,,2017-Q2,3,True,False,False,0.6722,pending,
+1R8VKE8O,arjun,Arjun,Golddex,GTX Plus Pro,455006,2017-05-30,2017-08-15,2017-Q3,3,False,False,False,0.4685,won,
+NDVZAHYA,arjun,Arjun,Golddex,GTX Basic,45650,2017-05-30,2017-08-15,2017-Q3,4,True,True,False,0.4537,won,
+PF7GFMLQ,sana,Sana,Condax,GTX Basic,45650,2017-05-30,2017-08-10,2017-Q3,3,True,True,True,0.8814,won,
+3CP9VXC1,rahul,Rahul,Labdrill,MG Special,4565,2017-05-31,2017-08-15,2017-Q3,3,True,True,True,0.6797,won,
+J47DPNB5,rahul,Rahul,Plexzap,GTX Plus Pro,455006,2017-05-31,2017-08-03,2017-Q3,3,False,False,True,0.6,lost,
+S1AU0IZX,priya,Priya,Inity,GTX Pro,400143,2017-05-31,2017-06-04,2017-Q2,1,True,True,False,0.6535,won,large_deal
+6ONKN1IM,arjun,Arjun,Newex,MG Advanced,281619,2017-06-01,2017-08-22,2017-Q3,1,True,False,False,0.3148,lost,
+CGCPVYNI,meera,Meera,Isdom,GTX Basic,45650,2017-06-01,2017-06-08,2017-Q2,2,False,False,True,0.6799,won,
+LKBS2IJC,priya,Priya,Konmatfix,GTX Plus Pro,455006,2017-06-01,2017-06-11,2017-Q2,3,True,True,False,0.6261,lost,
+CPL37MZC,priya,Priya,dambase,GTX Plus Pro,455006,2017-06-02,2017-08-02,2017-Q3,2,False,False,True,0.7193,won,
+45CMXP2K,priya,Priya,Treequote,GTX Basic,45650,2017-06-03,2017-08-03,2017-Q3,1,True,True,False,0.665,lost,
+4K8N65EM,sana,Sana,Initech,MG Special,4565,2017-06-04,2017-08-06,2017-Q3,3,False,True,True,0.8934,lost,
+9KJ89VHI,rahul,Rahul,J-Texon,GTX Basic,45650,2017-06-04,2017-09-01,2017-Q3,1,False,True,True,0.5926,won,single_contact_no_finance
+BPQ0358T,meera,Meera,Rangreen,MG Advanced,281619,2017-06-04,2017-09-16,2017-Q3,3,True,True,True,0.5891,lost,
+G54JJCMX,meera,Meera,Scottech,GTX Plus Pro,455006,2017-06-04,2017-08-18,2017-Q3,2,False,False,True,0.7003,lost,
+KVTBYOVD,sana,Sana,Kan-code,GTX Pro,400143,2017-06-04,2017-06-14,2017-Q2,2,False,False,False,0.8732,won,large_deal
+N3CN7GCZ,rahul,Rahul,Nam-zim,MG Special,4565,2017-06-04,2017-08-27,2017-Q3,3,False,True,False,0.699,won,
+N7WUBQR0,rahul,Rahul,Singletechno,GTX Plus Basic,90968,2017-06-04,2017-09-17,2017-Q3,2,False,False,True,0.7122,lost,
+PGK5K24U,sana,Sana,Plussunin,GTX Pro,400143,2017-06-08,2017-08-28,2017-Q3,1,False,True,False,0.8269,won,single_contact_no_finance;large_deal
+3QTN3F5T,meera,Meera,Isdom,MG Advanced,281619,2017-06-09,2017-08-15,2017-Q3,2,False,False,False,0.5926,won,
+EMIAKHPF,sana,Sana,Kinnamplus,GTX Plus Pro,455006,2017-06-10,2017-09-21,2017-Q3,1,True,False,True,0.8817,won,
+9YVSYSE8,meera,Meera,Globex Corporation,GTX Basic,45650,2017-06-11,2017-09-16,2017-Q3,4,True,False,True,0.5418,lost,
+KYL4UFG5,sana,Sana,Bluth Company,GTX Basic,45650,2017-06-11,2017-08-29,2017-Q3,1,True,True,False,0.8547,lost,
+GTOKTXRA,arjun,Arjun,Scotfind,MG Special,4565,2017-06-12,2017-09-20,2017-Q3,4,True,True,False,0.4064,won,
+RUYLZD4O,rahul,Rahul,Sonron,GTX Pro,400143,2017-06-12,2017-06-29,2017-Q2,4,True,False,True,0.6919,won,large_deal
+38YQ4771,meera,Meera,Treequote,MG Advanced,281619,2017-06-13,2017-08-20,2017-Q3,2,False,True,True,0.6026,lost,
+8X890G2T,meera,Meera,Globex Corporation,MG Special,4565,2017-06-14,2017-06-23,2017-Q2,3,False,False,False,0.6682,won,
+TAGD6XU9,priya,Priya,Isdom,MG Advanced,281619,2017-06-14,2017-08-25,2017-Q3,3,False,True,True,0.6756,won,
+C4CQ8FZL,arjun,Arjun,Hottechi,MG Special,4565,2017-06-15,2017-06-28,2017-Q2,1,False,False,False,0.3698,won,single_contact_no_finance
+GL8PN4LQ,priya,Priya,Isdom,MG Advanced,281619,2017-06-16,2017-06-24,2017-Q2,1,True,True,True,0.6507,won,
+SD8JJSKT,priya,Priya,Streethex,MG Advanced,281619,2017-06-17,2017-08-30,2017-Q3,2,False,False,True,0.6812,won,end_of_quarter
+XQ4FN1KA,rahul,Rahul,Golddex,GTX Pro,400143,2017-06-17,2017-09-06,2017-Q3,4,True,False,False,0.933,lost,large_deal;end_of_quarter
+RQJKAR7E,priya,Priya,Isdom,GTX Pro,400143,2017-06-21,2017-07-02,2017-Q3,1,True,True,True,0.6663,lost,large_deal;end_of_quarter
+B0XO4WY7,sana,Sana,Massive Dynamic,GTX Basic,45650,2017-06-22,2017-07-02,2017-Q3,3,True,True,True,0.922,won,end_of_quarter
+CKJZ86N6,meera,Meera,Genco Pura Olive Oil Company,MG Advanced,281619,2017-06-22,2017-08-11,2017-Q3,1,True,True,True,0.6452,lost,end_of_quarter
+QPZFP9WT,rahul,Rahul,Labdrill,GTX Pro,400143,2017-06-23,2017-07-04,2017-Q3,3,True,True,True,0.8255,lost,large_deal;end_of_quarter
+EFA9E6WV,rahul,Rahul,Lexiqvolax,GTX Plus Pro,455006,2017-06-24,2017-09-30,2017-Q3,1,True,True,True,0.9079,won,end_of_quarter
+HSYU33MS,arjun,Arjun,Unknown,MG Special,4565,2017-06-24,,2017-Q2,1,False,True,True,0.3556,pending,single_contact_no_finance;end_of_quarter
+3PD8YBPK,arjun,Arjun,Scotfind,GTX Basic,45650,2017-06-25,2017-07-04,2017-Q3,1,True,True,False,0.3951,lost,end_of_quarter
+GZ5M7MIQ,priya,Priya,Conecom,GTX Plus Basic,90968,2017-06-25,2017-07-01,2017-Q3,3,True,True,False,0.5931,lost,end_of_quarter
+XVYL67FL,sana,Sana,Bioplex,GTX Basic,45650,2017-06-26,2017-07-06,2017-Q3,1,True,False,False,0.9325,won,end_of_quarter
+99I4V65G,arjun,Arjun,Rantouch,MG Advanced,281619,2017-06-27,2017-07-06,2017-Q3,2,True,False,False,0.4382,lost,end_of_quarter
+ACZQMAR4,arjun,Arjun,Rantouch,MG Advanced,281619,2017-06-27,2017-07-07,2017-Q3,1,False,False,False,0.3585,won,single_contact_no_finance;end_of_quarter
+AMGC18DS,sana,Sana,Zotware,GTX Plus Pro,455006,2017-06-27,2017-09-08,2017-Q3,4,False,False,True,0.917,lost,end_of_quarter
+Q81Q0PJK,meera,Meera,Warephase,GTX Plus Basic,90968,2017-06-27,2017-07-06,2017-Q3,4,False,True,False,0.6047,won,end_of_quarter
+3DY60YA7,priya,Priya,Stanredtax,GTX Pro,400143,2017-06-28,2017-07-06,2017-Q3,2,False,True,True,0.7079,lost,large_deal;end_of_quarter
+AU5Q1XCW,arjun,Arjun,Faxquote,MG Advanced,281619,2017-06-28,2017-09-09,2017-Q3,1,True,True,True,0.4264,won,end_of_quarter
+C9M5B1N6,rahul,Rahul,Nam-zim,GTX Pro,400143,2017-06-28,2017-09-13,2017-Q3,4,True,True,False,0.8964,won,large_deal;end_of_quarter
+EG5M02ZV,rahul,Rahul,J-Texon,GTX Basic,45650,2017-06-28,2017-09-27,2017-Q3,1,False,True,False,0.9043,won,single_contact_no_finance;end_of_quarter
+TP9IE6PV,meera,Meera,Genco Pura Olive Oil Company,GTX Basic,45650,2017-06-28,2017-09-11,2017-Q3,2,True,False,True,0.6617,won,end_of_quarter
+V0V6O05H,priya,Priya,Condax,GTX Pro,400143,2017-06-28,2017-07-07,2017-Q3,3,True,True,True,0.6211,lost,large_deal;end_of_quarter
+CMCVD0N8,priya,Priya,Warephase,GTX Pro,400143,2017-06-29,2017-07-08,2017-Q3,2,False,True,False,0.6186,won,large_deal;end_of_quarter
+T4FR3FAC,arjun,Arjun,Unknown,MG Advanced,281619,2017-06-29,,2017-Q2,3,True,False,True,0.4385,pending,end_of_quarter
+019I751P,meera,Meera,Statholdings,GTX Plus Basic,90968,2017-07-02,2017-07-09,2017-Q3,4,False,False,True,0.6957,won,
+74JAOLQU,karan,Karan,Rantouch,GTX Basic,45650,2017-07-02,2017-08-16,2017-Q3,2,False,False,False,0.5488,lost,
+1IG94UUQ,rahul,Rahul,Singletechno,GTX Plus Basic,90968,2017-07-03,2017-07-13,2017-Q3,1,True,True,False,0.6093,won,
+35LLMROC,rahul,Rahul,Unknown,GTX Basic,45650,2017-07-03,,2017-Q3,3,False,False,False,0.647,pending,
+RABLXW5E,karan,Karan,Hatfan,MG Special,4565,2017-07-03,2017-09-02,2017-Q3,1,True,True,False,0.6041,won,
+WAFSPTW6,arjun,Arjun,Lexiqvolax,GTX Basic,45650,2017-07-03,2017-07-14,2017-Q3,1,False,False,False,0.3772,won,single_contact_no_finance
+1E5MFGR7,sana,Sana,Plussunin,GTX Basic,45650,2017-07-04,2017-09-26,2017-Q3,3,False,True,False,0.4958,lost,
+4R0TB2CL,sana,Sana,Bubba Gump,GTX Pro,400143,2017-07-04,2017-07-13,2017-Q3,1,False,True,True,0.584,won,single_contact_no_finance;large_deal
+Q7RV0YW6,rahul,Rahul,Green-Plus,GTX Plus Basic,90968,2017-07-04,2017-07-10,2017-Q3,3,True,True,False,0.6429,lost,
+TS2JEK3E,sana,Sana,Betasoloin,GTX Basic,45650,2017-07-04,2017-09-23,2017-Q3,3,False,False,True,0.6572,won,
+VH3C0A8F,sana,Sana,Mathtouch,GTX Basic,45650,2017-07-04,2017-07-05,2017-Q3,1,True,False,False,0.6776,lost,
+09W047QT,sana,Sana,Umbrella Corporation,GTX Pro,400143,2017-07-05,2017-08-10,2017-Q3,1,False,True,True,0.6126,won,single_contact_no_finance;large_deal
+STG85Q0N,sana,Sana,Kinnamplus,GTX Basic,45650,2017-07-05,2017-07-06,2017-Q3,2,False,False,False,0.6784,lost,
+UEXJN3Y6,karan,Karan,Konex,GTX Plus Basic,90968,2017-07-05,2017-07-12,2017-Q3,1,True,False,False,0.5946,won,
+CC3B5DSU,meera,Meera,Treequote,GTX Plus Pro,455006,2017-07-06,2017-07-16,2017-Q3,1,False,False,True,0.6844,lost,single_contact_no_finance
+E62A05BH,meera,Meera,Inity,GTX Basic,45650,2017-07-07,2017-07-15,2017-Q3,1,False,True,False,0.6862,lost,single_contact_no_finance
+K1K48OTP,rahul,Rahul,Conecom,GTX Plus Pro,455006,2017-07-07,,2017-Q3,2,True,False,False,0.7016,pending,
+00XBYXIB,rahul,Rahul,Green-Plus,GTX Plus Basic,90968,2017-07-08,2017-07-09,2017-Q3,2,True,False,False,0.5347,won,
+6XH71PH8,sana,Sana,Yearin,GTX Plus Basic,90968,2017-07-08,2017-09-28,2017-Q3,1,False,True,True,0.5153,won,single_contact_no_finance
+DJXM9LIW,sana,Sana,Kinnamplus,GTX Plus Basic,90968,2017-07-08,2017-07-14,2017-Q3,4,True,False,False,0.5439,won,
+K1UREXI5,meera,Meera,Genco Pura Olive Oil Company,GTX Basic,45650,2017-07-09,2017-09-16,2017-Q3,2,True,False,True,0.5931,won,
+9CQ6TMET,karan,Karan,Dalttechnology,MG Special,4565,2017-07-10,2017-07-11,2017-Q3,1,False,True,False,0.6005,won,single_contact_no_finance
+MN34I4DD,karan,Karan,Hatfan,GTX Plus Pro,455006,2017-07-10,2017-09-22,2017-Q3,4,True,True,False,0.6399,won,
+OTNZ5ZCN,arjun,Arjun,Singletechno,GTX Pro,400143,2017-07-10,2017-09-06,2017-Q3,1,True,False,False,0.3483,won,large_deal
+Z9DK5289,karan,Karan,Golddex,GTX Pro,400143,2017-07-10,2017-07-12,2017-Q3,2,True,False,True,0.6055,lost,large_deal
+9ZPY98PB,arjun,Arjun,Nam-zim,GTX Basic,45650,2017-07-11,2017-07-13,2017-Q3,4,True,False,False,0.3081,lost,
+JB3J080M,rahul,Rahul,Unknown,GTX Plus Pro,455006,2017-07-11,,2017-Q3,1,False,False,True,0.5954,pending,single_contact_no_finance
+8SNDBWPP,sana,Sana,Massive Dynamic,GTX Plus Pro,455006,2017-07-12,2017-09-28,2017-Q3,2,True,True,True,0.6709,lost,
+G5GPTVMU,meera,Meera,Bioholding,GTX Plus Basic,90968,2017-07-12,2017-08-31,2017-Q3,2,False,True,False,0.7181,lost,
+185PGG0J,meera,Meera,Treequote,MG Special,4565,2017-07-14,2017-07-17,2017-Q3,2,False,False,True,0.6119,won,
+8JH8YA79,karan,Karan,Unknown,GTX Basic,45650,2017-07-14,,2017-Q3,4,True,False,True,0.6274,pending,
+BABQISCH,karan,Karan,Hatfan,GTX Basic,45650,2017-07-14,2017-07-15,2017-Q3,1,False,True,False,0.6448,lost,single_contact_no_finance
+DPAEMTHC,sana,Sana,Konex,GTX Basic,45650,2017-07-14,2017-07-15,2017-Q3,2,False,False,True,0.7286,lost,
+8BBXNESQ,rahul,Rahul,Labdrill,GTX Plus Pro,455006,2017-07-15,2017-07-22,2017-Q3,1,True,False,False,0.583,lost,
+TT5QRQTF,arjun,Arjun,Konex,MG Special,4565,2017-07-15,2017-07-21,2017-Q3,4,False,False,True,0.4724,won,
+B00OD1IF,karan,Karan,Zoomit,GTX Plus Basic,90968,2017-07-16,2017-07-23,2017-Q3,4,False,True,True,0.6358,won,
+HYP3SXPV,priya,Priya,Isdom,MG Advanced,281619,2017-07-16,2017-08-02,2017-Q3,2,True,True,False,0.5468,won,
+OGO6SNTQ,rahul,Rahul,Plusstrip,GTX Plus Pro,455006,2017-07-16,2017-07-24,2017-Q3,3,True,True,True,0.6817,lost,
+P3QQIMTA,meera,Meera,Rundofase,GTX Basic,45650,2017-07-16,2017-07-24,2017-Q3,1,False,True,False,0.6445,lost,single_contact_no_finance
+3L965RUK,rahul,Rahul,Kan-code,MG Advanced,281619,2017-07-17,2017-07-26,2017-Q3,2,False,True,True,0.6178,won,
+8CV5MZWW,karan,Karan,Nam-zim,GTX Basic,45650,2017-07-17,2017-07-21,2017-Q3,3,True,False,True,0.6391,lost,
+BV4JZ4G8,karan,Karan,Konex,GTX Basic,45650,2017-07-17,2017-07-19,2017-Q3,1,False,True,True,0.7445,lost,single_contact_no_finance
+715TBGPE,priya,Priya,Rundofase,GTX Pro,400143,2017-07-18,2017-08-30,2017-Q3,1,True,True,False,0.7127,lost,large_deal
+SHKTBB71,meera,Meera,Condax,MG Special,4565,2017-07-18,2017-07-27,2017-Q3,2,False,True,True,0.5673,won,
+055Z2OAS,meera,Meera,Dontechi,MG Special,4565,2017-07-19,,2017-Q3,1,False,True,True,0.6621,pending,single_contact_no_finance
+6UCZ36IC,karan,Karan,Kan-code,GTX Basic,45650,2017-07-19,2017-11-04,2017-Q4,2,False,True,False,0.6162,lost,
+NDHQMBA0,priya,Priya,Globex Corporation,GTX Plus Basic,90968,2017-07-19,2017-08-03,2017-Q3,1,False,True,True,0.9029,won,single_contact_no_finance
+1R2CLEGQ,meera,Meera,Unknown,MG Special,4565,2017-07-20,,2017-Q3,3,False,False,False,0.6279,pending,
+KOG75BRP,meera,Meera,Ron-tech,GTX Plus Basic,90968,2017-07-20,2017-11-11,2017-Q4,3,True,False,False,0.6943,lost,
+LX4D50OF,priya,Priya,Rangreen,GTX Pro,400143,2017-07-20,2017-08-04,2017-Q3,1,True,True,True,0.7536,lost,large_deal
+9UO306XU,priya,Priya,Conecom,GTX Pro,400143,2017-07-21,2017-07-26,2017-Q3,4,True,False,True,0.6384,won,large_deal
+JAH8NGC2,arjun,Arjun,Xx-holding,MG Advanced,281619,2017-07-21,2017-09-24,2017-Q3,4,False,True,True,0.4437,won,
+1TJ6WP5R,arjun,Arjun,Hottechi,MG Special,4565,2017-07-22,2017-09-23,2017-Q3,4,False,True,True,0.4103,won,
+NK1TQTYO,priya,Priya,Streethex,GTX Pro,400143,2017-07-22,2017-07-24,2017-Q3,1,True,True,False,0.5597,lost,large_deal
+RZYCBSQN,meera,Meera,Condax,GTX Plus Basic,90968,2017-07-22,2017-07-29,2017-Q3,2,True,True,False,0.6714,lost,
+4P12PLQA,karan,Karan,Doncon,MG Special,4565,2017-07-23,2017-07-28,2017-Q3,3,True,False,False,0.7057,won,
+IAUXJ05J,meera,Meera,Unknown,MG Special,4565,2017-07-23,,2017-Q3,4,True,False,False,0.5315,pending,
+TGTJ0NBT,rahul,Rahul,Doncon,GTX Plus Basic,90968,2017-07-23,2017-07-30,2017-Q3,2,False,True,True,0.6126,lost,
+0TC6I9SJ,priya,Priya,Dontechi,GTX Pro,400143,2017-07-24,,2017-Q3,2,False,True,True,0.5964,pending,large_deal
+AHUTOSMS,priya,Priya,Genco Pura Olive Oil Company,GTX Pro,400143,2017-07-24,2017-07-31,2017-Q3,3,True,True,False,0.6119,won,large_deal
+APIB681L,priya,Priya,Unknown,GTX Basic,45650,2017-07-25,,2017-Q3,1,True,False,True,0.6109,pending,
+DEVXF86R,sana,Sana,Acme Corporation,GTX Plus Basic,90968,2017-07-26,2017-09-29,2017-Q3,2,False,False,True,0.6232,lost,
+2GQH9FKJ,priya,Priya,dambase,GTX Pro,400143,2017-07-27,2017-08-09,2017-Q3,3,True,True,False,0.6204,won,large_deal
+GQ7H31ZJ,priya,Priya,Funholding,GTX Pro,400143,2017-07-27,,2017-Q3,3,True,False,True,0.7076,pending,large_deal
+I8TEUO2C,karan,Karan,Scotfind,GTX Basic,45650,2017-07-27,2017-08-10,2017-Q3,4,True,True,False,0.6483,won,
+MW3K8553,priya,Priya,Zumgoity,GTX Pro,400143,2017-07-27,2017-08-23,2017-Q3,1,True,True,False,0.614,won,large_deal
+2IKGOPW1,priya,Priya,Inity,GTX Pro,400143,2017-07-28,2017-07-30,2017-Q3,3,False,False,False,0.6549,won,large_deal
+80S3ED8B,priya,Priya,Conecom,GTX Basic,45650,2017-07-28,2017-08-23,2017-Q3,2,False,False,True,0.6906,won,
+VZ1ETER5,karan,Karan,Goodsilron,GTX Plus Pro,455006,2017-07-29,2017-07-31,2017-Q3,1,True,False,True,0.6129,won,
+YOFRJU68,karan,Karan,Blackzim,MG Advanced,281619,2017-07-29,2017-09-29,2017-Q3,3,True,True,False,0.6188,won,
+5SED9K1C,karan,Karan,Plusstrip,GTX Plus Basic,90968,2017-07-30,2017-08-09,2017-Q3,1,True,True,False,0.5535,won,
+5SNCUQ8Z,meera,Meera,Unknown,MG Special,4565,2017-07-30,,2017-Q3,4,False,False,False,0.6606,pending,
+DVT7NPEH,priya,Priya,Unknown,MG Advanced,281619,2017-07-30,,2017-Q3,2,False,False,False,0.6846,pending,
+GZCWRMIR,rahul,Rahul,J-Texon,GTX Basic,45650,2017-07-30,2017-11-20,2017-Q4,2,False,True,True,0.5857,lost,
+MK380H70,meera,Meera,Unknown,MG Special,4565,2017-07-30,,2017-Q3,4,True,True,False,0.5558,pending,
+6YCDG16T,arjun,Arjun,Cheers,MG Advanced,281619,2017-07-31,2017-08-12,2017-Q3,2,False,True,False,0.3522,won,
+7CYRCTXI,meera,Meera,Konmatfix,MG Advanced,281619,2017-08-01,2017-08-16,2017-Q3,3,False,False,True,0.59,won,
+HISWL7B0,priya,Priya,Unknown,GTX Pro,400143,2017-08-01,,2017-Q3,2,True,True,True,0.6509,pending,large_deal
+ZJ76J97A,arjun,Arjun,Konex,GTX Pro,400143,2017-08-01,2017-08-19,2017-Q3,4,True,True,True,0.3628,won,large_deal
+N909ADDC,arjun,Arjun,Unknown,MG Advanced,281619,2017-08-02,,2017-Q3,2,False,False,False,0.4227,pending,
+PBVC1VI7,rahul,Rahul,Konex,GTX Plus Basic,90968,2017-08-03,2017-11-09,2017-Q4,3,False,True,False,0.4909,lost,
+7WYZ9HMC,rahul,Rahul,Scotfind,GTX Basic,45650,2017-08-04,2017-09-16,2017-Q3,1,True,False,False,0.6121,won,
+D4ZMTQLE,priya,Priya,Scottech,GTX Plus Basic,90968,2017-08-05,2017-12-20,2017-Q4,1,True,False,False,0.6345,won,
+QFXZT1TV,sana,Sana,Yearin,GTX Basic,45650,2017-08-05,2017-12-20,2017-Q4,2,False,True,False,0.6255,won,
+04T6SOQW,karan,Karan,Unknown,GTX Basic,45650,2017-08-06,,2017-Q3,3,True,True,False,0.6569,pending,
+SLMY2KDA,rahul,Rahul,Unknown,GTX Pro,400143,2017-08-06,,2017-Q3,2,True,True,False,0.6714,pending,large_deal
+4XLLUO6J,priya,Priya,Inity,GTX Plus Pro,455006,2017-08-07,2017-09-17,2017-Q3,1,True,True,True,0.6899,won,
+CLRPASVW,karan,Karan,Cancity,GTX Basic,45650,2017-08-08,,2017-Q3,1,False,False,True,0.6792,pending,single_contact_no_finance
+RRQIGS7E,meera,Meera,dambase,MG Special,4565,2017-08-08,2017-08-18,2017-Q3,2,True,True,False,0.5856,won,
+2SI35CTV,arjun,Arjun,Golddex,MG Special,4565,2017-08-10,2017-12-06,2017-Q4,1,False,False,False,0.4231,won,single_contact_no_finance
+FBVCN3BA,meera,Meera,Streethex,MG Special,4565,2017-08-11,2017-11-07,2017-Q4,1,True,True,False,0.5433,won,
+B96E3BBD,arjun,Arjun,Unknown,GTX Basic,45650,2017-08-12,,2017-Q3,1,True,True,False,0.3599,pending,
+1BAF1ZYL,arjun,Arjun,Plexzap,GTX Basic,45650,2017-08-14,2017-08-19,2017-Q3,4,False,True,True,0.3794,won,
+3XUKEIQF,sana,Sana,Plussunin,GTX Plus Pro,455006,2017-08-15,2017-12-11,2017-Q4,2,True,True,True,0.6714,won,
+WDUOD19F,priya,Priya,Dontechi,GTX Plus Basic,90968,2017-08-15,2017-12-03,2017-Q4,1,False,True,True,0.8408,lost,single_contact_no_finance
+WMJDLTEF,sana,Sana,Ontomedia,GTX Basic,45650,2017-08-15,2017-11-25,2017-Q4,4,False,True,False,0.6716,won,
+M49ZMLGL,karan,Karan,Finjob,MG Special,4565,2017-08-16,2017-09-04,2017-Q3,4,True,False,True,0.6262,won,
+9LJAADWH,rahul,Rahul,Fasehatice,GTX Basic,45650,2017-08-17,2017-11-08,2017-Q4,2,True,True,True,0.6134,won,
+0SSUR0IY,rahul,Rahul,Hottechi,GTX Basic,45650,2017-08-18,2017-11-14,2017-Q4,3,True,True,True,0.7626,lost,
+VYR4EWHR,rahul,Rahul,Unknown,GTX Basic,45650,2017-08-18,,2017-Q3,2,True,False,False,0.6157,pending,
+IUKIZFB7,karan,Karan,Singletechno,GTX Basic,45650,2017-08-19,2017-08-25,2017-Q3,2,True,False,True,0.6143,lost,
+TLJAFLON,rahul,Rahul,J-Texon,GTX Basic,45650,2017-08-19,2017-08-28,2017-Q3,2,True,False,True,0.7657,lost,
+05915PPX,karan,Karan,Xx-holding,MG Advanced,281619,2017-08-20,2017-11-19,2017-Q4,2,True,False,False,0.7411,won,
+1I1K838F,arjun,Arjun,Nam-zim,GTX Basic,45650,2017-08-21,2017-12-23,2017-Q4,2,False,True,False,0.4224,won,
+FBEP7939,rahul,Rahul,Scotfind,GTX Pro,400143,2017-08-23,2017-11-15,2017-Q4,1,False,False,True,0.6589,won,single_contact_no_finance;large_deal
+HTZD5YGO,rahul,Rahul,J-Texon,GTX Plus Basic,90968,2017-08-23,2017-09-13,2017-Q3,2,True,True,False,0.6574,lost,
+P6NQ2LZK,arjun,Arjun,Unknown,GTX Basic,45650,2017-08-23,,2017-Q3,3,True,True,True,0.3951,pending,
+YB4YJTK4,karan,Karan,Lexiqvolax,GTX Basic,45650,2017-08-23,,2017-Q3,2,False,False,True,0.6455,pending,
+IH4O3JXV,karan,Karan,Singletechno,GTX Basic,45650,2017-08-24,2017-09-10,2017-Q3,2,True,False,False,0.5891,won,
+ZVXINY4O,sana,Sana,Zotware,GTX Pro,400143,2017-08-24,2017-11-28,2017-Q4,2,True,False,True,0.5894,lost,large_deal
+M28Z11DC,karan,Karan,Blackzim,GTX Plus Basic,90968,2017-08-25,2017-08-31,2017-Q3,1,False,False,True,0.539,lost,single_contact_no_finance
+RUN3Z87A,sana,Sana,Donquadtech,GTX Plus Basic,90968,2017-08-25,2017-11-18,2017-Q4,2,False,True,False,0.6849,lost,
+62WFO2I3,karan,Karan,Finjob,GTX Basic,45650,2017-08-26,2017-12-04,2017-Q4,1,False,True,True,0.5359,won,single_contact_no_finance
+64CTQ6C5,meera,Meera,Bioholding,GTX Plus Pro,455006,2017-08-26,2017-11-02,2017-Q4,2,False,True,True,0.6692,won,
+6TND1V4T,arjun,Arjun,Scotfind,MG Special,4565,2017-08-26,2017-08-27,2017-Q3,1,False,False,False,0.4118,lost,single_contact_no_finance
+6GDZDVTV,meera,Meera,Dontechi,MG Special,4565,2017-08-27,2017-09-13,2017-Q3,2,True,False,False,0.595,won,
+FMMAQM87,karan,Karan,Green-Plus,GTX Basic,45650,2017-08-27,2017-09-09,2017-Q3,2,False,True,True,0.6149,won,
+PG4UQI8B,sana,Sana,Kan-code,GTX Plus Basic,90968,2017-08-27,2017-11-20,2017-Q4,1,False,False,False,0.6302,lost,single_contact_no_finance
+TPJNVDPH,karan,Karan,Kan-code,GTX Basic,45650,2017-08-27,2017-11-16,2017-Q4,2,False,True,True,0.6107,lost,
+FG79OR5X,karan,Karan,Xx-holding,GTX Plus Basic,90968,2017-08-28,2017-11-19,2017-Q4,2,True,False,True,0.6285,won,
+ZAY2J4I5,arjun,Arjun,Zoomit,MG Advanced,281619,2017-08-28,2017-09-10,2017-Q3,2,False,True,True,0.3662,lost,
+233HYDSP,meera,Meera,Gogozoom,MG Special,4565,2017-08-29,2017-12-03,2017-Q4,1,True,False,False,0.63,won,
+8838GIT9,rahul,Rahul,Plexzap,MG Special,4565,2017-08-30,2017-11-05,2017-Q4,1,True,False,True,0.5511,lost,
+PE3P7M7S,meera,Meera,Statholdings,MG Special,4565,2017-08-30,2017-09-08,2017-Q3,3,False,False,False,0.6216,won,
+QKUULSVC,rahul,Rahul,Kan-code,GTX Pro,400143,2017-08-30,2017-11-16,2017-Q4,1,False,False,True,0.726,lost,single_contact_no_finance;large_deal
+6M77EGH7,sana,Sana,Ganjaflex,MG Advanced,281619,2017-08-31,2017-11-26,2017-Q4,2,False,False,True,0.5923,won,
+AAFPTXEB,meera,Meera,Treequote,MG Special,4565,2017-09-01,2017-11-08,2017-Q4,3,True,True,False,0.6195,won,
+TDHFX8SC,karan,Karan,Hottechi,MG Special,4565,2017-09-01,2017-12-13,2017-Q4,1,True,False,False,0.6561,won,
+ZBB9CDO4,karan,Karan,J-Texon,GTX Plus Basic,90968,2017-09-01,2017-09-18,2017-Q3,3,True,False,False,0.6827,won,
+I819UEG6,meera,Meera,Gogozoom,MG Special,4565,2017-09-02,2017-11-04,2017-Q4,1,True,False,True,0.6891,lost,
+DV6WD759,arjun,Arjun,Newex,MG Advanced,281619,2017-09-03,2017-09-14,2017-Q3,4,False,False,True,0.3701,won,
+ZH2TBHVZ,sana,Sana,Gekko & Co,GTX Basic,45650,2017-09-03,2017-09-08,2017-Q3,3,True,True,False,0.7055,won,
+HLX6W646,arjun,Arjun,Dalttechnology,GTX Plus Pro,455006,2017-09-04,2017-11-19,2017-Q4,2,False,True,False,0.4537,won,
+2WPEOPIF,arjun,Arjun,Lexiqvolax,GTX Basic,45650,2017-09-05,2017-12-04,2017-Q4,1,False,True,True,0.4774,won,single_contact_no_finance
+DCZOTU5X,rahul,Rahul,Konex,GTX Basic,45650,2017-09-05,2017-11-13,2017-Q4,1,False,True,False,0.7057,lost,single_contact_no_finance
+0J24X1Y0,karan,Karan,Lexiqvolax,MG Special,4565,2017-09-06,2017-09-15,2017-Q3,1,False,True,True,0.6736,won,single_contact_no_finance
+2WZU46RL,arjun,Arjun,Scotfind,GTX Pro,400143,2017-09-06,2017-12-16,2017-Q4,1,True,True,False,0.4124,won,large_deal
+6BQMENQR,sana,Sana,Plussunin,GTX Pro,400143,2017-09-06,2017-11-03,2017-Q4,3,False,True,False,0.5896,lost,large_deal
+S4YQYJPM,priya,Priya,Codehow,MG Special,4565,2017-09-06,2017-09-13,2017-Q3,1,True,False,True,0.6329,won,
+98R4AZA8,rahul,Rahul,Plexzap,GTX Basic,45650,2017-09-07,2017-12-17,2017-Q4,4,True,False,True,0.611,won,
+DPDUK8RG,priya,Priya,Codehow,MG Advanced,281619,2017-09-07,2017-09-12,2017-Q3,2,True,False,True,0.6613,won,
+RKI7OEP9,meera,Meera,Statholdings,MG Special,4565,2017-09-07,2017-11-18,2017-Q4,4,True,True,True,0.5846,lost,
+XO7D3NYR,arjun,Arjun,Condax,GTX Basic,45650,2017-09-07,2017-11-03,2017-Q4,1,False,True,True,0.3582,won,single_contact_no_finance
+2PXZ68OA,priya,Priya,Scottech,GTX Pro,400143,2017-09-09,2017-12-05,2017-Q4,3,False,True,False,0.6909,won,large_deal
+4LVXK5H1,karan,Karan,J-Texon,GTX Plus Basic,90968,2017-09-09,2017-09-25,2017-Q3,3,True,True,False,0.6944,won,
+OBCBK0XR,karan,Karan,Faxquote,MG Advanced,281619,2017-09-09,2017-11-30,2017-Q4,1,True,False,True,0.6089,lost,
+MX0QEMEB,meera,Meera,Statholdings,MG Advanced,281619,2017-09-12,2017-11-27,2017-Q4,4,True,True,False,0.6137,lost,
+Y25T06D2,meera,Meera,dambase,GTX Plus Basic,90968,2017-09-12,2017-12-26,2017-Q4,1,True,False,False,0.5842,won,
+B7BT5DB8,arjun,Arjun,Dalttechnology,MG Special,4565,2017-09-13,2017-11-29,2017-Q4,2,False,True,True,0.488,won,
+6CXJOT2A,karan,Karan,Fasehatice,GTX Pro,400143,2017-09-14,2017-09-16,2017-Q3,2,True,True,False,0.6118,won,large_deal
+F0KWRLK1,arjun,Arjun,Konex,GTX Pro,400143,2017-09-14,2017-11-15,2017-Q4,1,False,False,True,0.3796,won,single_contact_no_finance;large_deal
+GPVQIS5U,rahul,Rahul,Plexzap,GTX Pro,400143,2017-09-14,2017-09-30,2017-Q3,1,False,True,False,0.6659,lost,single_contact_no_finance;large_deal
+ASK5U1TD,sana,Sana,Zathunicon,GTX Plus Basic,90968,2017-09-16,2017-11-22,2017-Q4,1,False,False,True,0.6503,won,single_contact_no_finance
+DY8DMZZ9,arjun,Arjun,Unknown,GTX Plus Pro,455006,2017-09-16,,2017-Q3,1,False,False,False,0.431,pending,single_contact_no_finance
+M3QL68T6,arjun,Arjun,Plexzap,GTX Basic,45650,2017-09-16,2017-12-04,2017-Q4,1,False,False,True,0.4683,won,single_contact_no_finance
+T49Q4GWU,sana,Sana,Plussunin,MG Advanced,281619,2017-09-16,2017-12-25,2017-Q4,2,False,True,False,0.7149,won,
+PAQ6EKHB,karan,Karan,Unknown,GTX Basic,45650,2017-09-17,,2017-Q3,1,False,False,True,0.654,pending,single_contact_no_finance;end_of_quarter
+3DM5SSI5,priya,Priya,Warephase,GTX Pro,400143,2017-09-18,2017-11-05,2017-Q4,2,True,False,True,0.6761,won,large_deal;end_of_quarter
+524QUXI2,sana,Sana,Xx-zobam,GTX Plus Pro,455006,2017-09-18,2017-11-26,2017-Q4,3,False,False,True,0.6734,lost,end_of_quarter
+BKMYW792,karan,Karan,Nam-zim,MG Advanced,281619,2017-09-19,2017-11-27,2017-Q4,3,True,False,False,0.5921,lost,end_of_quarter
+F34QYKQJ,sana,Sana,Betasoloin,GTX Pro,400143,2017-09-21,2017-11-30,2017-Q4,1,True,True,False,0.735,lost,large_deal;end_of_quarter
+9XF2B7RS,karan,Karan,Fasehatice,GTX Basic,45650,2017-09-22,2017-09-28,2017-Q3,3,True,False,True,0.6037,won,end_of_quarter
+O04P1WN6,arjun,Arjun,Hottechi,GTX Pro,400143,2017-09-23,2017-12-17,2017-Q4,4,True,False,True,0.3523,won,large_deal;end_of_quarter
+8DDC9RLE,arjun,Arjun,J-Texon,MG Advanced,281619,2017-09-24,2017-12-15,2017-Q4,1,True,True,False,0.3851,won,end_of_quarter
+DDXFIBEY,meera,Meera,Treequote,GTX Plus Pro,455006,2017-09-24,2017-11-23,2017-Q4,1,False,False,False,0.6232,lost,single_contact_no_finance;end_of_quarter
+4YXXI2OI,meera,Meera,Codehow,MG Special,4565,2017-09-25,2017-12-18,2017-Q4,2,False,False,True,0.6078,won,end_of_quarter
+TFGYLK6C,meera,Meera,Inity,GTX Basic,45650,2017-09-25,2017-10-04,2017-Q4,2,True,True,True,0.6257,lost,end_of_quarter
+61ON3Y6O,priya,Priya,Streethex,MG Special,4565,2017-09-26,2017-10-02,2017-Q4,1,True,True,True,0.625,lost,end_of_quarter
+8KIMVD15,meera,Meera,Cancity,MG Special,4565,2017-09-26,2017-10-06,2017-Q4,1,False,True,False,0.6307,lost,single_contact_no_finance;end_of_quarter
+MC3OSDV0,rahul,Rahul,Sunnamplex,MG Special,4565,2017-09-26,2017-10-02,2017-Q4,2,True,True,True,0.8682,won,end_of_quarter
+ZP9HW0LH,arjun,Arjun,Kan-code,MG Advanced,281619,2017-09-27,2017-10-03,2017-Q4,1,False,False,False,0.4035,won,single_contact_no_finance;end_of_quarter
+LZ3B174J,arjun,Arjun,Unknown,MG Special,4565,2017-09-29,,2017-Q3,2,False,False,True,0.3444,pending,end_of_quarter
+U3F5X6BB,sana,Sana,Bioplex,MG Special,4565,2017-09-29,2017-12-07,2017-Q4,1,True,True,True,0.6465,lost,end_of_quarter
+W40IER4O,arjun,Arjun,Sonron,MG Special,4565,2017-09-29,2017-12-08,2017-Q4,2,True,False,True,0.3976,won,end_of_quarter
+9HWUTUXQ,arjun,Arjun,Lexiqvolax,GTX Basic,45650,2017-09-30,2017-10-09,2017-Q4,4,True,False,False,0.3838,lost,end_of_quarter
+FSBZ3KOY,meera,Meera,Toughzap,GTX Plus Pro,455006,2017-09-30,2017-10-01,2017-Q4,4,False,True,True,0.6759,lost,end_of_quarter
+5B3BKUMD,meera,Meera,Finhigh,GTX Basic,45650,2017-10-01,2017-10-11,2017-Q4,1,True,True,True,0.6592,lost,
+TYLSS719,karan,Karan,Goodsilron,GTX Basic,45650,2017-10-01,2017-12-03,2017-Q4,2,False,True,True,0.6009,lost,
+U2JOATN3,priya,Priya,Scottech,GTX Pro,400143,2017-10-01,2017-12-06,2017-Q4,3,False,False,False,0.6872,won,large_deal
+TSU40NIZ,karan,Karan,Groovestreet,GTX Pro,400143,2017-10-02,2017-10-04,2017-Q4,4,False,False,False,0.5834,lost,large_deal
+L67B6CU2,meera,Meera,Rundofase,GTX Plus Pro,455006,2017-10-03,2017-10-09,2017-Q4,3,False,True,False,0.5855,lost,
+MYD4PBM9,rahul,Rahul,Unknown,GTX Basic,45650,2017-10-03,,2017-Q4,1,False,False,False,0.6011,pending,single_contact_no_finance
+L7TT9ZL4,priya,Priya,Finhigh,GTX Plus Pro,455006,2017-10-04,2017-12-21,2017-Q4,2,False,True,False,0.5861,won,
+NMF60XWK,meera,Meera,Cancity,MG Special,4565,2017-10-04,2017-10-13,2017-Q4,1,False,False,False,0.5394,lost,single_contact_no_finance
+HM4ZINFJ,sana,Sana,Zathunicon,MG Advanced,281619,2017-10-05,2017-10-10,2017-Q4,1,False,True,True,0.6977,lost,single_contact_no_finance
+M3RME16Q,priya,Priya,Inity,GTX Pro,400143,2017-10-05,2017-10-14,2017-Q4,1,False,True,True,0.8726,won,single_contact_no_finance;large_deal
+VVE9HGLD,rahul,Rahul,Unknown,GTX Pro,400143,2017-10-05,,2017-Q4,3,False,False,True,0.5651,pending,large_deal
+YPRHMUIB,priya,Priya,Stanredtax,GTX Pro,400143,2017-10-05,2017-12-22,2017-Q4,2,True,False,False,0.6887,won,large_deal
+52IHI8JD,meera,Meera,Funholding,MG Special,4565,2017-10-06,2017-11-24,2017-Q4,2,True,False,False,0.6153,lost,
+EM1W738H,priya,Priya,dambase,GTX Plus Pro,455006,2017-10-06,2017-11-22,2017-Q4,1,False,True,True,0.9533,won,single_contact_no_finance
+1XO519P4,priya,Priya,Genco Pura Olive Oil Company,MG Special,4565,2017-10-07,2017-12-30,2017-Q4,1,True,True,True,0.6685,won,
+GJX7YGIF,karan,Karan,Plexzap,GTX Basic,45650,2017-10-07,2017-11-25,2017-Q4,3,False,True,False,0.5435,lost,
+60QEB2FZ,rahul,Rahul,Fasehatice,GTX Plus Pro,455006,2017-10-08,2017-10-16,2017-Q4,2,True,True,True,0.6901,won,
+8F7VHV02,karan,Karan,Finjob,GTX Basic,45650,2017-10-09,2017-12-22,2017-Q4,3,True,False,True,0.6478,won,
+H9M21153,meera,Meera,Ron-tech,MG Advanced,281619,2017-10-09,2017-10-20,2017-Q4,2,True,True,True,0.5777,won,
+3F2EMUQ7,rahul,Rahul,Scotfind,GTX Plus Basic,90968,2017-10-10,2017-10-11,2017-Q4,3,False,True,True,0.6244,lost,
+IQ9GMTBR,karan,Karan,Dalttechnology,GTX Basic,45650,2017-10-10,2017-10-11,2017-Q4,3,False,True,False,0.6753,won,
+OHD4TPKZ,meera,Meera,Gogozoom,GTX Plus Basic,90968,2017-10-10,2017-10-11,2017-Q4,1,True,True,False,0.6587,won,
+VR6NO9FA,rahul,Rahul,Labdrill,GTX Basic,45650,2017-10-10,2017-10-22,2017-Q4,3,True,True,False,0.7202,won,
+46JP2TQB,priya,Priya,Globex Corporation,GTX Plus Basic,90968,2017-10-11,2017-10-19,2017-Q4,1,False,True,False,0.9121,lost,single_contact_no_finance
+KMBY0IGV,karan,Karan,Dalttechnology,MG Special,4565,2017-10-11,2017-10-12,2017-Q4,2,True,True,True,0.6275,won,
+KP8ZZ3Y6,rahul,Rahul,Labdrill,GTX Plus Basic,90968,2017-10-11,2017-12-23,2017-Q4,2,True,False,False,0.6175,lost,
+K0YFUK4X,karan,Karan,Scotfind,GTX Basic,45650,2017-10-12,2017-11-02,2017-Q4,1,False,True,True,0.6262,won,single_contact_no_finance
+QCBO7C6E,karan,Karan,Unknown,GTX Plus Basic,90968,2017-10-13,,2017-Q4,1,False,False,False,0.5887,pending,single_contact_no_finance
+36PET9WM,priya,Priya,Stanredtax,GTX Pro,400143,2017-10-14,2017-10-15,2017-Q4,3,False,True,False,0.6323,lost,large_deal
+3W1Y39BY,sana,Sana,Silis,GTX Pro,400143,2017-10-14,2017-10-24,2017-Q4,1,False,True,False,0.709,won,single_contact_no_finance;large_deal
+DYYJW46L,arjun,Arjun,Unknown,GTX Plus Pro,455006,2017-10-14,,2017-Q4,1,False,False,False,0.4162,pending,single_contact_no_finance
+03R1VC7O,sana,Sana,Condax,GTX Plus Basic,90968,2017-10-15,2017-10-28,2017-Q4,1,True,False,False,0.6892,won,
+94JOUSW7,rahul,Rahul,Finjob,GTX Basic,45650,2017-10-15,2017-10-23,2017-Q4,3,False,True,False,0.7641,lost,
+XFNYWN7B,rahul,Rahul,Xx-holding,GTX Plus Basic,90968,2017-10-15,2017-10-16,2017-Q4,2,True,True,False,0.5507,won,
+48HBI36Y,rahul,Rahul,Nam-zim,GTX Basic,45650,2017-10-16,2017-11-12,2017-Q4,1,True,True,True,0.6438,won,
+BZR75SK1,rahul,Rahul,Singletechno,GTX Basic,45650,2017-10-16,2017-10-21,2017-Q4,2,True,False,True,0.5243,lost,
+CX3PZ8DP,sana,Sana,Initech,GTX Basic,45650,2017-10-16,2017-10-26,2017-Q4,3,False,True,True,0.6742,lost,
+ME7IZ1WY,rahul,Rahul,Dalttechnology,MG Special,4565,2017-10-16,2017-10-24,2017-Q4,3,False,True,True,0.5768,won,
+02G0NJCN,arjun,Arjun,Xx-holding,MG Special,4565,2017-10-17,2017-10-26,2017-Q4,3,False,False,True,0.3979,won,
+C933ZQBB,priya,Priya,Cancity,GTX Pro,400143,2017-10-17,2017-10-23,2017-Q4,3,True,False,True,0.6616,won,large_deal
+OFC7ZTU8,karan,Karan,Unknown,GTX Pro,400143,2017-10-17,,2017-Q4,1,False,False,True,0.7039,pending,single_contact_no_finance;large_deal
+4S17VJ7O,rahul,Rahul,Unknown,MG Advanced,281619,2017-10-19,,2017-Q4,1,False,False,False,0.6512,pending,single_contact_no_finance
+BZGJ44FH,karan,Karan,Unknown,GTX Pro,400143,2017-10-19,,2017-Q4,4,False,False,False,0.6278,pending,large_deal
+LM3GZYXD,priya,Priya,Finhigh,GTX Pro,400143,2017-10-19,2017-10-28,2017-Q4,1,False,False,True,0.97,lost,single_contact_no_finance;large_deal
+OS59LIZX,arjun,Arjun,J-Texon,GTX Pro,400143,2017-10-19,2017-10-26,2017-Q4,1,False,True,True,0.4468,lost,single_contact_no_finance;large_deal
+UUCSEHJX,priya,Priya,Warephase,GTX Plus Pro,455006,2017-10-19,2017-10-27,2017-Q4,1,False,False,True,0.969,won,single_contact_no_finance
+6D7N5SQ7,arjun,Arjun,Lexiqvolax,MG Special,4565,2017-10-20,2017-10-28,2017-Q4,2,True,False,False,0.3881,lost,
+DQIKGS2U,arjun,Arjun,Dalttechnology,MG Special,4565,2017-10-20,2017-11-03,2017-Q4,2,False,False,False,0.3787,won,
+DTFLKV60,meera,Meera,Dontechi,MG Advanced,281619,2017-10-20,2017-10-21,2017-Q4,3,True,True,True,0.6813,lost,
+MJODFG6C,arjun,Arjun,Green-Plus,MG Special,4565,2017-10-20,2017-10-27,2017-Q4,2,False,True,True,0.3799,lost,
+RYWETTBK,karan,Karan,Fasehatice,GTX Basic,45650,2017-10-20,,2017-Q4,2,True,False,True,0.6256,pending,
+KY1CESUN,sana,Sana,The New York Inquirer,GTX Plus Pro,455006,2017-10-21,2017-10-29,2017-Q4,4,True,False,False,0.6671,lost,
+7PEL3AIZ,priya,Priya,Isdom,GTX Pro,400143,2017-10-23,2017-10-24,2017-Q4,2,True,True,True,0.7114,won,large_deal
+IQAP70OD,priya,Priya,Streethex,GTX Plus Basic,90968,2017-10-23,2017-10-29,2017-Q4,3,False,False,True,0.5505,won,
+JL358E5T,sana,Sana,Silis,GTX Basic,45650,2017-10-23,2017-12-12,2017-Q4,3,True,True,True,0.7108,won,
+X7MN9ROG,arjun,Arjun,Unknown,GTX Plus Pro,455006,2017-10-23,,2017-Q4,3,False,False,True,0.496,pending,
+AS2BKSCT,priya,Priya,Codehow,GTX Plus Basic,90968,2017-10-24,2017-11-08,2017-Q4,3,False,True,True,0.6123,lost,
+SQW60VII,karan,Karan,Fasehatice,MG Advanced,281619,2017-10-24,2017-10-26,2017-Q4,1,True,False,True,0.6005,lost,
+31IV2B9O,arjun,Arjun,Unknown,GTX Basic,45650,2017-10-26,,2017-Q4,3,True,True,False,0.3588,pending,
+E2R39451,arjun,Arjun,Groovestreet,GTX Basic,45650,2017-10-26,2017-10-27,2017-Q4,3,False,False,True,0.4112,lost,
+L3PLDC1Y,priya,Priya,Codehow,GTX Pro,400143,2017-10-29,2017-10-30,2017-Q4,1,True,True,True,0.6634,won,large_deal
+P2YWZPES,arjun,Arjun,Konex,GTX Basic,45650,2017-10-30,2017-11-04,2017-Q4,3,True,True,True,0.4632,won,
+2DT70XCQ,sana,Sana,Plussunin,GTX Basic,45650,2017-10-31,2017-11-08,2017-Q4,3,True,False,False,0.6542,won,
+3Z9AX43T,priya,Priya,Cancity,GTX Pro,400143,2017-10-31,2017-12-22,2017-Q4,4,False,True,True,0.6665,lost,large_deal
+KLBW3TOH,karan,Karan,Goodsilron,GTX Plus Pro,455006,2017-10-31,2017-11-09,2017-Q4,2,True,False,True,0.5846,won,
+JRCD2VQY,karan,Karan,Fasehatice,MG Advanced,281619,2017-11-01,2017-11-06,2017-Q4,3,False,False,False,0.6378,won,
+Q1Q3D9BZ,arjun,Arjun,Sunnamplex,GTX Basic,45650,2017-11-02,2017-11-07,2017-Q4,4,False,True,False,0.4559,lost,
+SQ71BWHG,rahul,Rahul,Zencorporation,GTX Pro,400143,2017-11-04,,2017-Q4,1,False,False,False,0.5531,pending,single_contact_no_finance;large_deal
+76ZQP7QY,priya,Priya,Betatech,GTX Pro,400143,2017-11-06,2017-11-07,2017-Q4,1,True,True,False,0.5619,lost,large_deal
+N22XN5IM,karan,Karan,Plusstrip,GTX Plus Basic,90968,2017-11-08,2017-12-04,2017-Q4,2,True,False,False,0.6685,won,
+X9MTGVJZ,karan,Karan,Sunnamplex,GTX Plus Pro,455006,2017-11-08,2017-11-26,2017-Q4,2,False,False,True,0.7302,lost,
+6JBM1ZKO,arjun,Arjun,Unknown,GTX Pro,400143,2017-11-09,,2017-Q4,2,False,False,True,0.4334,pending,large_deal
+NNREN4Q5,karan,Karan,Groovestreet,GTX Basic,45650,2017-11-09,2017-11-21,2017-Q4,3,True,True,True,0.5384,won,
+T0H5HATU,rahul,Rahul,Rantouch,MG Advanced,281619,2017-11-09,2017-11-23,2017-Q4,1,True,True,False,0.5925,lost,
+4J8IA9GL,rahul,Rahul,Lexiqvolax,GTX Basic,45650,2017-11-12,2017-12-29,2017-Q4,2,True,True,False,0.6414,won,
+7OIR36P2,sana,Sana,Acme Corporation,GTX Pro,400143,2017-11-15,2017-12-27,2017-Q4,2,True,False,True,0.6199,won,large_deal
+7XRWWM0X,karan,Karan,Scotfind,MG Special,4565,2017-11-15,,2017-Q4,1,True,True,False,0.6323,pending,
+6LS93NXH,rahul,Rahul,Goodsilron,GTX Basic,45650,2017-11-17,2017-11-27,2017-Q4,1,False,True,True,0.648,lost,single_contact_no_finance
+R2JKKVOO,karan,Karan,Cheers,GTX Plus Basic,90968,2017-11-17,2017-11-27,2017-Q4,1,True,False,True,0.7203,lost,
+820NH7ZA,karan,Karan,Konex,GTX Basic,45650,2017-11-18,2017-12-04,2017-Q4,2,True,False,True,0.7393,won,
+RVI6ARFW,priya,Priya,Funholding,GTX Basic,45650,2017-11-19,2017-11-20,2017-Q4,1,False,False,False,0.9662,won,single_contact_no_finance
+F28BOUE5,sana,Sana,Bubba Gump,GTX Pro,400143,2017-11-21,2017-12-10,2017-Q4,1,True,True,True,0.6183,won,large_deal
+PV3TH2FF,arjun,Arjun,Unknown,MG Special,4565,2017-11-23,,2017-Q4,2,True,True,True,0.4006,pending,
+RDZ2FC3A,priya,Priya,Warephase,GTX Basic,45650,2017-11-25,2017-12-11,2017-Q4,2,True,False,True,0.6138,won,
+JE63NRUA,karan,Karan,Faxquote,GTX Plus Basic,90968,2017-11-26,2017-12-25,2017-Q4,3,True,False,False,0.5997,lost,
+MAA6TJMM,karan,Karan,Cheers,GTX Basic,45650,2017-11-28,2017-12-13,2017-Q4,3,True,True,True,0.5864,won,
+MDK5NQJA,sana,Sana,Initech,GTX Plus Pro,455006,2017-11-30,2017-12-14,2017-Q4,4,True,True,True,0.6564,won,
+X70BM5FO,meera,Meera,Condax,GTX Plus Basic,90968,2017-12-01,2017-12-22,2017-Q4,1,False,True,True,0.6281,won,single_contact_no_finance
+23ZL97PN,sana,Sana,Betasoloin,GTX Plus Basic,90968,2017-12-02,2017-12-12,2017-Q4,1,True,False,True,0.6587,lost,
+CXAEFADQ,rahul,Rahul,Singletechno,GTX Plus Basic,90968,2017-12-02,2017-12-20,2017-Q4,2,False,True,False,0.6401,won,
+CEYW89RW,rahul,Rahul,Golddex,GTX Basic,45650,2017-12-05,2017-12-25,2017-Q4,4,True,True,False,0.6582,lost,
+7EYDG0CV,meera,Meera,Statholdings,MG Special,4565,2017-12-06,2017-12-14,2017-Q4,2,True,False,True,0.658,won,
+VL8YNHD7,rahul,Rahul,Unknown,GTX Plus Basic,90968,2017-12-08,,2017-Q4,4,False,False,False,0.5912,pending,
+YY4VFPND,rahul,Rahul,Golddex,GTX Plus Basic,90968,2017-12-08,2017-12-29,2017-Q4,2,False,True,False,0.663,won,
+7GXUCFW5,priya,Priya,Inity,GTX Pro,400143,2017-12-10,2017-12-17,2017-Q4,4,True,False,False,0.5409,won,large_deal
+04AOWMXV,meera,Meera,Codehow,GTX Basic,45650,2017-12-11,2017-12-28,2017-Q4,4,True,True,True,0.6478,won,
+FYAVINLC,arjun,Arjun,Finjob,MG Special,4565,2017-12-13,2017-12-17,2017-Q4,1,False,True,False,0.469,won,single_contact_no_finance
+M4MAVN65,arjun,Arjun,Doncon,MG Special,4565,2017-12-14,2017-12-22,2017-Q4,2,False,True,True,0.3679,lost,
+PLQ50D2O,meera,Meera,Domzoom,MG Advanced,281619,2017-12-17,2017-12-26,2017-Q4,1,True,False,False,0.6202,won,
+Q30OVFCZ,arjun,Arjun,Sonron,GTX Plus Basic,90968,2017-12-17,2017-12-31,2017-Q4,1,True,True,False,0.4684,lost,
+CNL7PCYU,sana,Sana,Xx-zobam,MG Advanced,281619,2017-12-20,2017-12-28,2017-Q4,4,True,False,False,0.5971,lost,end_of_quarter

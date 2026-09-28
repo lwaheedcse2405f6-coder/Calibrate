@@ -1,0 +1,14 @@
+{
+  "run_timestamp": "2026-09-28T16:12:57.538829Z",
+  "model": "dummy_ai_v1 (Pydantic-validated, no real model connected)",
+  "summary": {
+    "total_reps_evaluated": 0,
+    "pydantic_valid_cards": 0,
+    "pydantic_invalid_cards": 0,
+    "correct_bias_detections": 0,
+    "accuracy_pct": 0.0,
+    "false_alarm_count": 0
+  },
+  "false_alarms": [],
+  "per_rep_results": []
+}

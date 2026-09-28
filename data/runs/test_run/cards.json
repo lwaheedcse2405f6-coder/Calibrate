@@ -1,0 +1,229 @@
+{
+  "2017-Q1": {
+    "arjun": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "confidence": "high",
+          "adjustment": 1.3
+        }
+      ]
+    },
+    "meera": {
+      "rules": [
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "confidence": "medium",
+          "adjustment": 0.7
+        }
+      ]
+    },
+    "rahul": {
+      "rules": [
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "confidence": "medium",
+          "adjustment": 0.6
+        }
+      ]
+    },
+    "sana": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "over",
+          "confidence": "high",
+          "adjustment": 0.6
+        }
+      ]
+    },
+    "priya": {
+      "rules": []
+    },
+    "karan": {
+      "rules": []
+    }
+  },
+  "2017-Q2": {
+    "priya": {
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "confidence": "high",
+          "adjustment": 0.65
+        }
+      ]
+    },
+    "arjun": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "confidence": "high",
+          "adjustment": 1.3
+        }
+      ]
+    },
+    "meera": {
+      "rules": [
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "confidence": "medium",
+          "adjustment": 0.7
+        }
+      ]
+    },
+    "rahul": {
+      "rules": [
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "confidence": "medium",
+          "adjustment": 0.6
+        }
+      ]
+    },
+    "sana": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "over",
+          "confidence": "high",
+          "adjustment": 0.6
+        }
+      ]
+    },
+    "karan": {
+      "rules": []
+    }
+  },
+  "2017-Q3": {
+    "priya": {
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "confidence": "high",
+          "adjustment": 0.65
+        }
+      ]
+    },
+    "arjun": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "confidence": "high",
+          "adjustment": 1.3
+        }
+      ]
+    },
+    "meera": {
+      "rules": [
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "confidence": "medium",
+          "adjustment": 0.7
+        }
+      ]
+    },
+    "rahul": {
+      "rules": [
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "confidence": "medium",
+          "adjustment": 0.6
+        }
+      ]
+    },
+    "sana": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "confidence": "high",
+          "adjustment": 1.0
+        }
+      ]
+    },
+    "karan": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "confidence": "low",
+          "adjustment": 1.0
+        }
+      ]
+    }
+  },
+  "2017-Q4": {
+    "priya": {
+      "rules": [
+        {
+          "trait": "single_contact_no_finance",
+          "direction": "over",
+          "confidence": "high",
+          "adjustment": 0.65
+        }
+      ]
+    },
+    "arjun": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "under",
+          "confidence": "high",
+          "adjustment": 1.3
+        }
+      ]
+    },
+    "meera": {
+      "rules": [
+        {
+          "trait": "large_deal",
+          "direction": "over",
+          "confidence": "medium",
+          "adjustment": 0.7
+        }
+      ]
+    },
+    "rahul": {
+      "rules": [
+        {
+          "trait": "end_of_quarter",
+          "direction": "over",
+          "confidence": "medium",
+          "adjustment": 0.6
+        }
+      ]
+    },
+    "sana": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "confidence": "high",
+          "adjustment": 1.0
+        }
+      ]
+    },
+    "karan": {
+      "rules": [
+        {
+          "trait": "overall",
+          "direction": "accurate",
+          "confidence": "low",
+          "adjustment": 1.0
+        }
+      ]
+    }
+  }
+}

@@ -160,6 +160,8 @@ def get_beliefs(rep_id: str):
             default={},
         )
         evidence_count = strongest.get("evidence_count", 0)
+        biased = [r for r in rules if r.get("direction") not in (None, "accurate")]
+        top_bias = max(biased, key=lambda r: abs(r.get("adjustment", 1.0) - 1), default={})
 
         result.append(
             {
@@ -167,6 +169,7 @@ def get_beliefs(rep_id: str):
                 "belief": card.get("summary", ""),
                 "evidence_count": evidence_count,
                 "confidence": strongest.get("confidence", "low"),
+                "adjustment": top_bias.get("adjustment", 1.0),
             }
         )
 
@@ -217,6 +220,8 @@ def get_eval():
     return get("eval") or mock_data.EVAL
 
 
+REPLAY_DELAY_S = 1.5  # seconds between quarters on screen
+
 REPLAY = [
     {
         "quarter": "2017-Q2",
@@ -248,10 +253,35 @@ REPLAY = [
 ]
 
 
+def replay_frames(mode: str) -> list[dict]:
+    """One frame per quarter from the saved demo run, with the beliefs formed that quarter."""
+    rows = get_quarters(mode)
+    if not rows:
+        return REPLAY  # no saved run: fall back to the sample frames
+    cards = get("cards") or {}
+    frames = []
+    for row in rows:
+        updates = []
+        if mode == "on":
+            for rep_id, card in sorted((cards.get(row["quarter"]) or {}).items()):
+                rules = card.get("rules") or []
+                if any(r.get("direction") not in (None, "accurate") for r in rules):
+                    updates.append({
+                        "rep_id": rep_id,
+                        "belief": card.get("summary", ""),
+                        "evidence_count": card.get("deals_remembered")
+                        or max((r.get("evidence_count", 0) for r in rules), default=0),
+                    })
+        frames.append({**row, "belief_updates": updates})
+    return frames
+
+
 async def replay_events(mode: str):
-    for item in REPLAY:
+    for item in replay_frames(mode):
         yield f"data: {json.dumps(item)}\n\n"
-        await asyncio.sleep(1.5)
+        await asyncio.sleep(REPLAY_DELAY_S)
+    # The dashboard waits for this; without it the stream end looks like a disconnect.
+    yield "event: done\ndata: {}\n\n"
 
 
 @router.get("/replay/stream")

@@ -8,7 +8,7 @@
       "rep_id": "priya",
       "hidden_trait": "single_contact_no_finance",
       "hidden_direction": "over",
-      "agent_rule": "Overestimates single-contact deals without finance involvement by ~28%",
+      "agent_rule": "over-calls 1 contact and no finance person: says 89%, wins 75% (24 deals) -> x0.846",
       "found": true,
       "first_found_quarter": "2017-Q4"
     },
@@ -16,7 +16,7 @@
       "rep_id": "arjun",
       "hidden_trait": "overall",
       "hidden_direction": "under",
-      "agent_rule": "Underestimates win probabilities across all deal types (sandbagging) by ~23%",
+      "agent_rule": "under-calls all deals: says 39%, wins 60% (141 deals) -> x1.54",
       "found": true,
       "first_found_quarter": "2017-Q2"
     },
@@ -24,7 +24,7 @@
       "rep_id": "meera",
       "hidden_trait": "large_deal",
       "hidden_direction": "over",
-      "agent_rule": "Overestimates win probability on large deals (>₹30L) by ~25%",
+      "agent_rule": "over-calls big-ticket products: says 85%, wins 57% (14 deals) -> x0.673",
       "found": true,
       "first_found_quarter": "2017-Q4"
     },
@@ -32,7 +32,7 @@
       "rep_id": "rahul",
       "hidden_trait": "end_of_quarter",
       "hidden_direction": "over",
-      "agent_rule": "Overestimates close probability for deals closing near end-of-quarter by ~25%",
+      "agent_rule": "over-calls deals opened in the last 2 weeks of a quarter: says 84%, wins 61% (18 deals) -> x0.725",
       "found": true,
       "first_found_quarter": "2017-Q4"
     },
@@ -40,7 +40,7 @@
       "rep_id": "sana",
       "hidden_trait": "overall",
       "hidden_direction": "over",
-      "agent_rule": "Initially overconfident (+25%) through Q2, then recalibrated to accurate by Q3",
+      "agent_rule": "over-calls all deals: says 79%, wins 59% (129 deals) -> x0.746; gap shrinking since Q2 (correction eased from x0.70 in Q3)",
       "found": true,
       "first_found_quarter": "2017-Q3"
     },
@@ -48,9 +48,9 @@
       "rep_id": "karan",
       "hidden_trait": null,
       "hidden_direction": null,
-      "agent_rule": "no bias planted, correctly left alone",
+      "agent_rule": null,
       "status": "no bias planted, correctly left alone",
-      "found": "no bias planted, correctly left alone",
+      "found": false,
       "first_found_quarter": null
     }
   ]

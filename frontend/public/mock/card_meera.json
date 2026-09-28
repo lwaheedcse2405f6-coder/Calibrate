@@ -1,0 +1,8 @@
+{
+  "rep_id": "meera", "name": "Meera Iyer", "quarter": "2017-Q4",
+  "summary": "Blind to competitors: when one is involved her deals close half as often as she forecasts.",
+  "rules": [
+    { "condition": "A competitor is involved", "stated_win_rate": 0.78, "actual_win_rate": 0.38, "adjustment": 0.5, "evidence_count": 6, "confidence": "high" },
+    { "condition": "No competitor", "stated_win_rate": 0.7, "actual_win_rate": 0.68, "adjustment": 1.0, "evidence_count": 4, "confidence": "low" }
+  ]
+}

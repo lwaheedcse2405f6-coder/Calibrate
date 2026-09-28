@@ -1,0 +1,8 @@
+{
+  "rep_id": "rahul", "name": "Rahul Verma", "quarter": "2017-Q4",
+  "summary": "Over-optimistic on big-ticket deals above ₹50 L; accurate on smaller ones.",
+  "rules": [
+    { "condition": "Deal above ₹50 L", "stated_win_rate": 0.8, "actual_win_rate": 0.4, "adjustment": 0.5, "evidence_count": 5, "confidence": "medium" },
+    { "condition": "Deal ₹50 L or below", "stated_win_rate": 0.68, "actual_win_rate": 0.66, "adjustment": 0.95, "evidence_count": 8, "confidence": "medium" }
+  ]
+}

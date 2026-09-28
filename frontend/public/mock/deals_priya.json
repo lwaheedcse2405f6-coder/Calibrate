@@ -1,0 +1,8 @@
+[
+  { "deal_id": "priya-01", "account": "Zenith Logistics", "product": "GTX Pro", "amount_inr": 4200000, "n_contacts": 1, "has_finance_contact": false, "competitor": false, "stated_prob": 0.90, "calibrated_prob": 0.50, "outcome": "lost", "quarter": "2017-Q2" },
+  { "deal_id": "priya-02", "account": "Nimbus Retail", "product": "GTX Basic", "amount_inr": 1800000, "n_contacts": 1, "has_finance_contact": false, "competitor": false, "stated_prob": 0.85, "calibrated_prob": 0.47, "outcome": "lost", "quarter": "2017-Q2" },
+  { "deal_id": "priya-03", "account": "Kaveri Foods", "product": "MG Advanced", "amount_inr": 6500000, "n_contacts": 3, "has_finance_contact": true, "competitor": false, "stated_prob": 0.80, "calibrated_prob": 0.78, "outcome": "won", "quarter": "2017-Q3" },
+  { "deal_id": "priya-04", "account": "Orbit Fintech", "product": "GTX Plus Pro", "amount_inr": 5500000, "n_contacts": 1, "has_finance_contact": false, "competitor": false, "stated_prob": 0.90, "calibrated_prob": 0.50, "outcome": "won", "quarter": "2017-Q3" },
+  { "deal_id": "priya-05", "account": "Saffron Hotels", "product": "GTX Plus Basic", "amount_inr": 2400000, "n_contacts": 4, "has_finance_contact": true, "competitor": true, "stated_prob": 0.75, "calibrated_prob": 0.72, "outcome": "won", "quarter": "2017-Q4" },
+  { "deal_id": "priya-06", "account": "Indus Motors", "product": "GTK 500", "amount_inr": 8000000, "n_contacts": 1, "has_finance_contact": false, "competitor": false, "stated_prob": 0.90, "calibrated_prob": 0.50, "outcome": "pending", "quarter": "2017-Q4" }
+]

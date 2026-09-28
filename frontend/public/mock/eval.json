@@ -1,0 +1,14 @@
+{
+  "headline": "Found 5 of 5 hidden biases · noticed Sana improve in Q3 · 0 false alarms",
+  "biases_found": 5,
+  "biases_total": 5,
+  "false_alarms": 0,
+  "rows": [
+    { "rep_id": "priya", "rep_name": "Priya", "hidden_bias": "Overconfident on single-contact deals", "found": true, "first_quarter_found": "2017-Q2", "agent_rule": "1 contact → ×0.5" },
+    { "rep_id": "arjun", "rep_name": "Arjun", "hidden_bias": "Sandbags: understates good deals", "found": true, "first_quarter_found": "2017-Q1", "agent_rule": "Stated < 50% → ×1.8" },
+    { "rep_id": "meera", "rep_name": "Meera", "hidden_bias": "Ignores competitor risk", "found": true, "first_quarter_found": "2017-Q2", "agent_rule": "Competitor involved → ×0.5" },
+    { "rep_id": "rahul", "rep_name": "Rahul", "hidden_bias": "Over-optimistic on big deals", "found": true, "first_quarter_found": "2017-Q2", "agent_rule": "Deal > ₹50 L → ×0.5" },
+    { "rep_id": "sana", "rep_name": "Sana", "hidden_bias": "Over-optimistic, then improves from Q3", "found": true, "first_quarter_found": "2017-Q1", "agent_rule": "×0.7, softened to ×0.9 in Q3" },
+    { "rep_id": "karan", "rep_name": "Karan", "hidden_bias": null, "found": false, "first_quarter_found": null, "agent_rule": null }
+  ]
+}

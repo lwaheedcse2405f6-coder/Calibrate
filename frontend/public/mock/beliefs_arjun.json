@@ -1,0 +1,5 @@
+[
+  { "quarter": "2017-Q1", "text": "Low calls keep closing: possible sandbagging", "status": "superseded", "confidence": "low", "evidence_count": 3, "adjustment": 1.3, "change": "new" },
+  { "quarter": "2017-Q2", "text": "Sandbags deals he calls under 50%", "status": "superseded", "confidence": "medium", "evidence_count": 7, "adjustment": 1.6, "change": "strengthened" },
+  { "quarter": "2017-Q3", "text": "Sub-50% calls close about 64% of the time", "status": "active", "confidence": "high", "evidence_count": 11, "adjustment": 1.8, "change": "strengthened" }
+]

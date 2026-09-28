@@ -1,0 +1,45 @@
+[
+  {
+    "quarter": "2017-Q1",
+    "reps_forecast_inr": 42000000,
+    "agent_forecast_inr": 39500000,
+    "actual_inr": 31000000,
+    "belief_updates": [
+      { "rep_id": "priya", "rep_name": "Priya", "kind": "new", "text": "Priya may be optimistic on single-contact deals", "n_deals": 3 },
+      { "rep_id": "arjun", "rep_name": "Arjun", "kind": "new", "text": "Arjun's low calls keep closing: possible sandbagging", "n_deals": 3 },
+      { "rep_id": "sana", "rep_name": "Sana", "kind": "new", "text": "Sana is over-optimistic across the board", "n_deals": 5 }
+    ]
+  },
+  {
+    "quarter": "2017-Q2",
+    "reps_forecast_inr": 45000000,
+    "agent_forecast_inr": 38000000,
+    "actual_inr": 34000000,
+    "belief_updates": [
+      { "rep_id": "priya", "rep_name": "Priya", "kind": "strengthened", "text": "Priya overestimates single-contact deals: 90% calls close about 45%", "n_deals": 6 },
+      { "rep_id": "meera", "rep_name": "Meera", "kind": "new", "text": "Meera ignores competitor risk: those deals close half as often", "n_deals": 5 },
+      { "rep_id": "rahul", "rep_name": "Rahul", "kind": "new", "text": "Rahul is over-optimistic on deals above ₹50 L", "n_deals": 4 }
+    ]
+  },
+  {
+    "quarter": "2017-Q3",
+    "reps_forecast_inr": 39000000,
+    "agent_forecast_inr": 31500000,
+    "actual_inr": 30000000,
+    "belief_updates": [
+      { "rep_id": "priya", "rep_name": "Priya", "kind": "confirmed", "text": "Priya overestimates single-contact deals: rule set to ×0.5", "n_deals": 9 },
+      { "rep_id": "sana", "rep_name": "Sana", "kind": "softened", "text": "Sana is improving: her recent calls are close to reality", "n_deals": 10 },
+      { "rep_id": "arjun", "rep_name": "Arjun", "kind": "strengthened", "text": "Arjun sandbags: sub-50% calls close about 64% of the time", "n_deals": 11 }
+    ]
+  },
+  {
+    "quarter": "2017-Q4",
+    "reps_forecast_inr": 46000000,
+    "agent_forecast_inr": 37000000,
+    "actual_inr": 36000000,
+    "belief_updates": [
+      { "rep_id": "rahul", "rep_name": "Rahul", "kind": "confirmed", "text": "Rahul's big-deal optimism confirmed: ×0.5 above ₹50 L", "n_deals": 5 },
+      { "rep_id": "meera", "rep_name": "Meera", "kind": "confirmed", "text": "Meera's competitor blind spot confirmed", "n_deals": 6 }
+    ]
+  }
+]

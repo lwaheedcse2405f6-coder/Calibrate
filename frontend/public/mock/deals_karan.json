@@ -1,0 +1,5 @@
+[
+  { "deal_id": "karan-01", "account": "Ivory Apparel", "product": "GTX Basic", "amount_inr": 1000000, "n_contacts": 2, "has_finance_contact": false, "competitor": false, "stated_prob": 0.60, "calibrated_prob": 0.60, "outcome": "won", "quarter": "2017-Q4" },
+  { "deal_id": "karan-02", "account": "Juniper Travel", "product": "GTX Pro", "amount_inr": 3200000, "n_contacts": 1, "has_finance_contact": false, "competitor": false, "stated_prob": 0.70, "calibrated_prob": 0.70, "outcome": "lost", "quarter": "2017-Q4" },
+  { "deal_id": "karan-03", "account": "Kite Payments", "product": "GTX Plus Pro", "amount_inr": 4600000, "n_contacts": 2, "has_finance_contact": true, "competitor": false, "stated_prob": 0.80, "calibrated_prob": 0.80, "outcome": "pending", "quarter": "2017-Q4" }
+]

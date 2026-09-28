@@ -1,0 +1,7 @@
+[
+  { "quarter": "2017-Q1", "text": "Might be optimistic on single-contact deals", "status": "superseded", "confidence": "low", "evidence_count": 3, "adjustment": 0.8, "change": "new" },
+  { "quarter": "2017-Q2", "text": "Overestimates single-contact deals: 90% calls close about 45%", "status": "superseded", "confidence": "medium", "evidence_count": 6, "adjustment": 0.6, "change": "strengthened" },
+  { "quarter": "2017-Q3", "text": "Single-contact overconfidence confirmed", "status": "active", "confidence": "high", "evidence_count": 9, "adjustment": 0.5, "change": "confirmed" },
+  { "quarter": "2017-Q3", "text": "Also overconfident when no finance contact is involved", "status": "active", "confidence": "medium", "evidence_count": 7, "adjustment": 0.65, "change": "new" },
+  { "quarter": "2017-Q4", "text": "Accurate on multi-contact deals with finance involved", "status": "active", "confidence": "medium", "evidence_count": 5, "adjustment": 1.0, "change": "new" }
+]

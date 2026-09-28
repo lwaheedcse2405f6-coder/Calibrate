@@ -1,0 +1,8 @@
+[
+  { "deal_id": "arjun-01", "account": "Lotus Pharma", "product": "MG Special", "amount_inr": 3000000, "n_contacts": 3, "has_finance_contact": true, "competitor": false, "stated_prob": 0.30, "calibrated_prob": 0.54, "outcome": "won", "quarter": "2017-Q1" },
+  { "deal_id": "arjun-02", "account": "Vega Telecom", "product": "GTX Pro", "amount_inr": 4500000, "n_contacts": 2, "has_finance_contact": true, "competitor": false, "stated_prob": 0.40, "calibrated_prob": 0.70, "outcome": "won", "quarter": "2017-Q2" },
+  { "deal_id": "arjun-03", "account": "Monsoon Textiles", "product": "GTX Basic", "amount_inr": 1200000, "n_contacts": 2, "has_finance_contact": false, "competitor": false, "stated_prob": 0.35, "calibrated_prob": 0.63, "outcome": "lost", "quarter": "2017-Q2" },
+  { "deal_id": "arjun-04", "account": "Ganga Steel", "product": "GTK 500", "amount_inr": 9500000, "n_contacts": 4, "has_finance_contact": true, "competitor": true, "stated_prob": 0.45, "calibrated_prob": 0.78, "outcome": "won", "quarter": "2017-Q3" },
+  { "deal_id": "arjun-05", "account": "Peak Analytics", "product": "GTX Plus Pro", "amount_inr": 3800000, "n_contacts": 3, "has_finance_contact": true, "competitor": false, "stated_prob": 0.70, "calibrated_prob": 0.72, "outcome": "won", "quarter": "2017-Q4" },
+  { "deal_id": "arjun-06", "account": "Coral Healthcare", "product": "MG Advanced", "amount_inr": 5000000, "n_contacts": 2, "has_finance_contact": true, "competitor": false, "stated_prob": 0.30, "calibrated_prob": 0.54, "outcome": "pending", "quarter": "2017-Q4" }
+]

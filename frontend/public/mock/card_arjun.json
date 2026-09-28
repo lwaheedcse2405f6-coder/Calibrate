@@ -1,0 +1,8 @@
+{
+  "rep_id": "arjun", "name": "Arjun Mehta", "quarter": "2017-Q4",
+  "summary": "Sandbags: deals he calls under 50% close far more often than he says.",
+  "rules": [
+    { "condition": "Stated probability below 50%", "stated_win_rate": 0.36, "actual_win_rate": 0.64, "adjustment": 1.8, "evidence_count": 11, "confidence": "high" },
+    { "condition": "Stated 50% or above", "stated_win_rate": 0.72, "actual_win_rate": 0.75, "adjustment": 1.0, "evidence_count": 6, "confidence": "medium" }
+  ]
+}

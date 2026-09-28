@@ -1,0 +1,8 @@
+[
+  { "rep_id": "priya", "name": "Priya Sharma", "region": "West", "tenure_quarters": 6, "n_deals": 6 },
+  { "rep_id": "arjun", "name": "Arjun Mehta", "region": "North", "tenure_quarters": 8, "n_deals": 6 },
+  { "rep_id": "meera", "name": "Meera Iyer", "region": "South", "tenure_quarters": 5, "n_deals": 6 },
+  { "rep_id": "rahul", "name": "Rahul Verma", "region": "East", "tenure_quarters": 7, "n_deals": 6 },
+  { "rep_id": "sana", "name": "Sana Khan", "region": "West", "tenure_quarters": 6, "n_deals": 6 },
+  { "rep_id": "karan", "name": "Karan Singh", "region": "North", "tenure_quarters": 1, "n_deals": 3 }
+]

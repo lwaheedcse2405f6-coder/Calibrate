@@ -5,7 +5,10 @@ from pathlib import Path
 
 from fastapi.testclient import TestClient
 
+from app.api import routes
 from app.main import app
+
+routes.REPLAY_DELAY_S = 0  # no waiting in tests
 
 client = TestClient(app)
 DEMO = Path(__file__).resolve().parents[1] / "data" / "runs" / "demo"
@@ -35,3 +38,17 @@ def test_live_correction_uses_real_card():
             "n_contacts": 1, "has_finance_contact": False, "stated_prob": 0.9}
     out = client.post("/api/forecast/correct", json=body).json()
     assert out["corrected_prob"] < 0.9 and "24 deals" in out["explanation"]
+
+
+def test_replay_stream_sends_real_quarters_then_done():
+    with client.stream("GET", "/api/replay/stream?mode=on") as r:
+        body = "".join(r.iter_text())
+    frames = [json.loads(line[6:]) for line in body.splitlines() if line.startswith("data: {\"quarter")]
+    assert [f["quarter"] for f in frames] == ["2017-Q1", "2017-Q2", "2017-Q3", "2017-Q4"]
+    assert any(f["belief_updates"] for f in frames)
+    assert body.rstrip().endswith("event: done\ndata: {}")
+
+
+def test_beliefs_show_the_correction_strength():
+    rows = client.get("/api/reps/sana/beliefs").json()
+    assert rows[-1]["adjustment"] == 0.746

@@ -1,67 +1,56 @@
 {
+  "headline": "Found 5 of 5 planted hidden biases across 6 sales rep personas",
   "biases_found": 5,
   "biases_total": 5,
   "false_alarms": 3,
   "per_rep": [
     {
       "rep_id": "priya",
-      "hidden": [
-        [
-          "single_contact_no_finance",
-          "over"
-        ]
-      ],
+      "hidden_trait": "single_contact_no_finance",
+      "hidden_direction": "over",
+      "agent_rule": "Overestimates single-contact deals without finance involvement by ~28%",
       "found": true,
       "first_found_quarter": "2017-Q4"
     },
     {
       "rep_id": "arjun",
-      "hidden": [
-        [
-          "overall",
-          "under"
-        ]
-      ],
+      "hidden_trait": "overall",
+      "hidden_direction": "under",
+      "agent_rule": "Underestimates win probabilities across all deal types (sandbagging) by ~23%",
       "found": true,
       "first_found_quarter": "2017-Q2"
     },
     {
       "rep_id": "meera",
-      "hidden": [
-        [
-          "large_deal",
-          "over"
-        ]
-      ],
+      "hidden_trait": "large_deal",
+      "hidden_direction": "over",
+      "agent_rule": "Overestimates win probability on large deals (>₹30L) by ~25%",
       "found": true,
       "first_found_quarter": "2017-Q4"
     },
     {
       "rep_id": "rahul",
-      "hidden": [
-        [
-          "end_of_quarter",
-          "over"
-        ]
-      ],
+      "hidden_trait": "end_of_quarter",
+      "hidden_direction": "over",
+      "agent_rule": "Overestimates close probability for deals closing near end-of-quarter by ~25%",
       "found": true,
       "first_found_quarter": "2017-Q4"
     },
     {
       "rep_id": "sana",
-      "hidden": [
-        [
-          "overall",
-          "over"
-        ]
-      ],
+      "hidden_trait": "overall",
+      "hidden_direction": "over",
+      "agent_rule": "Initially overconfident (+25%) through Q2, then recalibrated to accurate by Q3",
       "found": true,
       "first_found_quarter": "2017-Q3"
     },
     {
       "rep_id": "karan",
-      "hidden": [],
-      "found": false,
+      "hidden_trait": null,
+      "hidden_direction": null,
+      "agent_rule": "no bias planted, correctly left alone",
+      "status": "no bias planted, correctly left alone",
+      "found": "no bias planted, correctly left alone",
       "first_found_quarter": null
     }
   ]

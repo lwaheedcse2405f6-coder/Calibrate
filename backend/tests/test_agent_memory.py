@@ -190,3 +190,18 @@ def test_memory_items():
 def test_correction_was_right():
     assert hs.correction_was_right(0.9, 0.45, "lost") is True
     assert hs.correction_was_right(0.9, 0.45, "won") is False
+
+
+def test_each_thread_gets_its_own_hindsight_client(monkeypatch):
+    import threading
+
+    monkeypatch.setenv("HINDSIGHT_API_KEY", "test-key")
+    hs._local.__dict__.clear()
+    seen = []
+    main = hs.get_client()
+    assert hs.get_client() is main                     # reused within a thread
+    t = threading.Thread(target=lambda: seen.append(hs.get_client()))
+    t.start()
+    t.join()
+    assert seen[0] is not main                          # a fresh one in another thread
+    hs._local.__dict__.clear()

@@ -10,7 +10,7 @@ Owner: Role 2.
 from __future__ import annotations
 
 import logging
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 
 from app.agent.card import MIN_EVIDENCE
 
@@ -20,6 +20,7 @@ LARGE_DEAL_PRODUCTS = {"GTX Pro", "GTK 500"}
 END_OF_QUARTER_DAYS = 14
 STRENGTH = {"low": 0.5, "medium": 0.8, "high": 1.0}
 PROB_MIN, PROB_MAX = 0.02, 0.98
+IST = timezone(timedelta(hours=5, minutes=30))
 
 EXPLAIN_SYSTEM = (
     "You explain a sales forecast correction to a sales manager in plain, simple English. "
@@ -54,7 +55,7 @@ def compute_traits(form: dict, today: date | None = None) -> list[str]:
         traits.append("single_contact_no_finance")
     if form.get("product") in LARGE_DEAL_PRODUCTS:
         traits.append("large_deal")
-    d = today or date.today()
+    d = today or datetime.now(IST).date()
     if (_quarter_end(d) - d).days < END_OF_QUARTER_DAYS:
         traits.append("end_of_quarter")
     return traits
@@ -134,7 +135,7 @@ def _evidence(rep_id: str, traits: list[str], deals_by_id: dict | None) -> list[
              else "closed deals and how they turned out")
     try:
         hits = hs.recall_rep_history(rep_id, query, limit=3)
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         log.warning("recall failed: %s", exc)
         return []
     out = []
@@ -183,7 +184,7 @@ def correct(form: dict, card: dict | None, *, rep_name: str | None = None,
             qs = [q for q in out.get("questions_to_ask") or [] if isinstance(q, str) and q.strip()]
             if qs:
                 questions = qs[:2]
-        except Exception as exc:  # the template text is a fine fallback
+        except Exception as exc:  # noqa: BLE001 (template text is the fallback)
             log.warning("explanation LLM call failed, using template: %s", exc)
 
     if cold_start:
@@ -209,7 +210,7 @@ def ask(question: str) -> dict:
 
     try:
         answer, based_on = hs.reflect_answer(question)
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         log.warning("ask failed: %s", exc)
         return {"answer": "Sorry, memory isn't reachable right now. Try again in a minute.",
                 "based_on": []}

@@ -1,15 +1,11 @@
 """Offline tests for Role 2's code. No API keys needed: Hindsight and Groq are faked."""
 
-import sys
 from datetime import date
-from pathlib import Path
 from types import SimpleNamespace
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-
-from app.agent import calibrator as cal  # noqa: E402
-from app.agent.card import parse_card  # noqa: E402
-from app.memory import hindsight_store as hs  # noqa: E402
+from app.agent import calibrator as cal
+from app.agent.card import parse_card
+from app.memory import hindsight_store as hs
 
 PRIYA_CARD = {
     "rep_id": "priya",

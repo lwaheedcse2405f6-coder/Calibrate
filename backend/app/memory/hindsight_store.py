@@ -93,7 +93,7 @@ def ensure_bank() -> None:
     """Create the bank if it doesn't exist yet. Safe to call many times."""
     try:
         get_client().create_bank(bank_id=bank_id(), name=bank_id())
-    except Exception as exc:  # already exists, most likely
+    except Exception as exc:  # noqa: BLE001 (bank already exists, most likely)
         log.info("create_bank skipped (%s)", str(exc)[:120])
 
 
@@ -248,8 +248,8 @@ def recall_beliefs(rep_id: str, limit: int = 5) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def _reflect_card(query: str, tags: list[str] | None) -> dict | None:
-    kwargs: dict[str, Any] = dict(bank_id=bank_id(), query=query, budget="mid",
-                                  response_schema=CARD_SCHEMA)
+    kwargs: dict[str, Any] = {"bank_id": bank_id(), "query": query, "budget": "mid",
+                              "response_schema": CARD_SCHEMA}
     if tags:
         kwargs.update(tags=tags, tags_match="all_strict")
     resp = get_client().reflect(**kwargs)
@@ -269,7 +269,7 @@ def reflect_calibration_card(rep_id: str, rep_name: str, quarter: str | None = N
             raw = _reflect_card(CARD_QUERY.format(rep_name=rep_name), [f"rep:{rep_id}"])
             if raw:
                 break
-        except Exception as exc:
+        except Exception as exc:  # noqa: BLE001
             log.warning("reflect failed for %s (attempt %d): %s", rep_id, attempt, exc)
     card = parse_card(raw) if raw else empty_card()
     return {"rep_id": rep_id, "quarter": quarter, **card}
@@ -279,7 +279,7 @@ def reflect_team_card(quarter: str | None = None) -> dict:
     """Team-wide patterns, for reps with no history yet (cold start)."""
     try:
         raw = _reflect_card(TEAM_CARD_QUERY, None)
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         log.warning("team reflect failed: %s", exc)
         raw = None
     card = parse_card(raw) if raw else empty_card()

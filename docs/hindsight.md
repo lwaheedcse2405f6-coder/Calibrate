@@ -21,6 +21,18 @@ Memory ON:   LLM sees today's deal + rep's full bias history → applies a
 
 This document specifies the **exact technical configuration** used in the Calibrate deployment.
 
+## How the Agent Actually Learns
+
+Learning in Calibrate is grounded in empirical CRM events, separating deterministic calculation from semantic explanation:
+
+1. **Numeric Metadata Ingestion**: Deal forecast and outcome events are written to Hindsight carrying exact numeric metadata (`stated_prob`, `actual_outcome`, `amount_inr`, `n_contacts`, `has_finance_contact`).
+2. **Quarterly Card Measurement**: At the beginning of each quarter, the agent queries Hindsight to read back the rep's historical track record across closed deals. Rather than letting the LLM invent calibration numbers, the calibration card is **measured from the rep's past win rates** across specific traits (`single_contact_no_finance`, `large_deal`, `end_of_quarter`, `overall`).
+3. **Deterministic Correction**: Each incoming forecast is adjusted using pure Python (`apply_card`) by matching deal traits against the rep's active card rules and applying the empirical factor.
+4. **Reflect Explanations & Executive Inquiries**: Groq LLMs (`openai/gpt-oss-*`) run `reflect` calls over the gathered evidence to generate plain-language explanations quoting past deal precedents (e.g., *"Priya's single-contact deals closed 4 of 9 times"*) and to synthesize answers for high-level queries via `POST /api/ask` (e.g., *"What is our realistic Q3 commit?"*).
+5. **Outcome Feedback Loop**: Once a deal closes, the agent writes an outcome fact and a **self-check memory** evaluating whether its adjustment improved or degraded accuracy.
+6. **Evolving Beliefs**: As observations accumulate, Hindsight updates its internal mental models. When a rep's habits change (such as Sana improving after Q2), the old belief softens and the adjustment factor normalizes to 1.0.
+
+
 ---
 
 ## Memory Type 1 — `facts` (Retain)

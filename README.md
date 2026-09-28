@@ -1,4 +1,4 @@
-# Calibrate
+# Calibrate — Found 5 of 5 Biases · 10.0% Q4 Error Reduction (4.3% Full Year)
 
 > **Stop trusting the rep. Start trusting the memory.**
 
@@ -72,7 +72,7 @@ See [`docs/hindsight.md`](docs/hindsight.md) for the full technical specificatio
 
 ## Evaluation Results
 
-The evaluation harness (`backend/tests/`) has **67 tests** (100% pass rate) covering:
+The evaluation harness (`backend/tests/`) covers:
 - Brier score accuracy (perfect, worst, coin-flip, dynamic historical baseline)
 - Temporal no-peeking rule (`latest_close < quarter_start` verified via `audit.json`)
 - Pydantic enum enforcement (invalid AI responses and traits rejected at boundary)
@@ -84,22 +84,22 @@ The evaluation harness (`backend/tests/`) has **67 tests** (100% pass rate) cove
 
 | Quarter | Trust the Rep (Stated) | Memory OFF | Historical Baseline | Agent Calibrated (Memory ON) |
 |---|---|---|---|---|
-| **2017-Q1** | 0.105 | 0.105 | 0.201 | **0.101** |
-| **2017-Q2** | 0.153 | 0.153 | 0.277 | **0.132** |
-| **2017-Q3** | 0.150 | 0.150 | 0.255 | **0.139** |
-| **2017-Q4** | 0.150 | 0.150 | 0.239 | **0.130** |
-| **Full Year Avg** | **0.137** | **0.137** | **0.243** | **0.126 (Best)** |
+| **2017-Q1** | 0.105 | 0.105 | 0.201 | **0.105** |
+| **2017-Q2** | 0.153 | 0.153 | 0.277 | **0.148** |
+| **2017-Q3** | 0.150 | 0.150 | 0.255 | **0.146** |
+| **2017-Q4** | 0.150 | 0.150 | 0.239 | **0.135** |
+| **Full Year Avg** | **0.140** | **0.140** | **0.243** | **0.134 (Best, -4.3%)** |
 
 **Bias Recovery Performance:**
 - **Hidden Biases Recovered:** 5 / 5 (100% recovery)
-  - Priya: `single_contact_no_finance` over-confidence detected in Q2
-  - Arjun: `overall` under-confidence (sandbagging) detected in Q1
-  - Meera: `large_deal` over-confidence detected in Q1
-  - Rahul: `end_of_quarter` optimism inflation detected in Q1
-  - Sana: `overall` over-confidence detected in Q1, with normalization verified in Q4 (`sana_improvement_noticed: true`)
+  - Priya: `single_contact_no_finance` over-confidence detected in Q4
+  - Arjun: `overall` under-confidence (sandbagging) detected in Q2
+  - Meera: `large_deal` over-confidence detected in Q4
+  - Rahul: `end_of_quarter` optimism inflation detected in Q4
+  - Sana: `overall` over-confidence detected in Q3
   - Karan: correctly classified as unbiased (joined Q3)
-- **False Alarm Count:** 0
-- **Test Suite Status:** 67 / 67 passing (0.73s)
+- **False Alarm Count:** 3
+- **Test Suite Status:** Passing all tests across evaluation harness
 
 ---
 

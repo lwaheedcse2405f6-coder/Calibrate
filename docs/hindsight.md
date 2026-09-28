@@ -200,20 +200,20 @@ Our 1,162-deal official dataset demonstrates the three-strategy comparison acros
 ```
 Quarter    Trust the Rep (Stated)  Memory OFF   Historical Baseline   Agent Calibrated (Memory ON)
 ──────────────────────────────────────────────────────────────────────────────────────────────────
-2017-Q1            0.105             0.105            0.201                      0.101
-2017-Q2            0.153             0.153            0.277                      0.132
-2017-Q3            0.150             0.150            0.255                      0.139
-2017-Q4            0.150             0.150            0.239                      0.130
+2017-Q1            0.105             0.105            0.201                      0.105
+2017-Q2            0.153             0.153            0.277                      0.148
+2017-Q3            0.150             0.150            0.255                      0.146
+2017-Q4            0.150             0.150            0.239                      0.135
 ──────────────────────────────────────────────────────────────────────────────────────────────────
-Full Year Avg      0.137             0.137            0.243                      0.126 (Best)
+Full Year Avg      0.140             0.140            0.243                      0.134 (Best, -4.3%)
 ```
 
 > [!NOTE]
-> Values reflect production calculations from `data/runs/memory_on/scores.json` and `backend/data/runs/memory_on/scores.json`. Agent Calibrated (Memory ON) strictly outperforms raw rep forecasts and flat baselines across all 4 quarters.
+> Values reflect production calculations from `backend/data/runs/demo/scores.json`. Agent Calibrated (Memory ON) demonstrates progressive calibration improvements as deal observations accumulate, achieving a 10.0% error reduction in Q4 (dropping Brier score from 0.150 to 0.135).
 
 ### What the drop proves
 
-The Brier score drops **only when memory is engaged**. When we run the replay in Memory OFF mode (no Hindsight context), the model has no directives, no observations, no facts — it returns a score statistically equivalent to "Trust the Rep" (0.137 vs 0.137). The moment we switch Memory ON, the score drops to 0.126.
+The Brier score drops **only when memory is engaged**. When we run the replay in Memory OFF mode (no Hindsight context), the model has no directives, no observations, no facts — it returns a score statistically equivalent to "Trust the Rep" (0.140 vs 0.140). The moment we switch Memory ON, calibration corrections compound, dropping the score to 0.134.
 
 This is the core demo contrast shown in [`docs/demo-script.md`](./demo-script.md).
 
@@ -233,43 +233,43 @@ GROQ_MODEL_FAST=          # Model ID for fast inference (e.g. llama3-8b-8192)
 
 ## Evaluation Output — `eval.json`
 
-The bias checker writes `eval.json` into each run folder (e.g., `data/runs/memory_on/eval.json` and `backend/app/eval/eval.json`). Production output:
+The bias checker writes `eval.json` into each run folder (e.g., `backend/data/runs/demo/eval.json`). Production output:
 
 ```json
 {
   "biases_found": 5,
   "biases_total": 5,
-  "false_alarms": 0,
+  "false_alarms": 3,
   "per_rep": [
     {
       "rep_id": "priya",
       "hidden": [["single_contact_no_finance", "over"]],
       "found": true,
-      "first_found_quarter": "2017-Q2"
+      "first_found_quarter": "2017-Q4"
     },
     {
       "rep_id": "arjun",
       "hidden": [["overall", "under"]],
       "found": true,
-      "first_found_quarter": "2017-Q1"
+      "first_found_quarter": "2017-Q2"
     },
     {
       "rep_id": "meera",
       "hidden": [["large_deal", "over"]],
       "found": true,
-      "first_found_quarter": "2017-Q1"
+      "first_found_quarter": "2017-Q4"
     },
     {
       "rep_id": "rahul",
       "hidden": [["end_of_quarter", "over"]],
       "found": true,
-      "first_found_quarter": "2017-Q1"
+      "first_found_quarter": "2017-Q4"
     },
     {
       "rep_id": "sana",
       "hidden": [["overall", "over"]],
       "found": true,
-      "first_found_quarter": "2017-Q1"
+      "first_found_quarter": "2017-Q3"
     },
     {
       "rep_id": "karan",
@@ -277,12 +277,11 @@ The bias checker writes `eval.json` into each run folder (e.g., `data/runs/memor
       "found": false,
       "first_found_quarter": null
     }
-  ],
-  "sana_improvement_noticed": true
+  ]
 }
 ```
 
-Every single planted bias was recovered (`5 / 5`), 0 false alarms were generated, and Sana's Q4 normalization was detected (`"sana_improvement_noticed": true`).
+Every single planted bias was recovered (`5 / 5`), with 3 false alarms, detecting Priya, Meera, and Rahul in Q4, Sana in Q3, and Arjun in Q2.
 
 ---
 

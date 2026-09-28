@@ -57,6 +57,16 @@ class HindsightReplayServices:
 def build_services() -> HindsightReplayServices:
     """Create the adapter from the Role 2 modules merged in PR #4."""
     try:
+        # Load the project-root .env before the store reads os.environ. The
+        # replay CLI does not import the FastAPI app, so config is not otherwise
+        # guaranteed to have loaded local credentials.
+        from app.config import HINDSIGHT_API_KEY
+
+        if not HINDSIGHT_API_KEY:
+            raise RuntimeError(
+                "HINDSIGHT_API_KEY is missing; set it in the project-root .env "
+                "or in the process environment before a memory-on replay"
+            )
         from app.agent import calibrator
         from app.memory import hindsight_store
     except ModuleNotFoundError as exc:

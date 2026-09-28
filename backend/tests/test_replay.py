@@ -110,6 +110,15 @@ def test_on_requires_hindsight_services(deals_file, tmp_path):
         run("on", "test", deals_file, tmp_path / "runs")
 
 
+def test_hindsight_adapter_reports_missing_api_key(monkeypatch):
+    from app import config
+    from app.replay.hindsight_services import build_services
+
+    monkeypatch.setattr(config, "HINDSIGHT_API_KEY", "")
+    with pytest.raises(RuntimeError, match="HINDSIGHT_API_KEY is missing"):
+        build_services()
+
+
 def test_one_rep_one_quarter_smoke_includes_later_outcome(deals_file, tmp_path):
     result = run("off", "smoke", deals_file, tmp_path / "runs", rep_id="priya", forecast_quarter="2017-Q1")
     assert result.completed_quarters == ("2017-Q1", "2017-Q2")

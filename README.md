@@ -29,7 +29,7 @@ graph TD
     C["Hindsight Memory Bank\n(Facts & Track Record)"]
     D["Calibration Card\n(Measured empirically from memory)"]
     E["Python calibrator.py\n(apply_card: pure deterministic adjustment)"]
-    F["Groq LLM\n(openai/gpt-oss-120b: Reflect explanation)"]
+    F["Plain-English reason\n(Hindsight reflect for cards & ask box;\nGroq gpt-oss for the live-form line)"]
     G["corrected_prob returned + reason"]
     H["Brier Score Dashboard"]
 

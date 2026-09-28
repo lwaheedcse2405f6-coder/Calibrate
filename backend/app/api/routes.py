@@ -48,14 +48,18 @@ def get_quarters(mode: str = "on"):
 
 @router.get("/scores")
 def get_scores():
+    official = get("scores")  # Role 5's scores.json: the numbers in the README
+    if official:
+        return official
+
     deal_map = (get("deals") or {}).get("deals", {})
     data = list(deal_map.values())
 
     by_quarter = {}
 
     for deal in data:
-        if deal.get("outcome") is None:
-            continue
+        if deal.get("outcome") not in ("won", "lost"):
+            continue  # still open: not a miss
 
         quarter = deal.get("forecast_quarter")
         if not quarter:
@@ -150,20 +154,19 @@ def get_beliefs(rep_id: str):
 
         rules = card.get("rules") or []
 
-        evidence_count = max(
-            (
-                rule.get("evidence_count", 0)
-                for rule in rules
-            ),
-            default=0,
+        strongest = max(
+            rules,
+            key=lambda rule: rule.get("evidence_count", 0),
+            default={},
         )
+        evidence_count = strongest.get("evidence_count", 0)
 
         result.append(
             {
                 "quarter": quarter,
                 "belief": card.get("summary", ""),
                 "evidence_count": evidence_count,
-                "confidence": card.get("confidence"),
+                "confidence": strongest.get("confidence", "low"),
             }
         )
 
@@ -172,11 +175,11 @@ def get_beliefs(rep_id: str):
 
 @router.get("/reps/{rep_id}/deals")
 def get_deals(rep_id: str):
-    deals = (get("deals") or {}).get("deals", [])
+    deals = (get("deals") or {}).get("deals", {})
 
     return [
         deal
-        for deal in deals
+        for deal in deals.values()
         if deal.get("rep_id") == rep_id
     ]
 
@@ -211,7 +214,7 @@ def ask(body: AskRequest):
 
 @router.get("/eval")
 def get_eval():
-    return mock_data.EVAL
+    return get("eval") or mock_data.EVAL
 
 
 REPLAY = [

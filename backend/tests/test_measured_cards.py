@@ -110,3 +110,14 @@ def test_outcome_memory_carries_exact_numbers():
     meta = hs.outcome_item(deal)["metadata"]
     assert meta == {"deal_id": "Z1", "rep_id": "priya", "stated_prob": "0.9", "outcome": "lost",
                     "traits": "single_contact_no_finance", "close_date": "2017-03-01"}
+
+
+def test_accurate_rep_summary_is_measured_not_invented(monkeypatch):
+    units = [_unit(f"D{i}", "priya", 0.65, "won" if i % 20 < 13 else "lost") for i in range(100)]
+    client = ListClient(units)
+    monkeypatch.setattr(hs, "get_client", lambda: client)
+    hs._TRACK_CACHE.clear()
+    card = hs.reflect_calibration_card("priya", "Priya", "2017-Q2")
+    assert client.reflects == []                      # nothing to explain: no reflect call
+    assert "within noise" in card["summary"]
+    hs._TRACK_CACHE.clear()

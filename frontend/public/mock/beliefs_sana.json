@@ -1,0 +1,6 @@
+[
+  { "quarter": "2017-Q1", "text": "Over-optimistic across the board", "status": "superseded", "confidence": "medium", "evidence_count": 5, "adjustment": 0.7, "change": "new" },
+  { "quarter": "2017-Q2", "text": "Over-optimism confirmed on every product", "status": "superseded", "confidence": "high", "evidence_count": 8, "adjustment": 0.7, "change": "confirmed" },
+  { "quarter": "2017-Q3", "text": "Sana is improving: her recent calls are close to reality", "status": "superseded", "confidence": "medium", "evidence_count": 10, "adjustment": 0.85, "change": "softened" },
+  { "quarter": "2017-Q4", "text": "Mostly calibrated now. Only a small trim.", "status": "active", "confidence": "medium", "evidence_count": 12, "adjustment": 0.9, "change": "softened" }
+]

@@ -1,0 +1,23 @@
+{
+  "answers": [
+    {
+      "match": ["q3", "realistic", "number"],
+      "answer": "Realistically about ₹3.2 Cr for Q3, not the ₹3.9 Cr the reps are calling. Most of the gap is Priya's single-contact deals (lowered by about half) and Rahul's two deals above ₹50 L. Arjun's pipeline is likely understated by roughly ₹20 L.",
+      "sources": ["Priya · single-contact rule (9 deals)", "Rahul · big-deal rule (5 deals)", "Arjun · sandbagging rule (11 deals)", "2017-Q2 actuals"]
+    },
+    {
+      "match": ["trust", "least", "worst"],
+      "answer": "Priya's forecasts need the most correction right now: her single-contact deals close about 45% of the time against 90% calls. Sana used to be the least reliable, but she has been close to reality since Q3.",
+      "sources": ["Priya · calibration card", "Sana · belief timeline"]
+    },
+    {
+      "match": ["zenith", "priya", "why"],
+      "answer": "Zenith Logistics has one contact and no finance contact. Priya's deals like that have closed 4 of 9 times, so Calibrate cut her 90% to 50%. Getting a second stakeholder and finance on the next call would change that.",
+      "sources": ["Zenith Logistics deal", "Priya · single-contact rule (9 deals)", "Priya · no-finance rule (7 deals)"]
+    }
+  ],
+  "fallback": {
+    "answer": "I don't have enough in memory to answer that confidently. Try asking about a rep, a deal, or the quarter's number.",
+    "sources": []
+  }
+}

@@ -1,0 +1,8 @@
+[
+  { "deal_id": "sana-01", "account": "Iris Optics", "product": "GTX Pro", "amount_inr": 3600000, "n_contacts": 2, "has_finance_contact": true, "competitor": false, "stated_prob": 0.85, "calibrated_prob": 0.60, "outcome": "lost", "quarter": "2017-Q1" },
+  { "deal_id": "sana-02", "account": "Delta Cement", "product": "GTK 500", "amount_inr": 7200000, "n_contacts": 3, "has_finance_contact": true, "competitor": false, "stated_prob": 0.80, "calibrated_prob": 0.56, "outcome": "lost", "quarter": "2017-Q1" },
+  { "deal_id": "sana-03", "account": "Echo Audio", "product": "GTX Basic", "amount_inr": 1600000, "n_contacts": 2, "has_finance_contact": false, "competitor": false, "stated_prob": 0.75, "calibrated_prob": 0.60, "outcome": "won", "quarter": "2017-Q2" },
+  { "deal_id": "sana-04", "account": "Fern Organics", "product": "GTX Plus Basic", "amount_inr": 2600000, "n_contacts": 2, "has_finance_contact": true, "competitor": false, "stated_prob": 0.70, "calibrated_prob": 0.63, "outcome": "won", "quarter": "2017-Q3" },
+  { "deal_id": "sana-05", "account": "Granite Mining", "product": "MG Advanced", "amount_inr": 5800000, "n_contacts": 3, "has_finance_contact": true, "competitor": true, "stated_prob": 0.70, "calibrated_prob": 0.63, "outcome": "won", "quarter": "2017-Q3" },
+  { "deal_id": "sana-06", "account": "Helix Biotech", "product": "GTX Plus Pro", "amount_inr": 4400000, "n_contacts": 3, "has_finance_contact": true, "competitor": false, "stated_prob": 0.75, "calibrated_prob": 0.68, "outcome": "pending", "quarter": "2017-Q4" }
+]

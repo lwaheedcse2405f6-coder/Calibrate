@@ -1,0 +1,8 @@
+[
+  { "deal_id": "rahul-01", "account": "Neon Gaming", "product": "GTK 500", "amount_inr": 12000000, "n_contacts": 3, "has_finance_contact": true, "competitor": false, "stated_prob": 0.80, "calibrated_prob": 0.40, "outcome": "lost", "quarter": "2017-Q1" },
+  { "deal_id": "rahul-02", "account": "Cedar Realty", "product": "MG Advanced", "amount_inr": 7500000, "n_contacts": 2, "has_finance_contact": true, "competitor": false, "stated_prob": 0.85, "calibrated_prob": 0.43, "outcome": "lost", "quarter": "2017-Q2" },
+  { "deal_id": "rahul-03", "account": "Falcon Aerospace", "product": "GTK 500", "amount_inr": 15000000, "n_contacts": 4, "has_finance_contact": true, "competitor": true, "stated_prob": 0.75, "calibrated_prob": 0.38, "outcome": "won", "quarter": "2017-Q3" },
+  { "deal_id": "rahul-04", "account": "Jade Cosmetics", "product": "GTX Basic", "amount_inr": 1400000, "n_contacts": 2, "has_finance_contact": false, "competitor": false, "stated_prob": 0.70, "calibrated_prob": 0.67, "outcome": "won", "quarter": "2017-Q3" },
+  { "deal_id": "rahul-05", "account": "Pixel Studios", "product": "GTX Pro", "amount_inr": 2800000, "n_contacts": 2, "has_finance_contact": true, "competitor": false, "stated_prob": 0.65, "calibrated_prob": 0.62, "outcome": "won", "quarter": "2017-Q4" },
+  { "deal_id": "rahul-06", "account": "Maple Insurance", "product": "MG Special", "amount_inr": 9000000, "n_contacts": 3, "has_finance_contact": true, "competitor": false, "stated_prob": 0.80, "calibrated_prob": 0.40, "outcome": "pending", "quarter": "2017-Q4" }
+]

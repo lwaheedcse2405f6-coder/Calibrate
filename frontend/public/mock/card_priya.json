@@ -1,0 +1,9 @@
+{
+  "rep_id": "priya", "name": "Priya Sharma", "quarter": "2017-Q4",
+  "summary": "Overconfident on single-contact deals: her 90% calls close about half the time.",
+  "rules": [
+    { "condition": "Only one contact on the deal", "stated_win_rate": 0.88, "actual_win_rate": 0.44, "adjustment": 0.5, "evidence_count": 9, "confidence": "high" },
+    { "condition": "No finance contact involved", "stated_win_rate": 0.85, "actual_win_rate": 0.57, "adjustment": 0.65, "evidence_count": 7, "confidence": "medium" },
+    { "condition": "3+ contacts including finance", "stated_win_rate": 0.8, "actual_win_rate": 0.78, "adjustment": 1.0, "evidence_count": 5, "confidence": "medium" }
+  ]
+}

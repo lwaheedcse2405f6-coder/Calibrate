@@ -1,0 +1,7 @@
+{
+  "rep_id": "sana", "name": "Sana Khan", "quarter": "2017-Q4",
+  "summary": "Used to be over-optimistic on everything, but has improved since Q3. Only a small trim now.",
+  "rules": [
+    { "condition": "All deals (since Q3)", "stated_win_rate": 0.72, "actual_win_rate": 0.66, "adjustment": 0.9, "evidence_count": 12, "confidence": "medium" }
+  ]
+}

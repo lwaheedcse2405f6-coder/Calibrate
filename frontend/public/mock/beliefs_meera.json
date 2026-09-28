@@ -1,0 +1,4 @@
+[
+  { "quarter": "2017-Q2", "text": "Ignores competitor risk", "status": "superseded", "confidence": "medium", "evidence_count": 5, "adjustment": 0.6, "change": "new" },
+  { "quarter": "2017-Q4", "text": "Competitor deals close half as often as she forecasts", "status": "active", "confidence": "high", "evidence_count": 6, "adjustment": 0.5, "change": "confirmed" }
+]

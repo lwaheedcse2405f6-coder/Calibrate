@@ -1,0 +1,6 @@
+[
+  { "quarter": "2017-Q1", "reps": 0.281, "agent_off": 0.281, "agent_on": 0.243, "baseline": 0.252 },
+  { "quarter": "2017-Q2", "reps": 0.297, "agent_off": 0.297, "agent_on": 0.188, "baseline": 0.241 },
+  { "quarter": "2017-Q3", "reps": 0.268, "agent_off": 0.268, "agent_on": 0.151, "baseline": 0.233 },
+  { "quarter": "2017-Q4", "reps": 0.289, "agent_off": 0.289, "agent_on": 0.119, "baseline": 0.238 }
+]

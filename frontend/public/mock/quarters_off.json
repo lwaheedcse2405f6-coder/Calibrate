@@ -1,0 +1,6 @@
+[
+  { "quarter": "2017-Q1", "reps_forecast_inr": 42000000, "agent_forecast_inr": 42000000, "actual_inr": 31000000, "belief_updates": [] },
+  { "quarter": "2017-Q2", "reps_forecast_inr": 45000000, "agent_forecast_inr": 45000000, "actual_inr": 34000000, "belief_updates": [] },
+  { "quarter": "2017-Q3", "reps_forecast_inr": 39000000, "agent_forecast_inr": 39000000, "actual_inr": 30000000, "belief_updates": [] },
+  { "quarter": "2017-Q4", "reps_forecast_inr": 46000000, "agent_forecast_inr": 46000000, "actual_inr": 36000000, "belief_updates": [] }
+]

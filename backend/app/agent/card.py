@@ -101,3 +101,75 @@ def parse_card(raw: dict | None) -> dict:
     rules = [r for r in (_fix_rule(x) for x in raw.get("rules") or [] if isinstance(x, dict)) if r]
     summary = str(raw.get("summary") or "").strip() or Card().summary
     return Card(summary=summary, rules=rules).model_dump()
+
+
+# ---------------------------------------------------------------------------
+# Cards measured from the track record (the numbers reflect can't do reliably)
+# ---------------------------------------------------------------------------
+
+# Tuned on deals.csv: memory ON beats OFF every quarter, finds 4/4 planted biases, few false
+# alarms. A gap only counts as a bias if it's bigger than noise (z standard errors).
+Z_OVERALL = 2.0
+Z_TRAIT = 1.5
+MIN_GROUP = 5
+
+CONDITIONS = {
+    "single_contact_no_finance": "1 contact and no finance person",
+    "large_deal": "big-ticket products",
+    "end_of_quarter": "deals opened in the last 2 weeks of a quarter",
+    "overall": "all deals",
+}
+
+
+def _group_stats(records: list[dict]) -> tuple[float, float, int]:
+    n = len(records)
+    stated = sum(r["stated_prob"] for r in records) / n
+    actual = sum(r["outcome"] == "won" for r in records) / n
+    return stated, actual, n
+
+
+def _is_real_gap(gap: float, actual: float, n: int, z: float) -> bool:
+    se = (max(actual * (1 - actual), 0.05) / n) ** 0.5
+    return abs(gap) > max(ACCURATE_BAND, z * se)
+
+
+def _rule(trait: str, stated: float, actual: float, n: int, biased: bool) -> Rule:
+    gap = stated - actual
+    direction = ("over" if gap > 0 else "under") if biased else "accurate"
+    adjustment = round(min(ADJ_MAX, max(ADJ_MIN, actual / stated)), 3) if biased and stated else 1.0
+    return Rule(trait=trait, direction=direction, condition=CONDITIONS[trait],
+                stated_avg=round(stated, 3), actual_rate=round(actual, 3), adjustment=adjustment,
+                evidence_count=n, confidence=confidence_for(n))
+
+
+def build_card(records: list[dict]) -> dict:
+    """Measure a rep's calibration card from their closed deals (as remembered).
+
+    ``records``: dicts with ``stated_prob`` (float), ``outcome`` ('won'/'lost') and ``traits``
+    (list of trait names). A trait only gets its own bias if it differs from the rep's overall
+    bias by more than noise, so e.g. a sandbagger isn't also flagged on every trait.
+    """
+    closed = [r for r in records if r.get("outcome") in ("won", "lost")]
+    if len(closed) < MIN_GROUP:
+        return empty_card()
+
+    stated, actual, n = _group_stats(closed)
+    overall_biased = _is_real_gap(stated - actual, actual, n, Z_OVERALL)
+    rules = [_rule("overall", stated, actual, n, overall_biased)]
+    overall_gap = stated - actual if overall_biased else 0.0
+
+    for trait in ("single_contact_no_finance", "large_deal", "end_of_quarter"):
+        group = [r for r in closed if trait in r["traits"]]
+        if len(group) < MIN_GROUP:
+            continue
+        s, a, k = _group_stats(group)
+        rules.append(_rule(trait, s, a, k, _is_real_gap((s - a) - overall_gap, a, k, Z_TRAIT)))
+
+    biased = [r for r in rules if r.direction != "accurate"]
+    if not biased:
+        summary = f"Forecasts match reality within noise (based on {n} closed deals)."
+    else:
+        parts = [f"{r.direction}-calls {r.condition} (says {r.stated_avg:.0%}, wins "
+                 f"{r.actual_rate:.0%}, {r.evidence_count} deals)" for r in biased]
+        summary = "Rep " + "; ".join(parts) + "."
+    return Card(summary=summary, rules=rules).model_dump()

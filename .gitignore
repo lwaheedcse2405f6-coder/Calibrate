@@ -1,5 +1,6 @@
 .env
 .venv/
+venv/
 __pycache__/
 node_modules/
 frontend/dist/
@@ -15,3 +16,9 @@ backend/.cache/
 
 # Python bytecode/cache artifacts
 *.py[cod]
+# keep the final demo run, ignore every other run folder
+backend/data/runs/*
+!backend/data/runs/demo/
+
+.pytest_cache/
+.ruff_cache/

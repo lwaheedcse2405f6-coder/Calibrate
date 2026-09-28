@@ -16,7 +16,8 @@ import os
 from functools import lru_cache
 from typing import Any
 
-from app.agent.card import TRAITS, empty_card, parse_card
+from app import config  # noqa: F401 (loads .env)
+from app.agent.card import TRAITS, build_card, empty_card, parse_card
 
 log = logging.getLogger(__name__)
 
@@ -42,6 +43,18 @@ TEAM_CARD_QUERY = (
     "group give stated_avg, actual_rate, evidence_count, adjustment = actual_rate / stated_avg, "
     "and direction (over / under / accurate, within 5 points = accurate)."
 )
+
+SUMMARY_QUERY = (
+    "In one or two plain sentences for a sales manager, say how reliable {rep_name}'s forecasts "
+    "are and where to be careful. Use the measured track record given as context, quote its "
+    "numbers and deal counts exactly, and mention if the pattern seems to be changing recently."
+)
+
+SUMMARY_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {"summary": {"type": "string"}},
+    "required": ["summary"],
+}
 
 CARD_SCHEMA: dict[str, Any] = {
     "type": "object",
@@ -154,6 +167,15 @@ def outcome_item(deal: dict) -> dict:
         "timestamp": f"{deal['close_date']}T18:00:00Z",
         "tags": _tags(deal, "outcome"),
         "document_id": f"outcome-{deal['deal_id']}",
+        # Exact numbers ride along with the memory, so the card can be measured from it.
+        "metadata": {
+            "deal_id": str(deal["deal_id"]),
+            "rep_id": str(deal["rep_id"]),
+            "stated_prob": str(float(deal["stated_prob"])),
+            "outcome": str(deal["outcome"]),
+            "traits": ";".join(_traits(deal)),
+            "close_date": str(deal["close_date"]),
+        },
     }
 
 
@@ -177,6 +199,7 @@ def self_check_item(deal: dict, corrected_prob: float, was_right: bool) -> dict:
 
 def _retain(item: dict) -> None:
     get_client().retain(bank_id=bank_id(), **item)
+    _TRACK_CACHE.clear()
 
 
 def retain_forecast(deal: dict) -> None:
@@ -199,6 +222,7 @@ def retain_many(items: list[dict], chunk: int = 25) -> None:
     client = get_client()
     for i in range(0, len(items), chunk):
         client.retain_batch(bank_id=bank_id(), items=items[i:i + chunk])
+    _TRACK_CACHE.clear()
 
 
 def correction_was_right(stated: float, corrected: float, outcome: str) -> bool:
@@ -244,6 +268,49 @@ def recall_beliefs(rep_id: str, limit: int = 5) -> list[str]:
 
 
 # ---------------------------------------------------------------------------
+# Track record: every closed deal the bank remembers, with exact numbers
+# ---------------------------------------------------------------------------
+
+_TRACK_CACHE: dict[str, dict[str, list[dict]]] = {}   # bank -> rep -> records; cleared on save
+PAGE_SIZE = 100
+
+
+def _all_outcome_records() -> dict[str, list[dict]]:
+    """Read every outcome memory in the bank (paged), grouped by rep. One read per quarter."""
+    bank = bank_id()
+    if bank in _TRACK_CACHE:
+        return _TRACK_CACHE[bank]
+    client = get_client()
+    by_rep: dict[str, dict[str, dict]] = {}
+    offset = 0
+    while True:
+        page = client.list_memories(bank_id=bank, limit=PAGE_SIZE, offset=offset)
+        items = page.items or []
+        for m in items:
+            meta = m.metadata or {}
+            if "stated_prob" not in meta or meta.get("outcome") not in ("won", "lost"):
+                continue
+            # One saved outcome can become several facts: keep one record per deal.
+            by_rep.setdefault(str(meta.get("rep_id")), {})[str(meta.get("deal_id"))] = {
+                "deal_id": str(meta.get("deal_id")),
+                "stated_prob": float(meta["stated_prob"]),
+                "outcome": meta["outcome"],
+                "traits": [t for t in str(meta.get("traits", "")).split(";") if t],
+                "close_date": meta.get("close_date"),
+            }
+        offset += len(items)
+        if not items or offset >= (page.total or 0):
+            break
+    _TRACK_CACHE[bank] = {rep: list(d.values()) for rep, d in by_rep.items()}
+    return _TRACK_CACHE[bank]
+
+
+def rep_track_record(rep_id: str) -> list[dict]:
+    """A rep's closed deals as remembered in Hindsight: stated %, outcome, traits."""
+    return _all_outcome_records().get(rep_id, [])
+
+
+# ---------------------------------------------------------------------------
 # Think it over (reflect) -> calibration card
 # ---------------------------------------------------------------------------
 
@@ -259,10 +326,27 @@ def _reflect_card(query: str, tags: list[str] | None) -> dict | None:
 
 
 def reflect_calibration_card(rep_id: str, rep_name: str, quarter: str | None = None) -> dict:
-    """Build a rep's calibration card. Tries twice, then falls back to an empty card.
+    """Build a rep's calibration card. Never raises, so the replay can't crash here.
 
-    Never raises, so the replay can't crash here.
+    1. Read the rep's track record back from Hindsight and measure the rules exactly.
+    2. Ask reflect to explain them in plain words (it also sees observations and directives).
+    If the track record isn't available (no metadata on the memories), fall back to asking
+    reflect for the whole card.
     """
+    try:
+        records = rep_track_record(rep_id)
+    except Exception as exc:  # noqa: BLE001
+        log.warning("track record read failed for %s: %s", rep_id, exc)
+        records = []
+
+    if records:
+        card = build_card(records)
+        if card["rules"]:
+            card["summary"] = _explain_card(rep_id, rep_name, card) or \
+                card["summary"].replace("Rep ", f"{rep_name} ", 1)
+        return {"rep_id": rep_id, "quarter": quarter, "source": "track_record",
+                "deals_remembered": len(records), **card}
+
     raw = None
     for attempt in (1, 2):
         try:
@@ -272,7 +356,31 @@ def reflect_calibration_card(rep_id: str, rep_name: str, quarter: str | None = N
         except Exception as exc:  # noqa: BLE001
             log.warning("reflect failed for %s (attempt %d): %s", rep_id, attempt, exc)
     card = parse_card(raw) if raw else empty_card()
-    return {"rep_id": rep_id, "quarter": quarter, **card}
+    return {"rep_id": rep_id, "quarter": quarter, "source": "reflect", **card}
+
+
+def _explain_card(rep_id: str, rep_name: str, card: dict) -> str | None:
+    """One reflect call: a plain-English summary of the measured card, in Hindsight's words."""
+    measured = "; ".join(
+        f"{r['condition']}: says {r['stated_avg']:.0%} on average, wins {r['actual_rate']:.0%} "
+        f"({r['evidence_count']} deals) -> {r['direction']}"
+        for r in card["rules"]
+    )
+    try:
+        resp = get_client().reflect(
+            bank_id=bank_id(),
+            query=SUMMARY_QUERY.format(rep_name=rep_name),
+            context=f"Measured track record for {rep_name}: {measured}",
+            tags=[f"rep:{rep_id}"],
+            tags_match="all_strict",
+            budget="low",
+            response_schema=SUMMARY_SCHEMA,
+        )
+        text = (resp.structured_output or {}).get("summary") or resp.text
+        return str(text).strip() or None
+    except Exception as exc:  # noqa: BLE001 (the measured summary is a fine fallback)
+        log.warning("summary reflect failed for %s: %s", rep_id, exc)
+        return None
 
 
 def reflect_team_card(quarter: str | None = None) -> dict:

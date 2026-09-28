@@ -9,4 +9,4 @@ pandas
 numpy
 httpx
 pytest
-ruff
+ruff==0.16.9

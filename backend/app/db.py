@@ -29,6 +29,13 @@ def load_run(run_id: str = "demo") -> None:
 def get(name: str):
     con = sqlite3.connect(DB)
 
+    try:
+        con.execute("SELECT 1 FROM blobs LIMIT 1")
+    except sqlite3.OperationalError:
+        con.close()
+        load_run()
+        con = sqlite3.connect(DB)
+
     row = con.execute(
         "SELECT body FROM blobs WHERE name = ?",
         (name,),

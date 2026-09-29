@@ -5,9 +5,9 @@ import type { AskResponse } from "../types";
 import { ErrorBlock, Panel, PanelHeader, Spinner } from "./ui";
 
 const SUGGESTIONS = [
-  "What's our realistic Q3 number?",
+  "What bias has Priya shown?",
   "Which rep should I trust least right now?",
-  "Why did you lower Priya's Zenith deal?",
+  "How reliable is Arjun's forecasting?",
 ];
 
 export function AskBox({ delay = 0 }: { delay?: number }) {

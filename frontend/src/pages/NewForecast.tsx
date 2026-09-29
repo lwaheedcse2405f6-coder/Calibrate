@@ -27,7 +27,7 @@ const PRESETS: { label: string; form: FormState }[] = [
     form: {
       rep_id: "priya",
       account: "Zenith Logistics",
-      product: "GTX Pro",
+      product: "GTX Basic", // not a big-ticket product, so Priya's single-contact rule applies
       amount_inr: "4200000",
       n_contacts: "1",
       has_finance_contact: false,
@@ -51,7 +51,7 @@ const PRESETS: { label: string; form: FormState }[] = [
     },
   },
   {
-    label: "Meera · competitor · 80%",
+    label: "Meera · big-ticket GTK 500 · 85%",
     form: {
       rep_id: "meera",
       account: "Harbor Shipping",
@@ -60,12 +60,12 @@ const PRESETS: { label: string; form: FormState }[] = [
       n_contacts: "3",
       has_finance_contact: true,
       has_champion: false,
-      competitor: true,
-      stated_pct: 80,
+      competitor: false,
+      stated_pct: 85,
     },
   },
   {
-    label: "Karan · new rep · 75%",
+    label: "Karan · accurate rep · 75%",
     form: {
       rep_id: "karan",
       account: "Kite Payments",

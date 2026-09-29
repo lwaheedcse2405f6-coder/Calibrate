@@ -41,9 +41,11 @@ export function BeliefTimeline({ beliefs, repName }: { beliefs: Belief[]; repNam
       ) : (
         <ol className="relative space-y-6 border-l-2 border-slate-800 pl-6">
           {quarters.map((q, qi) => (
-            <li key={q} className="animate-fade-up" style={{ animationDelay: `${qi * 90}ms` }}>
+            <li key={q} className="relative animate-fade-up" style={{ animationDelay: `${qi * 90}ms` }}>
               <span
-                className={`absolute -left-[9px] mt-1 size-4 rounded-full ring-4 ring-slate-900 ${
+                // Positioned from the row (its fade-in animation makes it the reference anyway):
+                // 24px list padding + 2px line + half the dot = 33px back onto the line.
+                className={`absolute -left-[33px] top-0.5 size-4 rounded-full ring-4 ring-slate-900 ${
                   beliefs.some((b) => b.quarter === q && b.status === "active") ? "bg-violet-500" : "bg-slate-600"
                 }`}
                 aria-hidden
